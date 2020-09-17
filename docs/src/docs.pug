@@ -1,0 +1,59 @@
+extends layouts/_main
+block variables
+    - var title = 'Docs - Coco.css'
+    - var description = 'A lightweight and minimal CSS Framework'
+
+block content
+    include partials/_header
+    .container.container-xxl
+        .row.docs-row
+            main.col.col-12.col-xl-10
+                h1.font-light.text-center.text-uppercase Elements
+                include partials/elements/_typography
+                .mb-5
+                include partials/elements/_buttons
+                .mb-5
+                include partials/elements/_images
+                .mb-5
+                h1.font-light.text-center.text-uppercase Layout
+                .mb-5
+                include partials/layout/_containers
+                .mb-5
+                include partials/layout/_grid
+                .mb-5
+                h1.font-light.text-center.text-uppercase Components
+                .mb-5
+                include partials/components/_alerts
+                .mb-5
+                include partials/components/_avatars
+                .mb-5
+                include partials/components/_badges
+                .mb-5
+                include partials/components/_embed
+                .mb-5
+                include partials/components/_modals
+                .mb-5
+                include partials/components/_progress
+                .mb-5
+                include partials/components/_tooltips
+                .mb-5
+                h1.font-light.text-center.text-uppercase Utilities
+                .mb-5
+                include partials/utilities/_colors
+                .mb-5
+                include partials/utilities/_display
+                .mb-5
+                include partials/utilities/_loading
+                .mb-5
+                include partials/utilities/_opacity
+                .mb-5
+                include partials/utilities/_position
+                .mb-5
+                include partials/utilities/_shapes
+                .mb-5
+                include partials/utilities/_spacing
+                .mb-5
+                include partials/utilities/_text
+            aside.col.col-12.col-xl-2.border-left
+                include partials/_sidebar
+        include partials/_footer

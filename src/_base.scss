@@ -1,0 +1,36 @@
+// Base
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $html-font-size;
+    line-height: $html-line-height;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $body-color;
+    text-align: left;
+    background: $body-bg-color;
+}
+
+a {
+    color: $link-color;
+    outline: none;
+    text-decoration: none;
+
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+        color: $link-hover-color;
+        text-decoration: underline;
+    }
+}

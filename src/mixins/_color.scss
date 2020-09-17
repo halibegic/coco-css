@@ -1,0 +1,34 @@
+// Text color
+@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+    #{$name} {
+        color: $color !important;
+    }
+
+    a#{$name} {
+        &:focus,
+        &:hover {
+            color: darken($color, 5%);
+        }
+
+        &:visited {
+            color: lighten($color, 5%);
+        }
+    }
+}
+// Background color
+@mixin bg-variant($name: ".bg-primary", $color: $primary-color) {
+    #{$name} {
+        background: $color !important;
+
+        @if ($color != transparent and lightness($color) < 70) {
+            color: $white-color;
+        }
+    }
+}
+
+// Background color
+@mixin border-variant($name: ".border-primary", $color: $primary-color) {
+    #{$name} {
+        border-color: $color !important;
+    }
+}

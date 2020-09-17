@@ -1,0 +1,81 @@
+// Spacing
+$sides: (top, bottom, left, right);
+
+// Auto margin and padding
+@mixin spacing-auto() {
+    .mx-auto {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .my-auto {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    .px-auto {
+        padding-left: auto !important;
+        padding-right: auto !important;
+    }
+
+    .py-auto {
+        padding-top: auto !important;
+        padding-bottom: auto !important;
+    }
+
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-auto {
+            margin-#{$side}: auto !important;
+        }
+
+        .p#{str-slice($side, 0, 1)}-auto {
+            margin-#{$side}: auto !important;
+        }
+    }
+}
+
+// Margin
+@mixin margin-variant($id: 1, $size: map-get($spacers, 1)) {
+    .m-#{$id} {
+        margin: $size !important;
+    }
+
+    .mx-#{$id} {
+        margin-left: $size !important;
+        margin-right: $size !important;
+    }
+
+    .my-#{$id} {
+        margin-bottom: $size !important;
+        margin-top: $size !important;
+    }
+
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$id} {
+            margin-#{$side}: $size !important;
+        }
+    }
+}
+
+// Padding
+@mixin padding-variant($id: 1, $size: map-get($spacers, 1)) {
+    .p-#{$id} {
+        padding: $size !important;
+    }
+
+    .px-#{$id} {
+        padding-left: $size !important;
+        padding-right: $size !important;
+    }
+
+    .py-#{$id} {
+        padding-bottom: $size !important;
+        padding-top: $size !important;
+    }
+
+    @each $side in $sides {
+        .p#{str-slice($side, 0, 1)}-#{$id} {
+            padding-#{$side}: $size !important;
+        }
+    }
+}

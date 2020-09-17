@@ -1,0 +1,48 @@
+// Text colors
+@include text-color-variant(".text-primary", $primary-color);
+@include text-color-variant(".text-secondary", $secondary-color);
+
+@include text-color-variant(".text-success", $success-color);
+@include text-color-variant(".text-warning", $warning-color);
+@include text-color-variant(".text-error", $error-color);
+
+@include text-color-variant(".text-dark", $dark-color);
+@include text-color-variant(".text-light", $light-color);
+
+@include text-color-variant(".text-white", $white-color);
+@include text-color-variant(".text-black", $black-color);
+@include text-color-variant(".text-gray", $gray-color);
+
+@include text-color-variant(".text-muted", $muted-color);
+
+// Background colors
+@include bg-variant(".bg-primary", $primary-color);
+@include bg-variant(".bg-secondary", $secondary-color);
+
+@include bg-variant(".bg-success", $success-color);
+@include bg-variant(".bg-warning", $warning-color);
+@include bg-variant(".bg-error", $error-color);
+
+@include bg-variant(".bg-dark", $dark-color);
+@include bg-variant(".bg-light", $light-color);
+
+@include bg-variant(".bg-white", $white-color);
+@include bg-variant(".bg-black", $black-color);
+@include bg-variant(".bg-gray", $gray-color);
+
+@include bg-variant(".bg-transparent", transparent);
+
+// Border colors
+@include border-variant(".border-primary", $primary-color);
+@include border-variant(".border-secondary", $secondary-color);
+
+@include border-variant(".border-success", $success-color);
+@include border-variant(".border-warning", $warning-color);
+@include border-variant(".border-error", $error-color);
+
+@include border-variant(".border-dark", $dark-color);
+@include border-variant(".border-light", $light-color);
+
+@include border-variant(".border-white", $white-color);
+@include border-variant(".border-black", $black-color);
+@include border-variant(".border-gray", $gray-color);

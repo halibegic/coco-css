@@ -1,0 +1,63 @@
+// Loading
+
+.loading {
+    display: inline-block;
+    position: relative;
+    width: $loading-width;
+    height: $loading-height;
+    line-height: 1;
+    color: $primary-color;
+    pointer-events: none;
+
+    &::after {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -$loading-width * 0.5;
+        margin-top: -$loading-height * 0.5;
+        width: $loading-width;
+        height: $loading-height;
+        content: "";
+        border-radius: 50%;
+        border: $border-width * 2 solid currentColor;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        animation: loading 500ms infinite linear;
+    }
+
+    &.loading-sm {
+        width: $loading-sm-width;
+        height: $loading-sm-height;
+
+        &::after {
+            margin-top: -$loading-sm-height * 0.5;
+            margin-left: -$loading-sm-width * 0.5;
+            width: $loading-sm-width;
+            height: $loading-sm-height;
+            border-width: $border-width;
+        }
+    }
+
+    &.loading-lg {
+        width: $loading-lg-width;
+        height: $loading-lg-height;
+
+        &::after {
+            margin-top: -$loading-lg-height * 0.5;
+            margin-left: -$loading-lg-width * 0.5;
+            width: $loading-lg-width;
+            height: $loading-lg-height;
+            border-width: $border-width * 4;
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

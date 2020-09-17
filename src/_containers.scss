@@ -1,0 +1,14 @@
+// Container
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-spacer;
+    padding-right: $container-spacer;
+    width: 100%;
+
+    @each $name, $width in $container-max-widths {
+        &.container-#{$name} {
+            max-width: $width;
+        }
+    }
+}

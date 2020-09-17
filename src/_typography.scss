@@ -1,0 +1,115 @@
+// Typography
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: $headings-margin-bottom;
+    font-family: $headings-font-family;
+    font-style: $headings-font-style;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    color: $headings-color;
+}
+
+h1,
+.h1 {
+    font-size: $h1-font-size;
+}
+
+h2,
+.h2 {
+    font-size: $h2-font-size;
+}
+
+h3,
+.h3 {
+    font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+    font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+    font-size: $h5-font-size;
+}
+
+h6,
+.h6 {
+    font-size: $h6-font-size;
+}
+
+// Paragraphs
+p {
+    margin: 0 0 $paragraph-margin-bottom;
+}
+
+// Lists
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+
+    ul,
+    ol {
+        margin-top: map-get($spacers, 1);
+        margin-left: map-get($spacers, 4);
+    }
+
+    li:not(:first-child) {
+        margin-top: map-get($spacers, 1);
+    }
+}
+
+ul {
+    list-style: disc inside;
+
+    ul {
+        list-style-type: circle;
+    }
+}
+
+ol {
+    list-style: decimal inside;
+
+    ol {
+        list-style-type: lower-alpha;
+    }
+}
+
+dl {
+    dt {
+        font-weight: $dt-font-weight;
+    }
+
+    dd {
+        margin: map-get($spacers, 1) 0;
+    }
+}
+
+.list-unstyled {
+    @include list-unstyled();
+
+    ul,
+    ol {
+        @include list-unstyled();
+    }
+}
+
+.list-inline {
+    @include list-unstyled();
+
+    li {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: map-get($spacers, 2);
+        }
+    }
+}

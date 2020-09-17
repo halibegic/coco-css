@@ -1,0 +1,54 @@
+// Grid
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$grid-spacer;
+    margin-right: -$grid-spacer;
+}
+
+.col {
+    flex: 1;
+    max-width: 100%;
+    padding-left: $grid-spacer;
+    padding-right: $grid-spacer;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        flex: none;
+        width: ($i / $grid-columns) * 100%;
+    }
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    max-width: none;
+    width: auto;
+}
+
+@each $name, $width in $grid-breakpoints {
+    .show-#{$name} {
+        display: none !important;
+    }
+
+    @media (min-width: $width) {
+        @for $i from 1 through $grid-columns {
+            .col-#{$name}-#{$i} {
+                flex: none;
+                width: ($i / $grid-columns) * 100%;
+            }
+        }
+
+        .col-#{$name}-auto {
+            width: auto;
+        }
+
+        .hide-#{$name} {
+            display: none !important;
+        }
+
+        .show-#{$name} {
+            display: block !important;
+        }
+    }
+}

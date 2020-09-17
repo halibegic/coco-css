@@ -1,0 +1,9 @@
+// Opacity
+$opacity: 0;
+
+@while $opacity < 1 {
+    $opacity: $opacity + 0.05;
+    .o-#{$opacity * 100} {
+        opacity: #{$opacity};
+    }
+}

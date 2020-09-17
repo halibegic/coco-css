@@ -1,0 +1,16 @@
+extends layouts/_main
+
+block variables
+    - var title = 'Home - Coco.css'
+    - var description = 'A lightweight and minimal CSS Framework'
+
+block content
+    main.w-100.h-100.d-flex.align-items-center.justify-content-center.flex-column.text-center
+        h1.mb-2.font-light Coco.css
+        h2.mb-4.font-light.font-lg.text-muted A lightweight and minimal CSS Framework
+        p.mb-4
+            a.btn.mr-2(href="docs.html") Docs
+            a.btn.btn-outline(href="https://github.com/halibegic/coco.css" target="_blank") GitHub
+        p.mb-0.text-muted 
+            | Latest version: 
+            span.version= version

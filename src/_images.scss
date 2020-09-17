@@ -1,0 +1,15 @@
+// Images
+.img-responsive {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fit-cover {
+    object-fit: cover;
+}
+
+.img-fit-contain {
+    object-fit: contain;
+}

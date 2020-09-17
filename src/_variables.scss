@@ -1,0 +1,192 @@
+// Core variables
+$version:                   "0.0.1";
+
+// Colors
+$primary-color:             #0069ff !default;
+$secondary-color:           #031b4e !default;
+
+$success-color:             #14c07b !default;
+$error-color:               #b62929 !default;
+$warning-color:             #ffa95d !default;
+
+$dark-color:                #252525 !default;
+$light-color:               #f3f5f9 !default;
+$gray-color:                #5b6987 !default;
+
+$white-color:               #fff !default;
+$black-color:               #000 !default;
+
+$white-color:               #fff !default;
+$black-color:               #000 !default;
+
+$muted-color:               lighten($gray-color, 10%) !default;
+
+// Spacer
+$spacer:                    1rem !default;
+
+$spacers:                   () !default;
+$spacers: map-merge((
+    0: 0,
+    1: ($spacer * 0.25),
+    2: ($spacer * 0.5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+), $spacers);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes:                     () !default;
+$sizes: map-merge((
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+), $sizes);
+
+// Z-index
+$z-index-0:                 0 !default;
+$z-index-1:                 1 !default;
+$z-index-2:                 2 !default;
+$z-index-3:                 3 !default;
+$z-index-4:                 4 !default;
+
+// HTML
+$html-font-size:            18px !default;
+$html-line-height:          1.15 !default;
+
+// Body
+$body-color:                $dark-color !default;              
+$body-bg-color:             $white-color !default;
+
+// Typography
+$font-family:               -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+
+$font-size:                 1rem !default;
+$font-size-sm:              $font-size * 0.875 !default;
+$font-size-lg:              $font-size * 1.25 !default;
+$font-size-xl:              $font-size * 1.5 !default;
+
+$font-weight-light:         300 !default;
+$font-weight-normal:        400 !default;
+$font-weight-medium:        500 !default;
+$font-weight-bold:          700 !default;
+
+$font-weight:               $font-weight-normal !default;
+
+$line-height:               1.5 !default;
+$line-height-sm:            1.25 !default;
+$line-height-lg:            2 !default;
+
+$headings-margin-bottom:    $spacer / 2 !default;
+$headings-font-family:      null !default;
+$headings-font-style:       null !default;
+$headings-font-weight:      $font-weight-medium !default;
+$headings-line-height:      1.2 !default;
+$headings-color:            null !default;
+
+$h1-font-size:              $font-size * 2.5 !default;
+$h2-font-size:              $font-size * 2 !default;
+$h3-font-size:              $font-size * 1.75 !default;
+$h4-font-size:              $font-size * 1.5 !default;
+$h5-font-size:              $font-size * 1.25 !default;
+$h6-font-size:              $font-size !default;
+
+$paragraph-margin-bottom:   1rem !default;
+
+$dt-font-weight:            $font-weight-bold !default;
+
+// Link
+$link-color:                $primary-color !default;
+$link-hover-color:          darken($link-color, 10%) !default;
+
+// Border
+$border-width:              1px !default;
+$border-color:              darken($light-color, 5%) !default;
+
+$border-radius:             0.2rem !default;
+$border-radius-sm:          0.1rem !default;
+$border-radius-lg:          0.3rem !default;
+
+// Alert
+$alert-color:               $white-color !default;
+$alert-bg-color:            rgba($primary-color, 0.95) !default;
+
+// Avatar
+$avatar-color:              $white-color !default;
+$avatar-bg-color:           rgba($primary-color, 0.95) !default;
+
+// Badge
+$badge-color:               $white-color !default;
+$badge-bg-color:            rgba($primary-color, 0.95) !default;
+
+// Button
+$btn-padding-y:             0.375rem !default;
+$btn-padding-x:             0.75rem !default;
+
+$btn-padding-y-sm:          0.25rem !default;
+$btn-padding-x-sm:          0.5rem !default;
+
+$btn-padding-y-lg:          0.5rem !default;
+$btn-padding-x-lg:          1rem !default;
+
+$btn-border-radius:         $border-radius !default;
+
+// Layout
+$container-spacer:          1.5rem !default;
+
+$grid-columns:              12 !default;
+$grid-spacer:               0.75rem !default;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+) !default;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+) !default;
+
+// Code
+$code-color:                lighten($body-color, 15%) !default;
+$code-bg-color:             lighten($light-color, 10%) !default;
+
+// Loading
+$loading-width:             $spacer * 1.5 !default;
+$loading-height:            $loading-width !default;
+
+$loading-sm-width:          $loading-width * 0.75 !default;
+$loading-sm-height:         $loading-width * 0.75 !default;
+
+$loading-lg-width:          $loading-width * 2 !default;
+$loading-lg-height:         $loading-width * 2 !default;
+
+// Modals
+$modal-width:               640px !default;
+$modal-width-sm:            320px !default;
+$modal-width-lg:            960px !default;
+$modal-color:               $body-color !default;
+$modal-bg-color:            $body-bg-color !default;
+$modal-border-color:        $border-color !default;
+$modal-overlay-bg-color:    rgba($dark-color, 0.75) !default;
+
+// Progress
+$progress-height:           6px !default;
+
+// Tooltip
+$tooltip-padding-y:         $spacer * 0.25 !default;
+$tooltip-padding-x:         $spacer * 0.75 !default;
+$tooltip-color:             $white-color;
+$tooltip-bg-color:          rgba($black-color, 0.95);
+
+// Assets
+$font-path:                 "../font/" !default;
+$image-path:                "../img/" !default;

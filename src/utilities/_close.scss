@@ -1,0 +1,23 @@
+.close {
+    font-size: $font-size;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+    cursor: pointer;
+    color: inherit;
+    outline: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+        opacity: 0.75;
+    }
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}

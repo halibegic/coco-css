@@ -1,0 +1,7 @@
+// Spacing
+@include spacing-auto();
+
+@each $prop, $value in $spacers {
+    @include margin-variant($prop, $value);
+    @include padding-variant($prop, $value);
+}

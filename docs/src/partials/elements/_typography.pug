@@ -1,0 +1,90 @@
+#typography
+    h2.docs-title.my-4.font-light
+        | Typography
+        a.anchor.ml-1.text-decoration-none(href="#typography") #
+    p
+        | Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.
+    p
+        h1
+            | H1 Heading
+        h2
+            | H2 Heading
+        h3
+            | H3 Heading
+        h4
+            | H4 Heading
+        h5
+            | H5 Heading
+        h6
+            | H6 Heading
+    pre.code(data-lang='HTML')
+        code.docs-code
+            :highlight(lang="html")
+                <h1>H1 Heading</h1>
+                <h2>H2 Heading</h2>
+                <h3>H3 Heading</h3>
+                <h4>H4 Heading</h4>
+                <h5>H5 Heading</h5>
+                <h6>H6 Heading</h6>
+#typography-paragraphs
+    h4.docs-title.my-4.font-light
+        | Paragraphs
+        a.anchor.ml-1.text-decoration-none(href="#typography-paragraphs") #
+    p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        | #[a(href='#typography') Aliquam] placerat libero id erat vehicula, pretium euismod metus suscipit. Vivamus tempor ut nunc consequat mattis. Morbi risus ipsum, ultricies at viverra non, pharetra sit amet magna.
+    pre.code(data-lang='HTML')
+        code.docs-code
+            :highlight(lang="html")
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <a href="#typography">Aliquam</a> placerat libero id erat vehicula, pretium euismod metus suscipit. Vivamus tempor ut nunc consequat mattis. Morbi risus ipsum, ultricies at viverra non, pharetra sit amet magna.
+                </p>
+#typography-lists
+    h4.docs-title.my-4.font-light
+        | Lists
+        a.anchor.ml-1.text-decoration-none(href="#typography-lists") #
+    .d-flex.justify-content-between
+        .item
+            p.text-bold Unordered list 
+            ul.list
+                li item 1
+                li
+                    | item 2
+                    ul
+                        li item 2.1
+                        li item 2.2
+                        li item 2.3
+                li item 3
+        .item
+            p.text-bold Ordered list 
+            ul.list
+                li item 1
+                li
+                    | item 2
+                    ul
+                        li item 2.1
+                        li item 2.2
+                        li item 2.3
+                li item 3
+        .item
+            p.text-bold Description list 
+            dl.list
+                dt term 1
+                dd description 1
+                dt term 2
+                dd description 2
+                dt term 3
+                dd description 3
+        .item
+            p.text-bold Unstyled list 
+            ul.list-unstyled
+                li item 1
+                li item 2
+                li item 3
+        .item
+            p.text-bold Inline list 
+            ul.list-inline
+                li item 1
+                li item 2
+                li item 3

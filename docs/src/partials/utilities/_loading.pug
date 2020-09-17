@@ -1,0 +1,31 @@
+#loading
+    h2.docs-title.my-4.font-light
+        | Loading
+        a.anchor.ml-1.text-decoration-none(href="#loading") #
+    p
+        | Loading indicator is used for loading or updating.
+    .row.mb-3
+        .col
+            .loading
+    pre.code(data-lang='HTML')
+        code.docs-code
+            :highlight(lang="html")
+                <div class="loading"></div>
+#loading-sizes
+    h4.docs-title.my-4.font-light
+        | Sizes
+        a.anchor.ml-1.text-decoration-none(href="#loading-sizes") #
+    p
+        |   Add the #[code loading-sm] or #[code loading-lg] class for small or large loading size.
+    .row.mb-3
+        .col.d-flex.align-items-center
+            .loading.loading-sm.mr-3
+            .loading.loading-lg
+    pre.code(data-lang='HTML')
+        code.docs-code
+            :highlight(lang="html")
+                <!-- small -->
+                <div class="loading loading-sm"></div>
+
+                <!-- large -->
+                <div class="loading loading-lg"></div>
