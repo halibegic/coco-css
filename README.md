@@ -9,21 +9,23 @@ A lightweight and modular CSS framework
 
 ## How to use
 
-### Install manually
+### CDN
 
-Just include the latest version like this:
+The fastest way to use Coco is to include CSS file from the jsDelivr CDN.
 
 ```
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/coco-css@latest/dist/coco.min.css">
 ```
 
-### Install with NPM
+### npm
+
+Coco is also available under npm, just run the following command:
 
 ```
 npm install coco-css --save
 ```
 
-Then include CSS file like this:
+then include CSS file like this:
 
 ```
 <link rel="stylesheet" href="node_modules/coco-css/dist/coco.min.css">
