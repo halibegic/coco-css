@@ -24,7 +24,7 @@
     "url": "https://github.com/halibegic/coco-css/issues"
   },
   "homepage": "https://halibegic.github.io/coco-css",
-  "path": "/",
+  "path": "https://halibegic.github.io/coco-css/",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
