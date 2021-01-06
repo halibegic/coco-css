@@ -1,12 +1,10 @@
 header.mb-5
     .bg-white.border-bottom.shadow-sm
         .container.d-flex.align-items-center.flex-column.flex-sm-row.py-3
-            a.mr-sm-auto.font-xl.text-dark(href="/index.html") Coco
+            a.mr-sm-auto.font-xl.text-dark(href=path+'index.html') Coco
             nav.my-2.my-sm-0
-                a.p-2(class=(navLink === "home" ? "text-primary" : "text-muted") href="/index.html") Home
-                a.p-2(class=(navLink === "docs" ? "text-primary" : "text-muted") href="/docs.html") Docs
-                a.p-2(class=(navLink === "lab" ? "text-primary" : "text-muted") href="/lab.html") Lab
-                a.p-2.text-muted(href="https://github.com/halibegic/coco-css")
-                    i.fe.fe-md(data-feather="github")
-
-
+                a.p-2(class=(navLink === 'home' ? 'text-primary' : 'text-muted') href=path+'index.html') Home
+                a.p-2(class=(navLink === 'docs' ? 'text-primary' : 'text-muted') href=path+'docs.html') Docs
+                a.p-2(class=(navLink === 'lab' ? 'text-primary' : 'text-muted') href=path+'lab.html') Lab
+                a.p-2.text-muted(href='https://github.com/halibegic/coco-css')
+                    i.fe.fe-md(data-feather='github')
