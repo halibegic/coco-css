@@ -1,10 +1,13 @@
 .close {
-    font-size: $font-size;
-    font-weight: $font-weight-normal;
-    line-height: $line-height;
+    font-size: $close-font-size;
+    font-weight: $close-font-weight;
+    line-height: $close-line-height;
     cursor: pointer;
     color: inherit;
     outline: none;
+    opacity: 0.5;
+    background-color: transparent;
+    border: 0;
 
     &:hover {
         text-decoration: none;
@@ -14,10 +17,4 @@
     &:focus {
         opacity: 0.75;
     }
-}
-
-button.close {
-    padding: 0;
-    background-color: transparent;
-    border: 0;
 }

@@ -1,0 +1,461 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Forms'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #buttons
+                    h2.mb-2
+                        | Forms
+                        a.anchor.ml-1.text-decoration-none(href="#forms") #
+                    p Easily create nicely looking forms with different styles and layouts.
+                    #input
+                        h4.mt-4.mb-2
+                            | Input
+                            a.anchor.ml-1.text-decoration-none(href="#input") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        label.form-label(for="name") Name
+                                        input#name.form-field(type="text" placeholder="Name")
+                                    .form-element
+                                        label.form-label(for="email") Email
+                                        input#email.form-field(type="email" placeholder="Email")
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <label class="form-label" for="name">Name</label>
+                                        <input class="form-field" id="name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input class="form-field" id="email" type="email" placeholder="Email">
+                                    </div>
+                    #hint
+                        h4.mt-4.mb-2
+                            | Hint
+                            a.anchor.ml-1.text-decoration-none(href="#hint") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        input#pin.form-field(type="text" placeholder="PIN code")
+                                        .form-hint We'll never share your PIN code with anyone else
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <input class="form-field" id="pin" type="text" placeholder="PIN code">
+                                        <div class="form-hint">We'll never share your PIN code with anyone else</div>
+                                    </div>
+                    #sizes
+                        h4.mt-4.mb-2
+                            | Sizes
+                            a.anchor.ml-1.text-decoration-none(href="#sizes") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        label.form-label.form-label-sm(for="input-sm") Input small
+                                        input#input-sm.form-field.form-field-sm(type="text" placeholder="Input small")
+                                    .form-element
+                                        label.form-label.form-label-sm(for="input-default") Input default
+                                        input#input-default.form-field(type="text" placeholder="Input default")
+                                    .form-element
+                                        label.form-label.form-label-lg(for="input-lg") Input large
+                                        input#input-lg.form-field.form-field-lg(type="text" placeholder="Input large")
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <label class="form-label form-label-sm" for="input-sm">Input small</label>
+                                        <input class="form-field form-field-sm" id="input-sm" type="text" placeholder="Input small">
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-label" for="input-default">Input default</label>
+                                        <input class="form-field" id="input-default" type="text" placeholder="Input default">
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-label form-label-lg" for="input-lg">Input large</label>
+                                        <input class="form-field form-field-lg" id="input-lg" type="text" placeholder="Input large">
+                                    </div>
+                    #textarea
+                        h4.mt-4.mb-2
+                            | Textarea
+                            a.anchor.ml-1.text-decoration-none(href="#textarea") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        label.form-label(for="message") Message
+                                        textarea#message.form-field(rows="5" placeholder="Your message")
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <label class="form-label" for="message">Name</label>
+                                        <textarea class="form-field" id="message" rows="5" placeholder="Name"></textarea>
+                                    </div>
+                    #select
+                        h4.mt-4.mb-2
+                            | Select
+                            a.anchor.ml-1.text-decoration-none(href="#select") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        label.form-label(for="fruit") Choose an option
+                                        select#fruit.form-field
+                                            option Apple
+                                            option Orange
+                                            option Banana
+                                            option Pineapple
+                                    .form-element
+                                        label.form-label(for="car") Choose an option
+                                        select#car.form-field(multiple)
+                                            option Acura
+                                            option Kia
+                                            option BMW
+                                            option Rolls-Royce
+                                            option Tesla
+                                            option Volkswagen
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <label class="form-label" for="fruit">Choose an option</label>
+                                        <select class="form-field" id="fruit">
+                                            <option>Apple</option>
+                                            <option>Orange</option>
+                                            <option>Banana</option>
+                                            <option>Pineapple</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-label" for="car">Choose an option</label>
+                                        <select class="form-field" id="car" multiple>
+                                            <option>Acura</option>
+                                            <option>Kia</option>
+                                            <option>BMW</option>
+                                            <option>Rolls-Royce</option>
+                                            <option>Tesla</option>
+                                            <option>Volkswagen</option>
+                                        </select>
+                                    </div>
+                    #radio
+                        h4.mt-4.mb-2
+                            | Radio
+                            a.anchor.ml-1.text-decoration-none(href="#radio") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        label.form-check
+                                            | First radio
+                                            input(type="radio" name="radio" checked)
+                                            span.form-mark
+                                        label.form-check
+                                            | Second radio
+                                            input(type="radio" name="radio")
+                                            span.form-mark
+                                        label.form-check
+                                            | Third disabled radio
+                                            input(type="radio" name="radio" disabled)
+                                            span.form-mark
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <label class="form-check">First radio
+                                            <input type="radio" name="radio" checked>
+                                            <span class="form-mark"></span>
+                                        </label>
+                                        <label class="form-check">Second radio
+                                            <input type="radio" name="radio">
+                                            <span class="form-mark"></span>
+                                        </label>
+                                        <label class="form-check">Third disabled radio
+                                            <input type="radio" name="radio" disabled>
+                                            <span class="form-mark"></span>
+                                        </label>
+                                    </div>
+                    #checkbox
+                        h4.mt-4.mb-2
+                            | Checkbox
+                            a.anchor.ml-1.text-decoration-none(href="#checkbox") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        label.form-check
+                                            | First checkbox
+                                            input(type="checkbox" name="checkbox" checked)
+                                            span.form-mark
+                                        label.form-check
+                                            | Second checkbox
+                                            input(type="checkbox" name="checkbox")
+                                            span.form-mark
+                                        label.form-check
+                                            | Third disabled checkbox
+                                            input(type="checkbox" name="checkbox" disabled)
+                                            span.form-mark
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <label class="form-check"> First checkbox
+                                            <input type="checkbox" name="checkbox" checked>
+                                            <span class="form-mark"></span>
+                                        </label>
+                                        <label class="form-check"> Second checkbox
+                                            <input type="checkbox" name="checkbox">
+                                            <span class="form-mark"></span>
+                                        </label>
+                                        <label class="form-check"> Third disabled checkbox
+                                            <input type="checkbox" name="checkbox" disabled>
+                                            <span class="form-mark"></span>
+                                        </label>
+                                    </div>
+                    #validation
+                        h4.mt-4.mb-2
+                            | Validation
+                            a.anchor.ml-1.text-decoration-none(href="#validation") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        input#pin-success.form-field.is-success(type="text" placeholder="PIN code")
+                                        .form-hint PIN code is valid.
+                                    .form-element
+                                        input#pin-error.form-field.is-error(type="text" placeholder="PIN code")
+                                        .form-hint PIN code must have at least 4 characters.
+                                    .form-element
+                                        label.form-label(for="car-error") Choose an option
+                                        select#car-error.form-field.is-error
+                                            option Volvo
+                                            option Saab
+                                            option Mercedes
+                                            option Audi
+                                        .form-hint The option is invalid.
+                                    .form-element
+                                        label.form-check.is-error
+                                            | Error radio
+                                            input(type="radio" name="radio")
+                                            span.form-mark
+                                    .form-element
+                                        label.form-check.is-error
+                                            | Error checkbox
+                                            input(type="checkbox" name="checkbox")
+                                            span.form-mark
+                                    .form-element
+                                        label.form-label(for="email-pattern") Email
+                                        input#email.form-field(type="email-pattern" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$" placeholder="Start typing...")
+                                        .form-hint Use input pattern attribute to validate the value as well.
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <div class="form-element">
+                                        <input class="form-field is-success" id="pin-success" type="text" placeholder="PIN code">
+                                        <div class="form-hint">PIN code is valid.</div>
+                                    </div>
+                                    <div class="form-element">
+                                        <input class="form-field is-error" id="pin-error" type="text" placeholder="PIN code">
+                                        <div class="form-hint">PIN code must have at least 4 characters.</div>
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-label" for="car-error">Choose an option</label>
+                                        <select class="form-field is-error" id="car-error">
+                                            <option>Volvo</option>
+                                            <option>Saab</option>
+                                            <option>Mercedes</option>
+                                            <option>Audi</option>
+                                        </select>
+                                        <div class="form-hint">The option is invalid.</div>
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-check is-error"> Error radio
+                                            <input type="radio" name="radio">
+                                            <span class="form-mark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-check is-error"> Error checkbox
+                                            <input type="checkbox" name="checkbox">
+                                            <span class="form-mark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-element">
+                                        <label class="form-label" for="email-pattern">Email</label>
+                                        <input class="form-field" id="email" type="email-pattern" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,14}$" placeholder="Start typing...">
+                                        <div class="form-hint">Use input pattern attribute to validate the value as well.</div>
+                                    </div>
+                    #horizontal-form
+                        h4.mt-4.mb-2
+                            | Horizontal form
+                            a.anchor.ml-1.text-decoration-none(href="#horizontal-form") #
+                        .row.mb-3
+                            .col-12
+                                form.form-horizontal
+                                    .form-element
+                                        .col-12.col-sm-2
+                                            label.form-label(for="username") Username
+                                        .col-12.col-sm-10
+                                            input#username.form-field(type="text")
+                                    .form-element
+                                        .col-12.col-sm-2
+                                            label.form-label(for="password") Password
+                                        .col-12.col-sm-10
+                                            input#password.form-field(type="text")
+                                    .form-element
+                                        .col-12.col-sm-10.ml-auto
+                                            label.form-check
+                                                | Remember me
+                                                input(type="checkbox" name="remember-me" checked)
+                                                span.form-mark
+                                    .form-element
+                                        .col-12.col-sm-10.ml-auto
+                                            button.btn.btn-primary Login
+                                            button.btn.btn-light Cancel
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <form class="form form-horizontal">
+                                        <div class="form-element">
+                                            <div class="col-12 col-sm-2">
+                                                <label class="form-label" for="username">Username</label>
+                                            </div>
+                                            <div class="col-12 col-sm-10">
+                                                <input class="form-field" id="username" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-element">
+                                            <div class="col-12 col-sm-2">
+                                                <label class="form-label" for="password">Password</label>
+                                            </div>
+                                            <div class="col-12 col-sm-10">
+                                                <input class="form-field" id="password" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="form-element">
+                                            <div class="col-12 col-sm-10 ml-auto">
+                                                <label class="form-check">Remember me
+                                                    <input type="checkbox" name="remember-me" checked>
+                                                    <span class="form-mark"></span>
+                                                </label>
+                                        </div>
+                                        </div>
+                                        <div class="form-element">
+                                            <div class="col-12 col-sm-10 ml-auto">
+                                                <button class="btn btn-primary">Login</button>
+                                                <button class="btn btn-light">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                    #overview
+                        h4.mt-4.mb-2
+                            | Overview
+                            a.anchor.ml-1.text-decoration-none(href="#overview") #
+                        .row.mb-3
+                            .col-12
+                                form
+                                    .form-element
+                                        label.form-label(for="first-name") First Name
+                                        input#first-name.form-field(type="text")
+                                    .form-element
+                                        label.form-label(for="last-name") Last Name
+                                        input#last-name.form-field(type="text")
+                                    .form-element
+                                        label.form-label(for="email-address") Email address
+                                        input#email.form-field(type="email-address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$")
+                                        .form-hint We'll never share your email with anyone else.
+                                    .form-element
+                                        label.form-label Gender
+                                        label.form-check
+                                            | Male
+                                            input(type="radio" name="genre" checked)
+                                            span.form-mark
+                                        label.form-check
+                                            | Female
+                                            input(type="radio" name="genre")
+                                            span.form-mark
+                                    .form-element
+                                        label.form-label(for="role") Role
+                                        select#role.form-field
+                                            option Choose an option
+                                            option Economist
+                                            option Technologist
+                                            option Environmental Scientist
+                                            option Cultural expertise
+                                    .form-element
+                                        label.form-label(for="comment") Comment
+                                        textarea#comment.form-field(rows="5" placeholder="Your comment")
+                                    .form-element
+                                        label.form-check
+                                            | Sign up for newsletter
+                                            input(type="checkbox" name="newsletter" checked)
+                                            span.form-mark
+                                    button.btn.btn-primary Submit
+                                    button.btn.btn-light Cancel
+                        pre.code(data-lang='HTML')
+                            code.docs-code
+                                :highlight(lang="html")
+                                    <form>
+                                        <div class="form-element">
+                                            <label class="form-label" for="first-name">First Name</label>
+                                            <input class="form-field" id="first-name" type="text">
+                                        </div>
+                                        <div class="form-element">
+                                            <label class="form-label" for="last-name">Last Name</label>
+                                            <input class="form-field" id="last-name" type="text">
+                                        </div>
+                                        <div class="form-element">
+                                            <label class="form-label" for="email-address">Email address</label>
+                                            <input class="form-field" id="email" type="email-address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,14}$"><div class="form-hint">We'll never share your email with anyone else.</div>
+                                        </div>
+                                        <div class="form-element">
+                                            <label class="form-label">Gender</label>
+                                            <label class="form-check">Male
+                                                <input type="radio" name="genre" checked>
+                                                <span class="form-mark"></span>
+                                            </label>
+                                            <label class="form-check">Female
+                                                <input type="radio" name="genre">
+                                                <span class="form-mark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-element">
+                                            <label class="form-label" for="role">Role</label>
+                                            <select class="form-field" id="role">
+                                                <option>Choose an option</option>
+                                                <option>Economist</option>
+                                                <option>Technologist</option>
+                                                <option>Environmental Scientist</option>
+                                                <option>Cultural expertise</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-element">
+                                            <label class="form-label" for="comment">Comment</label>
+                                            <textarea class="form-field" id="comment" rows="5" placeholder="Your comment"></textarea>
+                                        </div>
+                                        <div class="form-element">
+                                            <label class="form-check">Sign up for newsletter
+                                                <input type="checkbox" name="newsletter" checked>
+                                                <span class="form-mark"></span>
+                                            </label>
+                                        </div>
+                                        <button class="btn btn-primary">Submit</button>
+                                        <button class="btn btn-light">Cancel</button>
+                                    </form>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer
+

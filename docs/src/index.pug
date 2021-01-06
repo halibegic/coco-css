@@ -1,16 +1,40 @@
-extends layouts/_main
+extends _layout/_main
 
 block variables
-    - var title = 'Home - Coco.css'
-    - var description = 'A lightweight and minimal CSS Framework'
+    - var title = 'Home'
+    - var navLink = 'home'
 
 block content
-    main.w-100.h-100.d-flex.align-items-center.justify-content-center.flex-column.text-center
-        h1.mb-2.font-light Coco.css
-        h2.mb-4.font-light.font-lg.text-muted A lightweight and minimal CSS Framework
-        p.mb-4
-            a.btn.mr-2(href="docs.html") Docs
-            a.btn.btn-outline(href="https://github.com/halibegic/coco.css" target="_blank") GitHub
-        p.mb-0.text-muted 
-            | Latest version: 
-            span.version= version
+    include _layout/_header
+
+    .container
+        .my-5.py-5.text-center
+            h1.display-4.mb-3.font-bold.text-tight A lightweight and modular<br>CSS framework.
+            p.mb-3
+                a.btn.btn-primary.mr-2(href="docs.html") Get started
+                a.btn.btn-secondary(href="https://github.com/halibegic/coco-css/releases") Download 
+            p.mb-0
+                span.font-sm.text-muted Current version 
+                a(href="https://github.com/halibegic/coco-css/releases" title="View releases") 
+                    small.label.bg-success-soft=version
+    
+        .row.mb-5.text-center
+            .col-12.col-md-4.mb-5.mb-md-0
+                .docs-shape.mb-3.bg-primary-soft.rounded-circle
+                    i.fe.fe-lg(data-feather="award")
+                h4.mb-2 Lightweight
+                p.mb-0.text-muted Only necessary to get started.
+
+            .col-12.col-md-4.mb-5.mb-md-0
+                .docs-shape.mb-3.bg-primary-soft.rounded-circle
+                    i.fe.fe-lg(data-feather="package")
+                h4.mb-2 Modular
+                p.mb-0.text-muted Just include what you need.
+
+            .col-12.col-md-4
+                .docs-shape.mb-3.bg-primary-soft.rounded-circle
+                    i.fe.fe-lg(data-feather="code")
+                h4.mb-2 Open Source
+                p.mb-0.text-muted Free to use. Free to modify.
+
+    include _layout/_footer

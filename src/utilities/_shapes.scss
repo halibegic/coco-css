@@ -73,9 +73,34 @@
 }
 
 .rounded-circle {
-    border-radius: 50% !important;
+    border-radius: $border-radius-circle !important;
+}
+
+.rounded-pill {
+    border-radius: $border-radius-pill !important;
 }
 
 .rounded-0 {
     border-radius: 0 !important;
+}
+
+// Shadows
+.shadow-sm {
+    box-shadow: $box-shadow-sm !important;
+}
+
+.shadow {
+    box-shadow: $box-shadow !important;
+}
+
+.shadow-lg {
+    box-shadow: $box-shadow-lg !important;
+}
+
+.shadow-inset {
+    box-shadow: $box-shadow-inset !important;
+}
+
+.shadow-none {
+    box-shadow: none !important;
 }

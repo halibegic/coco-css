@@ -1,0 +1,112 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Responsive'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #responsive
+                    h2.mb-2
+                        =title
+                        a.anchor.ml-1.text-decoration-none(href="#responsive") #
+                p
+                    | You can show or hide content on specific viewport widths.
+                table.table.mb-3
+                    thead
+                        tr
+                            th
+                            th xs
+                            th sm
+                            th md
+                            th lg
+                            th xl
+                    tbody
+                        tr
+                            td hide-xs
+                            td.text-success Visible
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                        tr
+                            td hide-sm
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                        tr
+                            td hide-md
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                        tr
+                            td hide-lg
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-muted Hidden
+                        tr
+                            td hide-xl
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                table.table
+                    thead
+                        tr
+                            th 
+                            th xs
+                            th sm
+                            th md
+                            th lg
+                            th xl
+                    tbody
+                        tr
+                            td show-xs
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                        tr
+                            td show-sm
+                            td.text-muted Hidden
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                        tr
+                            td show-md
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-success Visible
+                            td.text-success Visible
+                            td.text-success Visible
+                        tr
+                            td show-lg
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-success Visible
+                            td.text-success Visible
+                        tr
+                            td show-xl
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-muted Hidden
+                            td.text-success Visible
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

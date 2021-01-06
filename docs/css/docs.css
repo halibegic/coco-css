@@ -1,32 +1,40 @@
-/*! Coco.css Docs | MIT License | github.com/halibegic/coco.css */
-.docs-row { margin-left: -3rem; margin-right: -3rem; }
+/*! coco-css v0.0.1 MIT License https://halibegic.github.io/coco-css */
+/*! Coco Documentation | MIT License | github.com/halibegic/coco-css */
+/*
 
-.docs-row > .col { padding-left: 3rem; padding-right: 3rem; }
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
 
-.docs-title .anchor { opacity: 0; transition: opacity 0.15s linear; }
+*/
+.hljs { display: block; overflow-x: auto; padding: 0.5em; background: white; color: black; }
 
-.docs-title:hover .anchor { opacity: 1; }
+.hljs-comment, .hljs-quote, .hljs-variable { color: #008000; }
+
+.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-name, .hljs-tag { color: #00f; }
+
+.hljs-string, .hljs-title, .hljs-section, .hljs-attribute, .hljs-literal, .hljs-template-tag, .hljs-template-variable, .hljs-type, .hljs-addition { color: #a31515; }
+
+.hljs-deletion, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-meta { color: #2b91af; }
+
+.hljs-doctag { color: #808080; }
+
+.hljs-attr { color: #f00; }
+
+.hljs-symbol, .hljs-bullet, .hljs-link { color: #00b0e8; }
+
+.hljs-emphasis { font-style: italic; }
+
+.hljs-strong { font-weight: bold; }
 
 .docs-modal .modal { position: relative; top: auto; right: auto; width: auto; height: auto; display: -ms-flexbox; display: flex; }
 
-.docs-shape { display: -ms-inline-flexbox; display: inline-flex; width: 4.5rem; height: 4.5rem; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; font-size: 0.875rem; }
+.docs-shape { display: -ms-inline-flexbox; display: inline-flex; width: 4.5rem; height: 4.5rem; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; -ms-flex-negative: 0; flex-shrink: 0; font-size: 0.875rem; }
 
-.docs-code .hljs { display: block; overflow-x: auto; color: black; }
+.docs-shape-pill { width: 4.5rem; height: 2.25rem; }
 
-.docs-code .hljs-comment, .docs-code .hljs-quote, .docs-code .hljs-variable { color: #008000; }
+.fe { vertical-align: -10%; }
 
-.docs-code .hljs-keyword, .docs-code .hljs-selector-tag, .docs-code .hljs-built_in, .docs-code .hljs-name, .docs-code .hljs-tag { color: #3232ff; }
+.fe-md { width: 1em; height: 1em; }
 
-.docs-code .hljs-string, .docs-code .hljs-title, .docs-code .hljs-section, .docs-code .hljs-attribute, .docs-code .hljs-literal, .docs-code .hljs-template-tag, .docs-code .hljs-template-variable, .docs-code .hljs-type, .docs-code .hljs-addition { color: #a31515; }
+.fe-lg { width: 2rem; height: 2rem; }
 
-.docs-code .hljs-deletion, .docs-code .hljs-selector-attr, .docs-code .hljs-selector-pseudo, .docs-code .hljs-meta { color: #2b91af; }
-
-.docs-code .hljs-doctag { color: #808080; }
-
-.docs-code .hljs-attr { color: #ff3232; }
-
-.docs-code .hljs-symbol, .docs-code .hljs-bullet, .docs-code .hljs-link { color: #00b0e8; }
-
-.docs-code .hljs-emphasis { font-style: italic; }
-
-.docs-code .hljs-strong { font-weight: bold; }
+.fe-xl { width: 4em; height: 4em; }

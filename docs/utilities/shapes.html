@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="w-100 h-100" lang="en">
+  <head>
+    <title>Shapes - Coco</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A lightweight and modular CSS framework">
+    <link rel="stylesheet" href="/css/coco.min.css">
+    <link rel="stylesheet" href="/css/docs.min.css">
+    <body class="w-100 h-100">
+      <header class="mb-5">
+        <div class="bg-white border-bottom shadow-sm">
+          <div class="container d-flex align-items-center flex-column flex-sm-row py-3"><a class="mr-sm-auto font-xl text-dark" href="/index.html">Coco</a>
+            <nav class="my-2 my-sm-0"><a class="p-2 text-muted" href="/index.html">Home</a><a class="p-2 text-primary" href="/docs.html">Docs</a><a class="p-2 text-muted" href="/lab.html">Lab</a><a class="p-2 text-muted" href="https://github.com/halibegic/coco-css"><i class="fe fe-md" data-feather="github"></i></a></nav>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <main class="col-12 col-xl-10">
+            <div id="shapes">
+              <h2 class="mb-2">Shapes<a class="anchor ml-1 text-decoration-none" href="#shapes">#</a>
+              </h2>
+              <p>Shape utilities are used for changing element shapes.</p>
+            </div>
+            <div id="border">
+              <h4 class="mt-4 mb-2">Border<a class="anchor ml-1 text-decoration-none" href="#border">#</a></h4>
+              <div class="row">
+                <div class="col-12"><span class="docs-shape mb-3 mr-3 border border-primary bg-light">default</span><span class="docs-shape mb-3 mr-3 border-top border-primary bg-light">top</span><span class="docs-shape mb-3 mr-3 border-right border-primary bg-light">right</span><span class="docs-shape mb-3 mr-3 border-bottom border-primary bg-light">bottom</span><span class="docs-shape mb-3 mr-3 border-left border-primary bg-light">left</span><span class="docs-shape mb-3 mr-3 border border-0 border-primary bg-light">0</span><span class="docs-shape mb-3 mr-3 border border-top-0 border-primary bg-light">top 0</span><span class="docs-shape mb-3 mr-3 border border-right-0 border-primary bg-light">right 0</span><span class="docs-shape mb-3 mr-3 border border-bottom-0 border-primary bg-light">bottom 0</span><span class="docs-shape mb-3 border border-left-0 border-primary bg-light">left 0</span></div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-0"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-top-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-right-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-left-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+            </div>
+            <div id="border-colors">
+              <h4 class="mt-4 mb-2">Colors</h4>
+              <div class="row">
+                <div class="col-12"><span class="docs-shape mb-3 mr-3 border border-primary">primary</span><span class="docs-shape mb-3 mr-3 border border-secondary">secondary</span><span class="docs-shape mb-3 mr-3 border border-success">success</span><span class="docs-shape mb-3 mr-3 border border-error">error</span><span class="docs-shape mb-3 mr-3 border border-warning">warning</span><span class="docs-shape mb-3 mr-3 border border-dark">dark</span><span class="docs-shape mb-3 mr-3 border border-light">light</span><span class="docs-shape mb-3 mr-3 border border-white">white</span><span class="docs-shape mb-3 mr-3 border border-black">black</span></div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-primary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-secondary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-success"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-error"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-warning"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-dark"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-light"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-white"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-black"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+            </div>
+            <div id="border-radius">
+              <h4 class="mt-4 mb-2">Border Radius<a class="anchor ml-1 text-decoration-none" href="#border-radius">#</a></h4>
+              <div class="row">
+                <div class="col-12"><span class="docs-shape mb-3 mr-3 rounded-sm bg-primary">sm</span><span class="docs-shape mb-3 mr-3 rounded bg-primary">default</span><span class="docs-shape mb-3 mr-3 rounded-lg bg-primary">lg</span><span class="docs-shape mb-3 mr-3 rounded-top bg-primary">top</span><span class="docs-shape mb-3 mr-3 rounded-right bg-primary">right</span><span class="docs-shape mb-3 mr-3 rounded-bottom bg-primary">bottom</span><span class="docs-shape mb-3 mr-3 rounded-left bg-primary">left</span><span class="docs-shape mb-3 mr-3 rounded-circle bg-primary">circle</span><span class="docs-shape docs-shape-pill mb-3 mr-3 rounded-pill bg-primary">pill</span><span class="docs-shape mb-3 rounded-0 bg-primary">0</span></div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-sm"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-lg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-circle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-pill"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+            </div>
+            <div id="shadows">
+              <h4 class="mt-4 mb-2">Shadows<a class="anchor ml-1 text-decoration-none" href="#shadows">#</a></h4>
+              <div class="row">
+                <div class="col-12"><span class="docs-shape mb-3 mr-3 rounded shadow-sm">sm</span><span class="docs-shape mb-3 mr-3 rounded shadow">default</span><span class="docs-shape mb-3 mr-3 rounded shadow-lg">lg</span><span class="docs-shape mb-3 mr-3 rounded shadow-inset">inset</span><span class="docs-shape mb-3 mr-3 rounded shadow-none">none</span></div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"shadow-sm"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"shadow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"shadow-lg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"shadow-inset"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"shadow-none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+            </div>
+          </main>
+          <aside class="col-12 col-xl-2">
+            <div class="mb-5 sticky-top">
+              <h6 class="mb-2 text-uppercase">Elements</h6>
+              <ul class="list-unstyled">
+                <li><a href="/elements/typography.html">Typography</a></li>
+                <li><a href="/elements/buttons.html">Buttons</a></li>
+                <li><a href="/elements/forms.html">Forms</a></li>
+                <li><a href="/elements/code.html">Code</a></li>
+                <li><a href="/elements/images.html">Images</a></li>
+                <li><a href="/elements/label.html">Label</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Layout</h6>
+              <ul class="list-unstyled">
+                <li><a href="/layout/containers.html">Containers</a></li>
+                <li><a href="/layout/grid.html">Grid</a></li>
+                <li><a href="/layout/responsive.html">Responsive</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Components</h6>
+              <ul class="list-unstyled">
+                <li><a href="/components/alerts.html">Alerts</a></li>
+                <li><a href="/components/avatars.html">Avatars</a></li>
+                <li><a href="/components/cards.html">Card</a></li>
+                <li><a href="/components/callouts.html">Callouts</a></li>
+                <li><a href="/components/modals.html">Modal</a></li>
+                <li><a href="/components/progress.html">Progress</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Utilities</h6>
+              <ul class="list-unstyled">
+                <li><a href="/utilities/align.html">Align</a></li>
+                <li><a href="/utilities/colors.html">Colors</a></li>
+                <li><a href="/utilities/display.html">Display</a></li>
+                <li><a href="/utilities/loading.html">Loading</a></li>
+                <li><a href="/utilities/opacity.html">Opacity</a></li>
+                <li><a href="/utilities/position.html">Position</a></li>
+                <li><a href="/utilities/shapes.html">Shapes</a></li>
+                <li><a href="/utilities/sizing.html">Sizing</a></li>
+                <li><a href="/utilities/spacing.html">Spacing</a></li>
+                <li><a href="/utilities/text.html">Text</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <footer class="py-5">
+          <p class="mb-0 text-center"><a class="text-muted" href="https://github.com/halibegic">@halibegic</a></p>
+        </footer>
+      </div>
+    </body>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+</html>

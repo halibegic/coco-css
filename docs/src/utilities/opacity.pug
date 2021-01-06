@@ -1,0 +1,66 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Opacity'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #opacity
+                    h2.mb-2
+                        =title
+                        a.anchor.ml-1.text-decoration-none(href="#opacity") #
+                    p Opacity utilities are used for changing element opacity.
+                    .row
+                        .col-12
+                            span.docs-shape.mb-3.mr-3.o-5.bg-primary 5
+                            span.docs-shape.mb-3.mr-3.o-10.bg-primary 10
+                            span.docs-shape.mb-3.mr-3.o-15.bg-primary 15
+                            span.docs-shape.mb-3.mr-3.o-20.bg-primary 20
+                            span.docs-shape.mb-3.mr-3.o-25.bg-primary 25
+                            span.docs-shape.mb-3.mr-3.o-30.bg-primary 30
+                            span.docs-shape.mb-3.mr-3.o-35.bg-primary 35
+                            span.docs-shape.mb-3.mr-3.o-40.bg-primary 40
+                            span.docs-shape.mb-3.mr-3.o-45.bg-primary 45
+                            span.docs-shape.mb-3.mr-3.o-50.bg-primary 50
+                            span.docs-shape.mb-3.mr-3.o-55.bg-primary 55
+                            span.docs-shape.mb-3.mr-3.o-60.bg-primary 60
+                            span.docs-shape.mb-3.mr-3.o-65.bg-primary 65
+                            span.docs-shape.mb-3.mr-3.o-70.bg-primary 70
+                            span.docs-shape.mb-3.mr-3.o-75.bg-primary 75
+                            span.docs-shape.mb-3.mr-3.o-80.bg-primary 80
+                            span.docs-shape.mb-3.mr-3.o-85.bg-primary 85
+                            span.docs-shape.mb-3.mr-3.o-90.bg-primary 90
+                            span.docs-shape.mb-3.mr-3.o-95.bg-primary 95
+                            span.docs-shape.mb-3.mr-3.o-100.bg-primary 100
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <span class="o-5"></span>
+                                <span class="o-10"></span>
+                                <span class="o-15"></span>
+                                <span class="o-20"></span>
+                                <span class="o-25"></span>
+                                <span class="o-30"></span>
+                                <span class="o-35"></span>
+                                <span class="o-40"></span>
+                                <span class="o-45"></span>
+                                <span class="o-50"></span>
+                                <span class="o-55"></span>
+                                <span class="o-60"></span>
+                                <span class="o-65"></span>
+                                <span class="o-70"></span>
+                                <span class="o-75"></span>
+                                <span class="o-80"></span>
+                                <span class="o-85"></span>
+                                <span class="o-90"></span>
+                                <span class="o-95"></span>
+                                <span class="o-100"></span>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

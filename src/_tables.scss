@@ -1,0 +1,17 @@
+// Tables
+.table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    th,
+    td {
+        padding: $spacer $spacer * 0.5;
+        border-bottom: $border-width solid $border-color;
+    }
+
+    th {
+        font-weight: $font-weight-medium;
+        border-bottom-width: $border-width * 2;
+    }
+}

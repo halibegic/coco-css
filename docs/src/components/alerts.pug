@@ -1,0 +1,97 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Alerts'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #alerts
+                    h2.mb-2
+                        | Alerts
+                        a.anchor.ml-1.text-decoration-none(href="#alerts") #
+                    p Notification toast using the  #[code alert] class.
+                #colors
+                    h4.mt-4.mb-2
+                        | Colors
+                        a.anchor.ml-1.text-decoration-none(href="#colors") #
+                    p Use color utility to set tab background color.
+                    .row
+                        .col-12
+                            .alert.bg-primary.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                            .alert.bg-secondary.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                            .alert.bg-success.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                            .alert.bg-error.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                            .alert.bg-warning.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                            .alert.bg-info.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                            .alert.bg-dark.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                            .alert.bg-light.mb-3
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close(data-dismiss="alert") &times;
+
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="alert bg-primary">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <button class="close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert bg-secondary">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <button class="close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert bg-success">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <button class="close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert bg-error">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <button class="close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert bg-warning">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <button class="close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert bg-dark">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <button class="close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert bg-light">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <button class="close" data-dismiss="alert">&times;</button>
+                                </div>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

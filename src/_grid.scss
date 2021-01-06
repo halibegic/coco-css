@@ -1,54 +1,149 @@
 // Grid
+
+// Rows
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -$grid-spacer;
-    margin-right: -$grid-spacer;
+    margin-left: -$grid-spacer * 0.5;
+    margin-right: -$grid-spacer * 0.5;
 }
 
-.col {
-    flex: 1;
-    max-width: 100%;
-    padding-left: $grid-spacer;
-    padding-right: $grid-spacer;
-}
+.no-spacers {
+    margin-left: 0;
+    margin-right: 0;
 
-@for $i from 1 through $grid-columns {
-    .col-#{$i} {
-        flex: none;
-        width: ($i / $grid-columns) * 100%;
+    > .col,
+    > [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
-.col-auto {
-    flex: 0 0 auto;
-    max-width: none;
-    width: auto;
+// Columns
+%grid-column {
+    position: relative;
+    width: 100%;
+    padding-right: $grid-spacer * 0.5;
+    padding-left: $grid-spacer * 0.5;
 }
 
-@each $name, $width in $grid-breakpoints {
-    .show-#{$name} {
-        display: none !important;
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @for $i from 1 through $grid-columns {
+        .col#{$infix}-#{$i} {
+            @extend %grid-column;
+        }
     }
 
-    @media (min-width: $width) {
+    .col#{$infix},
+    .col#{$infix}-auto {
+        @extend %grid-column;
+    }
+
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+        .col#{$infix} {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .col#{$infix}-auto {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+        }
+
         @for $i from 1 through $grid-columns {
-            .col-#{$name}-#{$i} {
-                flex: none;
-                width: ($i / $grid-columns) * 100%;
+            .col#{$infix}-#{$i} {
+                flex: 0 0 percentage($i / $grid-columns);
+                max-width: percentage($i / $grid-columns);
             }
         }
 
-        .col-#{$name}-auto {
-            width: auto;
+        // Order
+        .order#{$infix}-first {
+            order: -1;
         }
 
-        .hide-#{$name} {
-            display: none !important;
+        .order#{$infix}-last {
+            order: $grid-columns + 1;
         }
 
-        .show-#{$name} {
-            display: block !important;
+        @for $i from 0 through $grid-columns {
+            .order#{$infix}-#{$i} {
+                order: $i;
+            }
+        }
+
+        @for $i from 0 through $grid-columns {
+            .order#{$infix}-#{$i} {
+                order: $i;
+            }
+        }
+
+        // Offset
+        @for $i from 0 through ($grid-columns - 1) {
+            @if not($infix == "" and $i == 0) {
+                .offset#{$infix}-#{$i} {
+                    $num: $i / $grid-columns;
+                    margin-left: if($num == 0, 0, percentage($num));
+                }
+            }
         }
     }
 }
+
+// .col,
+// [class*="col-"] {
+//     position: relative;
+//     width: 100%;
+//     padding-left: $grid-spacer;
+//     padding-right: $grid-spacer;
+// }
+
+// .col {
+//     flex-basis: 0;
+//     flex-grow: 1;
+//     max-width: 100%;
+// }
+
+// .col-auto {
+//     flex: 0 0 auto;
+//     width: auto;
+//     max-width: 100%;
+// }
+
+// @for $i from 1 through $grid-columns {
+//     .col-#{$i} {
+//         flex: 0 0 percentage($i / $grid-columns);
+//         max-width: percentage($i / $grid-columns);
+//     }
+// }
+
+// @each $name, $width in $grid-breakpoints {
+//     .show-#{$name} {
+//         display: none !important;
+//     }
+
+//     @media (min-width: $width) {
+//         @for $i from 1 through $grid-columns {
+//             .col-#{$name}-#{$i} {
+//                 flex: none;
+//                 width: ($i / $grid-columns) * 100%;
+//             }
+//         }
+
+//         .col-#{$name}-auto {
+//             width: auto;
+//         }
+
+//         .hide-#{$name} {
+//             display: none !important;
+//         }
+
+//         .show-#{$name} {
+//             display: block !important;
+//         }
+//     }
+// }

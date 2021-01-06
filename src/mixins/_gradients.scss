@@ -1,4 +1,0 @@
-// Gradients
-@mixin gradient-bg($degrees: 270deg, $start-color: $primary-color, $end-color: $secondary-color) {
-    background-image: linear-gradient($degrees, $start-color, $end-color);
-}

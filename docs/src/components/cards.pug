@@ -1,0 +1,90 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Cards'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #cards
+                    h2.mb-2
+                        | Cards
+                        a.anchor.ml-1.text-decoration-none(href="#cards") #
+                    p Cards are flexible content containers.
+                    .row
+                        .col-12.col-md-5
+                            .card
+                                .card-header.text-muted.text-uppercase.text-tight Featured news
+                                .card-image
+                                    img.img-responsive(src=path+"img/bg/04.jpg" alt="")
+                                .card-body 
+                                    h4.card-title iPhone 12
+                                    h6.card-subtitle.mb-2.font-normal.text-muted Blast past fast.
+                                    p.card-text 5G on iPhone is superfast. So you can download movies on the fly. Stream higher-quality video. 
+                                .card-footer
+                                    ul.list-inline
+                                        li
+                                            a(href="https://www.apple.com") Website
+                                        li
+                                            a(href="https://www.apple.com/shop/buy-iphone/iphone-12") Store
+
+                        .col-12.col-md-7
+                            .row
+                                .col-12.col-md-6
+                                    .card.mb-3
+                                        .card-body.row.no-spacers
+                                            .col
+                                                h1.card-title.leading-1.text-tight
+                                                    span.text-dark 565
+                                                    span.ml-1.font-xl.text-muted €
+                                                p.card-text.font-sm
+                                                    span.text-muted Revenue This Year 
+                                                    small.label.bg-error-soft -3.5%
+
+                                            .col-auto.text-primary
+                                                i.fe.fe-lg(data-feather="check-circle")
+
+                                .col-12.col-md-6
+                                    .card.mb-3
+                                        .card-body.row.no-spacers
+                                            .col
+                                                h1.card-title.leading-1.text-tight
+                                                    span.text-dark 25
+                                                    span.ml-1.font-xl.text-muted %
+                                                p.card-text.font-sm
+                                                    span.text-muted Target income 
+                                                    small.label.bg-success-soft 80.000€
+
+                                            .col-auto.text-primary
+                                                i.fe.fe-lg(data-feather="dollar-sign")
+
+                                .col-12
+                                    .card.mb-3
+                                        .card-body.row.no-spacers.align-items-center
+                                            .col-auto
+                                                a.avatar.avatar-status.online(href="#")
+                                                    img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
+                                            .col.ml-3
+                                                h6.card-title.mb-1 John Doe
+                                                p.card-text.font-sm.text-muted Lorem ipsum dolor sit amet
+
+                                            .col-auto
+                                                a.btn.btn-primary.btn-sm.d-none.d-md-inline-block Subscribe
+
+                                .col-12
+                                    .card.border-0
+                                        .card-image
+                                            img.img-responsive(src=path+"img/bg/05.jpg" alt="")
+                                        .card-overlay.d-flex.align-items-end
+                                            .card-body.text-white
+                                                h4.card-title Apple Watch
+                                                h6.card-subtitle.mb-2.text-error.text-uppercase Series 6
+                                                p.card-text.o-75 The future of health is on your wrist.
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="w-100 h-100 h-100" lang="en">
+  <head>
+    <title>Signin Template - Coco</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A lightweight and modular CSS framework">
+    <link rel="stylesheet" href="/css/coco.min.css">
+    <link rel="stylesheet" href="/css/docs.min.css">
+    <body class="w-100 h-100 h-100">
+      <div class="row no-spacers align-items-center justify-content-center h-100">
+        <div class="col-12 col-md-5 col-lg-6 col-xl-4 my-5 px-4 px-lg-5">
+          <div class="mb-5 text-center">
+            <h1 class="display-4 font-bold text-tight">Sign in</h1>
+            <p class="mb-0 font-lg text-muted">Free access to our dashboard.</p>
+          </div>
+          <form>
+            <div class="form-element">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-field form-field-lg" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,14}$" placeholder="Your email" required>
+            </div>
+            <div class="form-element">
+              <label class="form-label" for="password">Password<a class="float-right" href="#forgot-password">Forgot password?</a></label>
+              <input class="form-field form-field-lg" id="password" type="password" pattern=".{8,}" placeholder="Your password" required>
+              <div class="form-hint">You password must contain at least 8 characters.</div>
+            </div>
+            <div class="form-element">
+              <label class="form-check">Remember me
+                <input type="checkbox" name="remember-me" checked><span class="form-mark"></span>
+              </label>
+            </div>
+            <div class="form-element">
+              <button class="btn btn-primary btn-lg btn-block">Login</button>
+            </div>
+            <p class="mb-0 text-center text-muted">
+               Don't have account yet? <a href="#register">Sign up.</a></p>
+          </form>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 col-xl-8 bg-dark d-none d-md-block">
+          <div class="vh-100 o-50" style="background-image: url(img/bg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+        </div>
+      </div>
+    </body>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+</html>

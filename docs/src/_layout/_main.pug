@@ -1,0 +1,19 @@
+block variables
+
+doctype html
+html.w-100.h-100(class=htmlClass lang='en')
+    head
+        title=title+' - Coco'||'Coco'
+        meta(charset='utf-8')
+        meta(name='robots' content='index, follow')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+        meta(http-equiv='x-ua-compatible' content='ie=edge')
+        meta(name='description' content=description||'A lightweight and modular CSS framework')
+        link(rel='stylesheet' href=path+'css/coco.min.css')
+        link(rel='stylesheet' href=path+'css/docs.min.css')
+        block style
+        body.w-100.h-100(class=bodyClass)
+            block content
+        block script
+        script(src=path+'js/vendor/feather.min.js')
+        script(src=path+'js/main.js')

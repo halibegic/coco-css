@@ -1,0 +1,34 @@
+extends ../../_layout/_main
+
+block variables
+    - var title = 'Signin Template'
+    - var htmlClass = 'h-100'
+    - var bodyClass = 'h-100'
+
+block content
+    .row.no-spacers.align-items-center.justify-content-center.h-100
+        .col-12.col-md-5.col-lg-6.col-xl-4.my-5.px-4.px-lg-5
+            .mb-5.text-center
+                h1.display-4.font-bold.text-tight Sign in
+                p.mb-0.font-lg.text-muted Free access to our dashboard.
+            form
+                .form-element
+                    label.form-label(for='email') Email Address
+                    input#email.form-field.form-field-lg(type='email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$' placeholder='Your email' required)
+                .form-element
+                    label.form-label(for='password') Password
+                        a.float-right(href='#forgot-password') Forgot password?
+                    input#password.form-field.form-field-lg(type='password' pattern='.{8,}' placeholder='Your password' required)
+                    .form-hint You password must contain at least 8 characters.
+                .form-element
+                    label.form-check
+                        | Remember me
+                        input(type='checkbox' name='remember-me' checked)
+                        span.form-mark
+                .form-element
+                    button.btn.btn-primary.btn-lg.btn-block Login
+                p.mb-0.text-center.text-muted 
+                    | Don't have account yet? 
+                    a(href='#register') Sign up.
+        .col-12.col-md-7.col-lg-6.col-xl-8.bg-dark.d-none.d-md-block
+            .vh-100.o-50(style='background-image: url(img/bg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;')

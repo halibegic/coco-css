@@ -3,82 +3,81 @@
     display: inline-block;
     position: relative;
     margin: 0;
-    width: $spacer * 2.5;
-    height: $spacer * 2.5;
+    width: $avatar-width;
+    height: $avatar-height;
     font-weight: $font-weight-medium;
     font-size: $font-size;
     line-height: $line-height;
     vertical-align: middle;
     text-align: center;
-    border-radius: 50%;
+}
 
-    .avatar-img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        z-index: $z-index-1;
-        object-fit: cover;
-        border-radius: 50%;
-    }
+.avatar-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $avatar-border-radius;
+}
 
-    .avatar-indicator {
+.avatar-status {
+    &::after {
         position: absolute;
-        right: 15%;
-        bottom: 15%;
-        width: 0.5em;
-        height: 0.5em;
-        z-index: $z-index-2;
+        bottom: 5%;
+        right: 5%;
+        width: 20%;
+        height: 20%;
+        content: "";
+        border: $avatar-status-border-width solid $avatar-status-border-color;
         border-radius: 50%;
-        transform: translate(50%, 50%);
-        box-shadow: 0 0 0 $border-width $border-color;
-
-        &.offline {
-            background: $gray-color;
-        }
-
-        &.online {
-            background: $success-color;
-        }
-
-        &.busy {
-            background: $error-color;
-        }
-
-        &.away {
-            background: $warning-color;
-        }
     }
 
-    &[data-initial] {
-        color: $avatar-color;
-        background-color: $avatar-bg-color;
-
-        &::before {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            z-index: $z-index-1;
-            content: attr(data-initial);
-            color: currentColor;
-            transform: translate(-50%, -50%);
-        }
+    &.online::after {
+        background-color: $success;
     }
 
-    &.avatar-sm {
-        width: $spacer * 2;
-        height: $spacer * 2;
-        font-size: $font-size-sm;
+    &.offline::after {
+        background-color: $muted;
     }
 
-    &.avatar-lg {
-        width: $spacer * 3;
-        height: $spacer * 3;
-        font-size: $font-size-lg;
+    &.busy::after {
+        background-color: $error;
     }
 
-    &.avatar-xl {
-        width: $spacer * 4;
-        height: $spacer * 4;
-        font-size: $font-size-xl;
+    &.away::after {
+        background-color: $warning;
     }
+}
+
+.avatar[data-initial] {
+    color: $avatar-color;
+    background-color: $avatar-bg;
+    border-radius: $avatar-border-radius;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: attr(data-initial);
+        color: currentColor;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.avatar-sm {
+    width: $avatar-width-sm;
+    height: $avatar-height-sm;
+    font-size: $font-size-sm;
+}
+
+.avatar-lg {
+    width: $avatar-width-lg;
+    height: $avatar-height-lg;
+    font-size: $font-size-lg;
+}
+
+.avatar-xl {
+    width: $avatar-width-xl;
+    height: $avatar-height-xl;
+    font-size: $font-size-xl;
 }

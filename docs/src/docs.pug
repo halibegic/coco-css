@@ -1,59 +1,133 @@
-extends layouts/_main
+extends _layout/_main
 block variables
-    - var title = 'Docs - Coco.css'
-    - var description = 'A lightweight and minimal CSS Framework'
+    - var title = 'Docs'
+    - var navLink = 'docs'
 
 block content
-    include partials/_header
-    .container.container-xxl
-        .row.docs-row
-            main.col.col-12.col-xl-10
-                h1.font-light.text-center.text-uppercase Elements
-                include partials/elements/_typography
-                .mb-5
-                include partials/elements/_buttons
-                .mb-5
-                include partials/elements/_images
-                .mb-5
-                h1.font-light.text-center.text-uppercase Layout
-                .mb-5
-                include partials/layout/_containers
-                .mb-5
-                include partials/layout/_grid
-                .mb-5
-                h1.font-light.text-center.text-uppercase Components
-                .mb-5
-                include partials/components/_alerts
-                .mb-5
-                include partials/components/_avatars
-                .mb-5
-                include partials/components/_badges
-                .mb-5
-                include partials/components/_embed
-                .mb-5
-                include partials/components/_modals
-                .mb-5
-                include partials/components/_progress
-                .mb-5
-                include partials/components/_tooltips
-                .mb-5
-                h1.font-light.text-center.text-uppercase Utilities
-                .mb-5
-                include partials/utilities/_colors
-                .mb-5
-                include partials/utilities/_display
-                .mb-5
-                include partials/utilities/_loading
-                .mb-5
-                include partials/utilities/_opacity
-                .mb-5
-                include partials/utilities/_position
-                .mb-5
-                include partials/utilities/_shapes
-                .mb-5
-                include partials/utilities/_spacing
-                .mb-5
-                include partials/utilities/_text
-            aside.col.col-12.col-xl-2.border-left
-                include partials/_sidebar
-        include partials/_footer
+    include _layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #get-started
+                    h2.mb-2
+                        | Get Started
+                        a.anchor.ml-1.text-decoration-none(href="#get-started") #
+                    p  There are a few different ways you can include #[a(href="https://halibegic.github.io/coco-css") Coco] within your project.
+                    
+                #installation
+                    h4.mt-4.mb-2
+                        | Installation
+                        a.anchor.ml-1.text-decoration-none(href="#installation") #
+                    .row
+                        .col-12
+                            p The fastest way to use Coco is to include CSS file from the #[a(href="https://www.jsdelivr.com/package/npm/coco-css") jsDelivr] CDN.
+                            pre.code.mb-3(data-lang='HTML')
+                                code.docs-code
+                                    :highlight(lang="html")
+                                        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/coco-css@latest/dist/coco.min.css">
+                            p Coco is also available under #[a(href="https://www.npmjs.com/package/coco-css") npm], just run the following command:
+                            pre.code.mb-3
+                                code.docs-code
+                                    :highlight(lang="html")
+                                        npm install coco-css --save
+                            p then include CSS file like this:
+                            pre.code.mb-0
+                                code.docs-code
+                                    :highlight(lang="html")
+                                        <link rel="stylesheet" href="node_modules/coco-css/dist/coco.min.css">
+                        
+                #quick-start
+                    h4.mt-4.mb-2
+                        | Quick start
+                        a.anchor.ml-1.text-decoration-none(href="#quick-start") #
+                    p Here is a minimalistic starter template with Coco using the #[a(href="https://www.jsdelivr.com/package/npm/coco-css") jsDelivr] CDN.
+                    .row
+                        .col-12
+                            pre.code
+                                code.docs-code
+                                    :highlight(lang="html")
+                                        <!doctype html>
+                                        <html lang="en">
+                                            <head>
+                                                <!-- Required meta tags -->
+                                                <meta charset="utf-8">
+                                                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                                                <!-- Page Title -->
+                                                <title>Coco</title>
+
+                                                <!-- Coco CSS -->
+                                                <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/coco-css@latest/dist/coco.min.css">
+                                            </head>
+                                            <body>
+                                                <h1>Hello, world!</h1>
+                                            </body>
+                                        </html>
+
+                #folder-structure
+                    h4.mt-4.mb-2
+                        | Folder structure
+                        a.anchor.ml-1.text-decoration-none(href="#folder-structure") #
+                    .row
+                        .col-12
+                            pre.code
+                                code.docs-code
+                                    :highlight
+                                        coco/
+                                        ├── dist                    // Build
+                                        │   ├── coco.css
+                                        │   └── coco.min.css
+                                        │
+                                        ├── docs                    // Docs
+                                        │   ├── css
+                                        │   ├── img
+                                        │   └── ...
+                                        │
+                                        ├── src                     // Source
+                                        │   ├── coco.scss
+                                        │   ├── _normalize.scss
+                                        │   ├── _variables.scss
+                                        │   └── ...
+                                        │
+                                        ├── gulpfile.js
+                                        ├── package.json
+                                        └── ...
+
+                #browsers-support
+                    h4.mt-4.mb-2
+                        | Browsers support
+                        a.anchor.ml-1.text-decoration-none(href="#browsers-support") #
+                    .row
+                        .col-12
+                            p
+                                | Coco uses 
+                                a(href='https://github.com/postcss/autoprefixer', target='_blank') Autoprefixer
+                                |  to make most styles compatible with earlier browsers and 
+                                a(href='https://necolas.github.io/normalize.css/', target='_blank') Normalize.css
+                                |  for CSS resets. For best compatibility, these browsers are recommended:
+                            ul
+                                li
+                                    | Chrome 
+                                    small.label.bg-success-soft.rounded-pill Last 4
+                                li
+                                    | Microsoft Edge 
+                                    small.label.bg-success-soft.rounded-pill 12+
+                                li
+                                    | Firefox 
+                                    small.label.bg-success-soft.rounded-pill ESR
+                                li
+                                    | Safari 
+                                    small.label.bg-success-soft.rounded-pill Last 4
+                                li
+                                    | Opera 
+                                    small.label.bg-success-soft.rounded-pill Last 4
+                                li 
+                                    | Internet Explorer 
+                                    small.label.bg-success-soft.rounded-pill 10+
+                            
+            aside.col-12.col-xl-2
+                include _layout/_sidebar
+
+        include _layout/_footer

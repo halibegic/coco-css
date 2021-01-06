@@ -45,11 +45,25 @@ h6,
     font-size: $h6-font-size;
 }
 
+// Type display classes
+@each $display, $font-size in $display-font-sizes {
+    .display-#{$display} {
+        font-size: $font-size;
+        font-weight: $display-font-weight;
+        line-height: $display-line-height;
+    }
+}
+
 // Paragraphs
 p {
     margin: 0 0 $paragraph-margin-bottom;
 }
 
+.lead {
+    font-size: $lead-font-size;
+    font-weight: $lead-font-weight;
+}
+  
 // Lists
 ul,
 ol {
@@ -58,12 +72,8 @@ ol {
 
     ul,
     ol {
-        margin-top: map-get($spacers, 1);
-        margin-left: map-get($spacers, 4);
-    }
-
-    li:not(:first-child) {
-        margin-top: map-get($spacers, 1);
+        margin-top: $spacer * 0.25;
+        margin-left: $spacer * 1.5;
     }
 }
 
@@ -89,7 +99,7 @@ dl {
     }
 
     dd {
-        margin: map-get($spacers, 1) 0;
+        margin: $spacer * 0.25 0;
     }
 }
 
@@ -109,7 +119,7 @@ dl {
         display: inline-block;
 
         &:not(:last-child) {
-            margin-right: map-get($spacers, 2);
+            margin-right: $spacer * 0.5;
         }
     }
 }

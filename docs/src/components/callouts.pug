@@ -1,0 +1,94 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Callouts'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #callouts
+                    h2.mb-2
+                        | Callouts
+                        a.anchor.ml-1.text-decoration-none(href="#callouts") #
+                    p You can display the stand out notification with  #[code callout] class.
+                #colors
+                    h4.mt-4.mb-2
+                        | Colors
+                        a.anchor.ml-1.text-decoration-none(href="#colors") #
+                    p Use color utility to set callout background and border color.
+                    .row.mb-3
+                        .col-12
+                            .callout.bg-light.border-primary.mb-3
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .callout.bg-light.border-secondary.mb-3
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .callout.bg-light.border-success.mb-3
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .callout.bg-light.border-error.mb-3
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .callout.bg-light.border-warning.mb-3
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .callout.bg-light.border-info.mb-3
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .callout.bg-light.border-dark.mb-3
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .callout.bg-white.border-light
+                                p.font-semi-bold Hi stranger!
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="callout bg-light border-primary">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="callout bg-light border-secondary">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="callout bg-light border-success">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="callout bg-light border-error">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="callout bg-light border-warning">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="callout bg-light border-info">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="callout bg-light border-dark">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="callout bg-white border-light">
+                                    <p>Hi stranger!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

@@ -1,0 +1,38 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Align'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #align
+                    h2.mb-2
+                        =title
+                        a.anchor.ml-1.text-decoration-none(href="#align") #
+                    .row
+                        .col-12
+                            span.d-inline-block.mb-3.mr-3.align-baseline align-baseline
+                            span.d-inline-block.mb-3.mr-3.align-top align-top
+                            span.d-inline-block.mb-3.mr-3.align-middle align-middle
+                            span.d-inline-block.mb-3.mr-3.align-bottom align-bottom
+                            span.d-inline-block.mb-3.mr-3.align-text-top align-text-top
+                            span.d-inline-block.mb-3.mr-3.align-text-bottom align-text-bottom
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <span class="align-baseline"></span>
+                                <span class="align-top"></span>
+                                <span class="align-middle"></span>
+                                <span class="align-bottom"></span>
+                                <span class="align-text-top"></span>
+                                <span class="align-text-bottom"></span>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer
+

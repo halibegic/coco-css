@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="w-100 h-100" lang="en">
+  <head>
+    <title>Avatars - Coco</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A lightweight and modular CSS framework">
+    <link rel="stylesheet" href="/css/coco.min.css">
+    <link rel="stylesheet" href="/css/docs.min.css">
+    <body class="w-100 h-100">
+      <header class="mb-5">
+        <div class="bg-white border-bottom shadow-sm">
+          <div class="container d-flex align-items-center flex-column flex-sm-row py-3"><a class="mr-sm-auto font-xl text-dark" href="/index.html">Coco</a>
+            <nav class="my-2 my-sm-0"><a class="p-2 text-muted" href="/index.html">Home</a><a class="p-2 text-primary" href="/docs.html">Docs</a><a class="p-2 text-muted" href="/lab.html">Lab</a><a class="p-2 text-muted" href="https://github.com/halibegic/coco-css"><i class="fe fe-md" data-feather="github"></i></a></nav>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <main class="col-12 col-xl-10">
+            <div id="avatars">
+              <h2 class="mb-2">Avatars<a class="anchor ml-1 text-decoration-none" href="#avatars">#</a></h2>
+              <p>Avatars are user profile pictures.</p>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <div class="avatar mr-3"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
+                  <div class="avatar" data-initial="HA"></div>
+                </div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">data-initial</span>=<span class="hljs-string">"HA"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </div>
+            <div id="sizes">
+              <h4 class="mt-4 mb-2">Sizes<a class="anchor ml-1 text-decoration-none" href="#sizes">#</a></h4>
+              <p>  Add the  <code>avatar-sm</code>, <code>avatar-lg</code> or <code>avatar-xl</code> class for small, large or extra large avatar size.</p>
+              <div class="row mb-3">
+                <div class="col-12 d-flex align-items-center">
+                  <div class="avatar avatar-sm mr-3"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
+                  <div class="avatar avatar-lg mr-3"><img class="avatar-img" src="/img/avatar/02.jpg" alt=""></div>
+                  <div class="avatar avatar-xl"><img class="avatar-img" src="/img/avatar/03.jpg" alt=""></div>
+                </div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-sm"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-lg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </div>
+            <div id="indicators">
+              <h4 class="mt-4 mb-2">Indicators<a class="anchor ml-1 text-decoration-none" href="#indicators">#</a></h4>
+              <div class="row mb-3">
+                <div class="col-12 d-flex align-items-center">
+                  <div class="avatar avatar-status offline mr-3"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
+                  <div class="avatar avatar-status online mr-3"><img class="avatar-img" src="/img/avatar/02.jpg" alt=""></div>
+                  <div class="avatar avatar-status busy mr-3"><img class="avatar-img" src="/img/avatar/03.jpg" alt=""></div>
+                  <div class="avatar avatar-status away"><img class="avatar-img" src="/img/avatar/04.jpg" alt=""></div>
+                </div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-status offline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-status online"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-status busy"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-status away"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            </div>
+          </main>
+          <aside class="col-12 col-xl-2">
+            <div class="mb-5 sticky-top">
+              <h6 class="mb-2 text-uppercase">Elements</h6>
+              <ul class="list-unstyled">
+                <li><a href="/elements/typography.html">Typography</a></li>
+                <li><a href="/elements/buttons.html">Buttons</a></li>
+                <li><a href="/elements/forms.html">Forms</a></li>
+                <li><a href="/elements/code.html">Code</a></li>
+                <li><a href="/elements/images.html">Images</a></li>
+                <li><a href="/elements/label.html">Label</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Layout</h6>
+              <ul class="list-unstyled">
+                <li><a href="/layout/containers.html">Containers</a></li>
+                <li><a href="/layout/grid.html">Grid</a></li>
+                <li><a href="/layout/responsive.html">Responsive</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Components</h6>
+              <ul class="list-unstyled">
+                <li><a href="/components/alerts.html">Alerts</a></li>
+                <li><a href="/components/avatars.html">Avatars</a></li>
+                <li><a href="/components/cards.html">Card</a></li>
+                <li><a href="/components/callouts.html">Callouts</a></li>
+                <li><a href="/components/modals.html">Modal</a></li>
+                <li><a href="/components/progress.html">Progress</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Utilities</h6>
+              <ul class="list-unstyled">
+                <li><a href="/utilities/align.html">Align</a></li>
+                <li><a href="/utilities/colors.html">Colors</a></li>
+                <li><a href="/utilities/display.html">Display</a></li>
+                <li><a href="/utilities/loading.html">Loading</a></li>
+                <li><a href="/utilities/opacity.html">Opacity</a></li>
+                <li><a href="/utilities/position.html">Position</a></li>
+                <li><a href="/utilities/shapes.html">Shapes</a></li>
+                <li><a href="/utilities/sizing.html">Sizing</a></li>
+                <li><a href="/utilities/spacing.html">Spacing</a></li>
+                <li><a href="/utilities/text.html">Text</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <footer class="py-5">
+          <p class="mb-0 text-center"><a class="text-muted" href="https://github.com/halibegic">@halibegic</a></p>
+        </footer>
+      </div>
+    </body>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+</html>

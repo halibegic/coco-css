@@ -1,33 +1,38 @@
 // Text color
-@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+@mixin text-color-variant($name: ".text-primary", $color: $primary) {
     #{$name} {
         color: $color !important;
     }
 
     a#{$name} {
         &:focus,
-        &:hover {
-            color: darken($color, 5%);
-        }
-
-        &:visited {
-            color: lighten($color, 5%);
+        &:hover,
+        &:active,
+        &.active {
+            color: $link-hover-color !important;
         }
     }
 }
-// Background color
-@mixin bg-variant($name: ".bg-primary", $color: $primary-color) {
+
+@mixin bg-variant(
+    $name: ".bg-primary",
+    $bg: $primary,
+    $color: color-contrast($bg),
+) {
     #{$name} {
-        background: $color !important;
-
-        @if ($color != transparent and lightness($color) < 70) {
-            color: $white-color;
-        }
+        color: $color;
+        background-color: $bg !important;
     }
 }
 
-// Background color
-@mixin border-variant($name: ".border-primary", $color: $primary-color) {
+@mixin bg-soft-variant($name: ".bg-primary-soft", $bg: $primary, $color: $bg) {
+    #{$name} {
+        color: $color;
+        background-color: rgba($bg, 0.1) !important;
+    }
+}
+
+@mixin border-variant($name: ".border-primary", $color: $primary) {
     #{$name} {
         border-color: $color !important;
     }

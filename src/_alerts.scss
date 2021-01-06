@@ -1,15 +1,14 @@
 // Alerts
 .alert {
-    display: block;
     position: relative;
-    padding: $spacer * 0.75 $spacer;
+    display: block;
+    padding: $alert-padding-y $alert-padding-x;
     width: 100%;
-    color: $alert-color;
-    background: $alert-bg-color;
-    border-radius: $border-radius;
+    border-radius: $alert-border-radius;
 
+    // Reset
     a {
-        color: $alert-color;
+        color: currentColor;
         text-decoration: underline;
 
         &:focus,
@@ -26,10 +25,13 @@
         }
     }
 
+    // Close
     .close {
         position: absolute;
         top: 0;
         right: 0;
-        padding: $spacer * 0.75 $spacer;
+        bottom: 0;
+        padding-left: $alert-padding-x;
+        padding-right: $alert-padding-x;
     }
 }

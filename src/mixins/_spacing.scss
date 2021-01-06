@@ -2,79 +2,87 @@
 $sides: (top, bottom, left, right);
 
 // Auto margin and padding
-@mixin spacing-auto() {
-    .mx-auto {
+@mixin spacing-auto($name: "") {
+    .m#{$name}-auto {
+        margin: auto !important;
+    }
+
+    .mx#{$name}-auto {
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    .my-auto {
+    .my#{$name}-auto {
         margin-top: auto !important;
         margin-bottom: auto !important;
     }
 
-    .px-auto {
+    .p#{$name}-auto {
+        padding: auto !important;
+    }
+
+    .px#{$name}-auto {
         padding-left: auto !important;
         padding-right: auto !important;
     }
 
-    .py-auto {
+    .py#{$name}-auto {
         padding-top: auto !important;
         padding-bottom: auto !important;
     }
 
     @each $side in $sides {
-        .m#{str-slice($side, 0, 1)}-auto {
+        .m#{str-slice($side, 0, 1)}#{$name}-auto {
             margin-#{$side}: auto !important;
         }
 
-        .p#{str-slice($side, 0, 1)}-auto {
+        .p#{str-slice($side, 0, 1)}#{$name}-auto {
             margin-#{$side}: auto !important;
         }
     }
 }
 
 // Margin
-@mixin margin-variant($id: 1, $size: map-get($spacers, 1)) {
-    .m-#{$id} {
+@mixin margin-variant($id: 1, $size: $spacer * 0.25, $name: "") {
+    .m#{$name}-#{$id} {
         margin: $size !important;
     }
 
-    .mx-#{$id} {
+    .mx#{$name}-#{$id} {
         margin-left: $size !important;
         margin-right: $size !important;
     }
 
-    .my-#{$id} {
+    .my#{$name}-#{$id} {
         margin-bottom: $size !important;
         margin-top: $size !important;
     }
 
     @each $side in $sides {
-        .m#{str-slice($side, 0, 1)}-#{$id} {
+        .m#{str-slice($side, 0, 1)}#{$name}-#{$id} {
             margin-#{$side}: $size !important;
         }
     }
 }
 
 // Padding
-@mixin padding-variant($id: 1, $size: map-get($spacers, 1)) {
-    .p-#{$id} {
+@mixin padding-variant($id: 1, $size: $spacer * 0.25, $name: "") {
+    .p#{$name}-#{$id} {
         padding: $size !important;
     }
 
-    .px-#{$id} {
+    .px#{$name}-#{$id} {
         padding-left: $size !important;
         padding-right: $size !important;
     }
 
-    .py-#{$id} {
+    .py#{$name}-#{$id} {
         padding-bottom: $size !important;
         padding-top: $size !important;
     }
 
     @each $side in $sides {
-        .p#{str-slice($side, 0, 1)}-#{$id} {
+        .p#{str-slice($side, 0, 1)}#{$name}-#{$id} {
             padding-#{$side}: $size !important;
         }
     }

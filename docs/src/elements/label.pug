@@ -1,0 +1,73 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Label'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #label
+                    h2.mb-2
+                        | Label
+                        a.anchor.ml-1.text-decoration-none(href="#label") #
+                    p Small labelling element using the  #[code label] class.
+                #colors
+                    h4.mt-4.mb-2
+                        | Colors
+                        a.anchor.ml-1.text-decoration-none(href="#colors") #
+                    p Use color utility to set label background color.
+                    .row
+                        .col-12
+                            small.label.bg-primary.mb-3.mr-3 primary
+                            small.label.bg-secondary.mb-3.mr-3 secondary
+                            small.label.bg-success.mb-3.mr-3 success
+                            small.label.bg-error.mb-3.mr-3 error
+                            small.label.bg-warning.mb-3.mr-3 warning
+                            small.label.bg-info.mb-3.mr-3 info
+                            small.label.bg-dark.mb-3.mr-3 dark
+                            small.label.bg-light.mb-3 light
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <small class="label bg-primary">primary</small>
+                                <small class="label bg-secondary">secondary</small>
+                                <small class="label bg-success">success</small>
+                                <small class="label bg-error">error</small>
+                                <small class="label bg-warning">warning</small>
+                                <small class="label bg-info">info</small>
+                                <small class="label bg-dark">dark</small>
+                                <small class="label bg-light">light</small>
+                #pill
+                    h4.mt-4.mb-2
+                        | Pill
+                        a.anchor.ml-1.text-decoration-none(href="#pill") #
+                    p Add the  #[code rounded-pill] class for more rounded labels.
+                    .row
+                        .col-12
+                            small.label.bg-primary.rounded-pill.mb-3.mr-3 primary
+                            small.label.bg-secondary.rounded-pill.mb-3.mr-3 secondary
+                            small.label.bg-success.rounded-pill.mb-3.mr-3 success
+                            small.label.bg-error.rounded-pill.mb-3.mr-3 error
+                            small.label.bg-warning.rounded-pill.mb-3.mr-3 warning
+                            small.label.bg-info.rounded-pill.mb-3.mr-3 info
+                            small.label.bg-dark.rounded-pill.mb-3.mr-3 dark
+                            small.label.bg-light.rounded-pill.mb-3 light
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <small class="label bg-primary rounded-pill">primary</small>
+                                <small class="label bg-secondary rounded-pill">secondary</small>
+                                <small class="label bg-success rounded-pill">success</small>
+                                <small class="label bg-error rounded-pill">error</small>
+                                <small class="label bg-warning rounded-pill">warning</small>
+                                <small class="label bg-info rounded-pill">info</small>
+                                <small class="label bg-dark rounded-pill">dark</small>
+                                <small class="label bg-light rounded-pill">light</small>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

@@ -9,82 +9,9 @@
     overflow: hidden;
     outline: 0;
 
-    .modal-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin-top: $spacer;
-        margin-bottom: $spacer;
-        width: 100%;
-        max-width: $modal-width;
-        background-color: $modal-bg-color;
-        border: $border-width solid $modal-border-color;
-        border-radius: $border-radius;
-        outline: 0;
-
-        .modal-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: $spacer;
-
-            &::before {
-                bottom: 0;
-            }
-        }
-
-        .modal-body {
-            position: relative;
-            flex: 1 1 auto;
-            padding: $spacer;
-
-            p {
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-        .modal-footer {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: flex-end;
-            padding: $spacer * 0.75;
-
-            &::before {
-                top: 0;
-            }
-
-            > * {
-                margin: $spacer * 0.25;
-            }
-        }
-
-        .modal-header,
-        .modal-footer {
-            position: relative;
-
-            &::before {
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: $border-width;
-                content: "";
-                background: linear-gradient(
-                    to right,
-                    $modal-bg-color 0,
-                    $border-color 25%,
-                    $border-color 50%,
-                    $modal-bg-color 100%
-                );
-            }
-        }
-    }
-
     &.fade {
         .modal-content {
-            animation: slide-down 0.25s ease 1;
+            animation: slide-down 0.35s ease forwards;
         }
     }
 
@@ -102,24 +29,81 @@
             bottom: 0;
             left: 0;
             cursor: default;
-            background-color: $modal-overlay-bg-color;
+            background-color: $modal-overlay-bg;
         }
 
         .modal-content {
             z-index: $z-index-1;
         }
     }
+}
 
-    &.modal-sm {
-        .modal-content {
-            max-width: $modal-width-sm;
-            padding: 0 ($spacer * 0.5);
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: $modal-padding-y;
+    margin-bottom: $modal-padding-y;
+    width: 100%;
+    max-width: $modal-width;
+    background-color: $modal-bg;
+    border-radius: $modal-border-radius;
+    outline: 0;
+}
+
+.modal-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $modal-header-padding-y $modal-header-padding-x;
+    border-bottom: $modal-border-width solid $modal-border-color;
+
+    // Close
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding-left: $modal-padding-x;
+        padding-right: $modal-padding-x;
+    }
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: $modal-padding-y $modal-padding-x;
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
         }
     }
+}
 
-    &.modal-lg {
-        .modal-content {
-            max-width: $modal-width-lg;
-        }
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: $modal-footer-padding-y $modal-footer-padding-x;
+    border-top: $modal-border-width solid $modal-border-color;
+
+    > * {
+        margin: $modal-footer-padding-x * 0.25;
+    }
+}
+
+// Sizes
+.modal-sm {
+    .modal-content {
+        max-width: $modal-width-sm;
+    }
+}
+
+.modal-lg {
+    .modal-content {
+        max-width: $modal-width-lg;
     }
 }

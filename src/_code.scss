@@ -1,0 +1,35 @@
+// Codes
+code {
+    font-size: $code-font-size;
+    color: $code-color;
+    word-wrap: break-word;
+}
+
+pre {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: $pre-padding-y $pre-padding-x;
+    font-size: $code-font-size;
+    color: $pre-color;
+    background-color: $pre-bg;
+    border-radius: $pre-border-radius;
+
+    &::before {
+        position: absolute;
+        top: $pre-padding-y * 0.5;
+        right: $pre-padding-x * 0.5;
+        color: $muted;
+        content: attr(data-lang);
+        font-size: $font-size-sm;
+    }
+
+    code {
+        display: block;
+        width: 100%;
+        font-size: inherit;
+        color: inherit;
+        word-break: normal;
+        overflow-x: auto;
+    }
+}

@@ -4,27 +4,27 @@
     width: 100%;
     height: $progress-height;
     line-height: 0;
-    font-size: $font-size-sm;
-    background-color: $light-color;
-    border-radius: $border-radius;
+    background-color: $progress-bg;
+    border-radius: $progress-border-radius;
     overflow: hidden;
+}
 
-    &-sm {
-        height: $progress-height * 0.5;
-    }
 
-    &-lg {
-        height: $progress-height * 2;
-    }
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $progress-bar-bg;
+    overflow: hidden;
+}
 
-    .progress-bar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $white-color;
-        text-align: center;
-        white-space: nowrap;
-        background-color: $primary-color;
-        overflow: hidden;
-    }
+// Sizes
+.progress-sm {
+    height: $progress-height-sm;
+}
+
+.progress-lg {
+    height: $progress-height-lg;
 }

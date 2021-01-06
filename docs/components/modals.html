@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="w-100 h-100" lang="en">
+  <head>
+    <title>Modals - Coco</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A lightweight and modular CSS framework">
+    <link rel="stylesheet" href="/css/coco.min.css">
+    <link rel="stylesheet" href="/css/docs.min.css">
+    <body class="w-100 h-100">
+      <header class="mb-5">
+        <div class="bg-white border-bottom shadow-sm">
+          <div class="container d-flex align-items-center flex-column flex-sm-row py-3"><a class="mr-sm-auto font-xl text-dark" href="/index.html">Coco</a>
+            <nav class="my-2 my-sm-0"><a class="p-2 text-muted" href="/index.html">Home</a><a class="p-2 text-primary" href="/docs.html">Docs</a><a class="p-2 text-muted" href="/lab.html">Lab</a><a class="p-2 text-muted" href="https://github.com/halibegic/coco-css"><i class="fe fe-md" data-feather="github"></i></a></nav>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <main class="col-12 col-xl-10">
+            <div id="modals">
+              <h2 class="mb-2">Modals<a class="anchor ml-1 text-decoration-none" href="#modals">#</a></h2>
+              <p>Modals are flexible dialog prompts.</p>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <button class="btn btn-primary" data-toggle="modal" data-target="modal-example-1">Open modal</button>
+                </div>
+              </div>
+              <div class="docs-modal mb-3">
+                <div class="modal show">
+                  <div class="modal-content border shadow-sm">
+                    <div class="modal-header">
+                      <div class="modal-title h5">Modal title</div>
+                      <button class="close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary">Save changes</button>
+                      <button class="btn btn-light">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal show"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"modal-example-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-content"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-title h5"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"modal"</span>&gt;</span><span class="hljs-symbol">&amp;times;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-body"</span>&gt;</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. 
+            Duis quis sodales risus. Etiam euismod ornare consequat.
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-footer"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-light"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"modal"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                </div>
+              </div>
+            </div>
+            <div id="sizes">
+              <h4 class="mt-4 mb-2">Sizes<a class="anchor ml-1 text-decoration-none" href="#sizes">#</a></h4>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <button class="btn btn-primary" data-toggle="modal" data-target="modal-example-2">Open small modal</button>
+                </div>
+              </div>
+              <p>Use the  <code>modal-sm</code> class for a smaller size modal.</p>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <button class="btn btn-primary" data-toggle="modal" data-target="modal-example-3">Open large modal</button>
+                </div>
+              </div>
+              <p>Use the  <code>modal-lg</code> class for a full size modal.</p>
+              <div class="modal fade" id="modal-example-1"><a class="modal-overlay" href="#" data-dismiss="modal"></a>
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title h5">Modal title</div>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is the content inside the modal.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary">Save changes</button>
+                    <button class="btn btn-light" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal modal-sm fade" id="modal-example-2"><a class="modal-overlay" href="#" data-dismiss="modal"></a>
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title h5">Modal title</div>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is the content inside the modal.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary">Save changes</button>
+                    <button class="btn btn-light" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal modal-lg fade" id="modal-example-3"><a class="modal-overlay" href="#" data-dismiss="modal"></a>
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title h5">Modal title</div>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is the content inside the modal.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary">Save changes</button>
+                    <button class="btn btn-light" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <aside class="col-12 col-xl-2">
+            <div class="mb-5 sticky-top">
+              <h6 class="mb-2 text-uppercase">Elements</h6>
+              <ul class="list-unstyled">
+                <li><a href="/elements/typography.html">Typography</a></li>
+                <li><a href="/elements/buttons.html">Buttons</a></li>
+                <li><a href="/elements/forms.html">Forms</a></li>
+                <li><a href="/elements/code.html">Code</a></li>
+                <li><a href="/elements/images.html">Images</a></li>
+                <li><a href="/elements/label.html">Label</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Layout</h6>
+              <ul class="list-unstyled">
+                <li><a href="/layout/containers.html">Containers</a></li>
+                <li><a href="/layout/grid.html">Grid</a></li>
+                <li><a href="/layout/responsive.html">Responsive</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Components</h6>
+              <ul class="list-unstyled">
+                <li><a href="/components/alerts.html">Alerts</a></li>
+                <li><a href="/components/avatars.html">Avatars</a></li>
+                <li><a href="/components/cards.html">Card</a></li>
+                <li><a href="/components/callouts.html">Callouts</a></li>
+                <li><a href="/components/modals.html">Modal</a></li>
+                <li><a href="/components/progress.html">Progress</a></li>
+              </ul>
+              <h6 class="mt-4 mb-2 text-uppercase">Utilities</h6>
+              <ul class="list-unstyled">
+                <li><a href="/utilities/align.html">Align</a></li>
+                <li><a href="/utilities/colors.html">Colors</a></li>
+                <li><a href="/utilities/display.html">Display</a></li>
+                <li><a href="/utilities/loading.html">Loading</a></li>
+                <li><a href="/utilities/opacity.html">Opacity</a></li>
+                <li><a href="/utilities/position.html">Position</a></li>
+                <li><a href="/utilities/shapes.html">Shapes</a></li>
+                <li><a href="/utilities/sizing.html">Sizing</a></li>
+                <li><a href="/utilities/spacing.html">Spacing</a></li>
+                <li><a href="/utilities/text.html">Text</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <footer class="py-5">
+          <p class="mb-0 text-center"><a class="text-muted" href="https://github.com/halibegic">@halibegic</a></p>
+        </footer>
+      </div>
+    </body>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+</html>

@@ -1,4 +1,8 @@
 // Base
+@if $font-import == true {
+    @import url($font-url);
+}
+
 *,
 *::before,
 *::after {
@@ -6,8 +10,11 @@
 }
 
 html {
-    font-size: $html-font-size;
-    line-height: $html-line-height;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -18,19 +25,24 @@ body {
     line-height: $line-height;
     color: $body-color;
     text-align: left;
-    background: $body-bg-color;
+    background-color: $body-bg;
 }
 
 a {
     color: $link-color;
     outline: none;
-    text-decoration: none;
+    text-decoration: $link-decoration;
 
     &:focus,
     &:hover,
     &:active,
     &.active {
         color: $link-hover-color;
-        text-decoration: underline;
+        text-decoration: $link-hover-decoration;
     }
+}
+
+img,
+svg {
+    vertical-align: middle;
 }

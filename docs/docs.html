@@ -1,995 +1,163 @@
 <!DOCTYPE html>
 <html class="w-100 h-100" lang="en">
   <head>
-    <title>Docs - Coco.css</title>
+    <title>Docs - Coco</title>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="A lightweight and minimal CSS Framework">
-    <link rel="stylesheet" href="css/coco.min.css">
-    <link rel="stylesheet" href="css/docs.min.css">
-    <link rel="stylesheet" href="css/lab.min.css">
+    <meta name="description" content="A lightweight and modular CSS framework">
+    <link rel="stylesheet" href="/css/coco.min.css">
+    <link rel="stylesheet" href="/css/docs.min.css">
     <body class="w-100 h-100">
-      <header class="mb-5 py-4 border-bottom">
-        <div class="container container-xxl">
-          <div class="d-flex align-items-center justify-content-between"><a class="text-white text-decoration-none" href="index.html">Coco.css</a>
-            <nav>
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="docs.html">Docs</a></li>
-                <li class="list-inline-item"><a href="https://github.com/halibegic/coco.css" target="_blank">GitHub</a></li>
-              </ul>
-            </nav>
+      <header class="mb-5">
+        <div class="bg-white border-bottom shadow-sm">
+          <div class="container d-flex align-items-center flex-column flex-sm-row py-3"><a class="mr-sm-auto font-xl text-dark" href="/index.html">Coco</a>
+            <nav class="my-2 my-sm-0"><a class="p-2 text-muted" href="/index.html">Home</a><a class="p-2 text-primary" href="/docs.html">Docs</a><a class="p-2 text-muted" href="/lab.html">Lab</a><a class="p-2 text-muted" href="https://github.com/halibegic/coco-css"><i class="fe fe-md" data-feather="github"></i></a></nav>
           </div>
         </div>
       </header>
-      <div class="container container-xxl">
-        <div class="row docs-row">
-          <main class="col col-12 col-xl-10">
-            <h1 class="font-light text-center text-uppercase">Elements</h1>
-            <div id="typography">
-              <h2 class="docs-title my-4 font-light">Typography<a class="anchor ml-1 text-decoration-none" href="#typography">#</a></h2>
-              <p>Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.</p>
-              <p>
-                <h1>H1 Heading</h1>
-                <h2>H2 Heading</h2>
-                <h3>H3 Heading</h3>
-                <h4>H4 Heading</h4>
-                <h5>H5 Heading</h5>
-                <h6>H6 Heading</h6>
-              </p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>H1 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>H2 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>H3 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>H4 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>H5 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>H6 Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span></code></pre>
+      <div class="container">
+        <div class="row">
+          <main class="col-12 col-xl-10">
+            <div id="get-started">
+              <h2 class="mb-2">Get Started<a class="anchor ml-1 text-decoration-none" href="#get-started">#</a></h2>
+              <p> There are a few different ways you can include <a href="https://halibegic.github.io/coco-css">Coco</a> within your project.</p>
             </div>
-            <div id="typography-paragraphs">
-              <h4 class="docs-title my-4 font-light">Paragraphs<a class="anchor ml-1 text-decoration-none" href="#typography-paragraphs">#</a></h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                <a href="#typography">Aliquam</a> placerat libero id erat vehicula, pretium euismod metus suscipit. Vivamus tempor ut nunc consequat mattis. Morbi risus ipsum, ultricies at viverra non, pharetra sit amet magna.
-              </p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#typography"</span>&gt;</span>Aliquam<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> placerat libero id erat vehicula, pretium euismod metus suscipit. Vivamus tempor ut nunc consequat mattis. Morbi risus ipsum, ultricies at viverra non, pharetra sit amet magna.
-<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <div id="installation">
+              <h4 class="mt-4 mb-2">Installation<a class="anchor ml-1 text-decoration-none" href="#installation">#</a></h4>
+              <div class="row">
+                <div class="col-12">
+                  <p>The fastest way to use Coco is to include CSS file from the <a href="https://www.jsdelivr.com/package/npm/coco-css">jsDelivr</a> CDN.</p>
+                  <pre class="code mb-3" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"//cdn.jsdelivr.net/npm/coco-css@latest/dist/coco.min.css"</span>&gt;</span></code></pre>
+                  <p>Coco is also available under <a href="https://www.npmjs.com/package/coco-css">npm</a>, just run the following command:</p>
+                  <pre class="code mb-3"><code class="docs-code">npm install coco-css --save</code></pre>
+                  <p>then include CSS file like this:</p>
+                  <pre class="code mb-0"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"node_modules/coco-css/dist/coco.min.css"</span>&gt;</span>
+</code></pre>
+                </div>
+              </div>
             </div>
-            <div id="typography-lists">
-              <h4 class="docs-title my-4 font-light">Lists<a class="anchor ml-1 text-decoration-none" href="#typography-lists">#</a></h4>
-              <div class="d-flex justify-content-between">
-                <div class="item">
-                  <p class="text-bold">Unordered list </p>
-                  <ul class="list">
-                    <li>item 1</li>
-                    <li>item 2
-                      <ul>
-                        <li>item 2.1</li>
-                        <li>item 2.2</li>
-                        <li>item 2.3</li>
-                      </ul>
-                    </li>
-                    <li>item 3</li>
+            <div id="quick-start">
+              <h4 class="mt-4 mb-2">Quick start<a class="anchor ml-1 text-decoration-none" href="#quick-start">#</a></h4>
+              <p>Here is a minimalistic starter template with Coco using the <a href="https://www.jsdelivr.com/package/npm/coco-css">jsDelivr</a> CDN.</p>
+              <div class="row">
+                <div class="col-12">
+                  <pre class="code"><code class="docs-code"><span class="hljs-meta">&lt;!doctype <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Required meta tags --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Page Title --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Coco<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Coco CSS --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"//cdn.jsdelivr.net/npm/coco-css@latest/dist/coco.min.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, world!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+                </div>
+              </div>
+            </div>
+            <div id="folder-structure">
+              <h4 class="mt-4 mb-2">Folder structure<a class="anchor ml-1 text-decoration-none" href="#folder-structure">#</a></h4>
+              <div class="row">
+                <div class="col-12">
+                  <pre class="code"><code class="docs-code">coco/
+├── dist                    <span class="hljs-comment">// Build</span>
+│   ├── coco<span class="hljs-selector-class">.css</span>
+│   └── coco<span class="hljs-selector-class">.min</span><span class="hljs-selector-class">.css</span>
+│
+├── docs                    <span class="hljs-comment">// Docs</span>
+│   ├── css
+│   ├── <span class="hljs-selector-tag">img</span>
+│   └── ...
+│
+├── src                     <span class="hljs-comment">// Source</span>
+│   ├── coco<span class="hljs-selector-class">.scss</span>
+│   ├── _normalize<span class="hljs-selector-class">.scss</span>
+│   ├── _variables<span class="hljs-selector-class">.scss</span>
+│   └── ...
+│
+├── gulpfile<span class="hljs-selector-class">.js</span>
+├── package<span class="hljs-selector-class">.json</span>
+└── ...
+</code></pre>
+                </div>
+              </div>
+            </div>
+            <div id="browsers-support">
+              <h4 class="mt-4 mb-2">Browsers support<a class="anchor ml-1 text-decoration-none" href="#browsers-support">#</a></h4>
+              <div class="row">
+                <div class="col-12">
+                  <p>Coco uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. For best compatibility, these browsers are recommended:</p>
+                  <ul>
+                    <li>Chrome <small class="label bg-success-soft rounded-pill">Last 4</small></li>
+                    <li>Microsoft Edge <small class="label bg-success-soft rounded-pill">12+</small></li>
+                    <li>Firefox <small class="label bg-success-soft rounded-pill">ESR</small></li>
+                    <li>Safari <small class="label bg-success-soft rounded-pill">Last 4</small></li>
+                    <li>Opera <small class="label bg-success-soft rounded-pill">Last 4</small></li>
+                    <li>
+                       Internet Explorer <small class="label bg-success-soft rounded-pill">10+</small></li>
                   </ul>
                 </div>
-                <div class="item">
-                  <p class="text-bold">Ordered list </p>
-                  <ul class="list">
-                    <li>item 1</li>
-                    <li>item 2
-                      <ul>
-                        <li>item 2.1</li>
-                        <li>item 2.2</li>
-                        <li>item 2.3</li>
-                      </ul>
-                    </li>
-                    <li>item 3</li>
-                  </ul>
-                </div>
-                <div class="item">
-                  <p class="text-bold">Description list </p>
-                  <dl class="list">
-                    <dt>term 1</dt>
-                    <dd>description 1</dd>
-                    <dt>term 2</dt>
-                    <dd>description 2</dd>
-                    <dt>term 3</dt>
-                    <dd>description 3</dd>
-                  </dl>
-                </div>
-                <div class="item">
-                  <p class="text-bold">Unstyled list </p>
-                  <ul class="list-unstyled">
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                  </ul>
-                </div>
-                <div class="item">
-                  <p class="text-bold">Inline list </p>
-                  <ul class="list-inline">
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                  </ul>
-                </div>
               </div>
-            </div>
-            <div class="mb-5"></div>
-            <div id="buttons">
-              <h2 class="docs-title my-4 font-light">Buttons<a class="anchor ml-1 text-decoration-none" href="#buttons">#</a></h2>
-              <p>Buttons include simple button styles for actions in different types and sizes.</p>
-              <div class="row mb-3">
-                <div class="col">
-                  <button class="btn mr-3">default</button>
-                  <button class="btn btn-outline mr-3">outline</button>
-                  <button class="btn btn-link">link</button>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>default<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline"</span>&gt;</span>outline<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>link<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            </div>
-            <div id="buttons-colors">
-              <h4 class="docs-title my-4 font-light">Colors<a class="anchor ml-1 text-decoration-none" href="#buttons-colors">#</a></h4>
-              <div class="row mb-3">
-                <div class="col">
-                  <button class="btn btn-dark mr-3">dark</button>
-                  <button class="btn btn-light">light</button>
-                </div>
-              </div>
-              <p>And you can add the <code>btn-dark</code>  or <code>btn-light</code> class for additional button colors.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark"</span>&gt;</span>dark<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-light"</span>&gt;</span>light<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            </div>
-            <div id="buttons-sizes">
-              <h4 class="docs-title my-4 font-light">Sizes<a class="anchor ml-1 text-decoration-none" href="#buttons-sizes">#</a></h4>
-              <div class="row mb-3">
-                <div class="col d-flex align-items-center">
-                  <button class="btn btn-sm mr-3">small</button>
-                  <button class="btn btn-lg mr-3">large</button>
-                  <button class="btn btn-block flex-grow-1">block</button>
-                </div>
-              </div>
-              <p>Add the<code>btn-sm</code> or <code>btn-lg</code> class for small or large button size. Also, you can add the btn-block class for a full-width button.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm"</span>&gt;</span>small<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-lg"</span>&gt;</span>large<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-block"</span>&gt;</span>block<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            </div>
-            <div id="buttons-states">
-              <h4 class="docs-title my-4 font-light">States<a class="anchor ml-1 text-decoration-none" href="#buttons-states">#</a></h4>
-              <div class="row mb-3">
-                <div class="col">
-                  <button class="btn active mr-3">active</button>
-                  <button class="btn disabled" tabindex="-1">disabled</button>
-                </div>
-              </div>
-              <p>Add the <code>active</code> or <code>disabled</code> class for active or disabled button size.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn active"</span>&gt;</span>active<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn disabled"</span>&gt;</span>disabled<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="images">
-              <h2 class="docs-title my-4 font-light">Images<a class="anchor ml-1 text-decoration-none" href="#images">#</a></h2>
-              <p>Add the <code>img-responsive</code> class to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
-              <div class="row mb-3">
-                <div class="col col-sm-12"><img class="img-responsive bg-black rounded-lg" src="../img/bg/1.jpg" alt=""></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span></code></pre>
-            </div>
-            <div id="images-crop">
-              <h2 class="docs-title my-4 font-light">Crop<a class="anchor ml-1 text-decoration-none" href="#images-crop">#</a></h2>
-              <p>Add the <code>img-fit-contain</code> or <code>img-fit-cover</code> class to fit  &lt;img&gt; inside the element.</p>
-              <div class="row mb-3">
-                <div class="col col-sm-6"><img class="img-fit-cover bg-black rounded-lg" src="../img/bg/1.jpg" alt="" style="width: 100%; height: 15rem;"></div>
-                <div class="col col-sm-6"><img class="img-fit-contain bg-black rounded-lg" src="../img/bg/1.jpg" alt="" style="width: 100%; height: 15rem;"></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fit-cover"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fit-contain"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <h1 class="font-light text-center text-uppercase">Layout</h1>
-            <div class="mb-5"></div>
-            <div id="containers">
-              <h2 class="docs-title my-4 font-light">Containers<a class="anchor ml-1 text-decoration-none" href="#containers">#</a></h2>
-              <p>Use <code>container-sm</code> (540px), <code>container-md</code> (720px), <code>container-lg</code> (960px), <code>container-xl</code> (1140px) or <code>container-xxl</code> (1320px) to the container for a fixed-width container with the specific max-width.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-comment">&lt;!-- 100% width container with max-width set to container-lg (960px) --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container container-lg"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="grid">
-              <h2 class="docs-title my-4 font-light">Grid<a class="anchor ml-1 text-decoration-none" href="#grid">#</a></h2>
-              <div class="row mb-3 text-center">
-                <div class="col col-12">
-                  <div class="p-2 bg-gray rounded">col-12 (100%)</div>
-                </div>
-              </div>
-              <div class="row mb-3 text-center">
-                <div class="col col-9">
-                  <div class="p-2 bg-gray rounded">col-9 (75%)</div>
-                </div>
-              </div>
-              <div class="row mb-3 text-center">
-                <div class="col col-6">
-                  <div class="p-2 bg-gray rounded">col-6 (50%)</div>
-                </div>
-              </div>
-              <div class="row mb-3 text-center">
-                <div class="col col-3">
-                  <div class="p-2 bg-gray rounded">col-3 (25%)</div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-6"</span>&gt;</span>col-6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-3"</span>&gt;</span>col-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-2"</span>&gt;</span>col-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-1"</span>&gt;</span>col-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div id="grid-auto-width">
-              <h4 class="docs-title my-4 font-light">Auto width<a class="anchor ml-1 text-decoration-none" href="#grid-auto-width">#</a></h4>
-              <p>You can add the <code>col-auto</code> class to the <code>col</code> to have auto width row.
-                There are <code>col-sm-auto</code>, <code>col-md-auto</code>, <code>col-lg-auto</code>, <code>col-xl-auto</code> and <code>col-xxl-auto</code> to set auto width in different viewport sizes.
-              </p>
-              <div class="row mb-3 text-center">
-                <div class="col col-auto">
-                  <div class="p-2">col-auto</div>
-                </div>
-                <div class="col">
-                  <div class="p-2 bg-gray rounded">col</div>
-                </div>
-              </div>
-              <div class="row mb-3 text-center">
-                <div class="col col-6 col-lg-auto">
-                  <div class="p-2">col-lg-auto</div>
-                </div>
-                <div class="col">
-                  <div class="p-2 bg-gray rounded">col</div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-auto"</span>&gt;</span>col-auto<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col"</span>&gt;</span>col<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-6 col-lg-auto"</span>&gt;</span>col-lg-auto<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col"</span>&gt;</span>col<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <h1 class="font-light text-center text-uppercase">Components</h1>
-            <div class="mb-5"></div>
-            <div id="alerts">
-              <h2 class="docs-title my-4 font-light">Alerts<a class="anchor ml-1 text-decoration-none" href="#alerts">#</a></h2>
-              <p>You can display the toast notification with <code>alert</code> class as shown in the following example:</p>
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="alert">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <button class="close">&times;</button>
-                  </div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert"</span>&gt;</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span>&gt;</span><span class="hljs-symbol">&amp;times;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="avatars">
-              <h2 class="docs-title my-4 font-light">Avatars<a class="anchor ml-1 text-decoration-none" href="#avatars">#</a></h2>
-              <p>Avatars are user profile pictures.</p>
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="avatar mr-3"><img class="avatar-img" src="../img/avatar/1.jpg" alt=""></div>
-                  <div class="avatar" data-initial="HA"></div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">data-initial</span>=<span class="hljs-string">"HA"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div id="avatars-sizes">
-              <h4 class="docs-title my-4 font-light">Sizes<a class="anchor ml-1 text-decoration-none" href="#avatars-sizes">#</a></h4>
-              <p>  Add the <code>avatar-sm</code>, <code>avatar-lg</code> or <code>avatar-xl</code> class for small, large or extra large avatar size.</p>
-              <div class="row mb-3">
-                <div class="col d-flex align-items-center">
-                  <div class="avatar avatar-sm mr-3"><img class="avatar-img" src="../img/avatar/1.jpg" alt=""></div>
-                  <div class="avatar avatar-lg mr-3"><img class="avatar-img" src="../img/avatar/2.jpg" alt=""></div>
-                  <div class="avatar avatar-xl"><img class="avatar-img" src="../img/avatar/3.jpg" alt=""></div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-sm"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-lg"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div id="avatars-indicators">
-              <h4 class="docs-title my-4 font-light">Indicators<a class="anchor ml-1 text-decoration-none" href="#avatars-indicators">#</a></h4>
-              <div class="row mb-3">
-                <div class="col d-flex align-items-center">
-                  <div class="avatar mr-3"><img class="avatar-img" src="../img/avatar/1.jpg" alt=""><i class="avatar-indicator offline"></i></div>
-                  <div class="avatar mr-3"><img class="avatar-img" src="../img/avatar/2.jpg" alt=""><i class="avatar-indicator online"></i></div>
-                  <div class="avatar mr-3"><img class="avatar-img" src="../img/avatar/3.jpg" alt=""><i class="avatar-indicator busy"></i></div>
-                  <div class="avatar"><img class="avatar-img" src="../img/avatar/4.jpg" alt=""><i class="avatar-indicator away"></i></div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-indicator offline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-indicator online"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-indicator busy"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-indicator away"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="badges">
-              <h2 class="docs-title my-4 font-light">Badges<a class="anchor ml-1 text-decoration-none" href="#badges">#</a></h2>
-              <p>Badges are often used as unread number indicators.</p>
-              <div class="row mb-3 align-items-center">
-                <div class="col d-flex align-items-center"> <span class="badge mr-3 font-lg"><img src="img/icon/bell.svg" alt=""></span><span class="badge mr-3 font-lg" data-badge="5"><img src="img/icon/bell.svg" alt=""></span><span class="avatar badge mr-3" data-badge="99+"><img class="avatar-img" src="../img/avatar/3.jpg" alt=""></span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/icon/bell.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span> <span class="hljs-attr">data-badge</span>=<span class="hljs-string">"5"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/icon/bell.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar badge"</span> <span class="hljs-attr">data-badge</span>=<span class="hljs-string">"99+"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../img/avatar/3.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="embed">
-              <h2 class="docs-title my-4 font-light">Embed<a class="anchor ml-1 text-decoration-none" href="#embed">#</a></h2>
-              <p>For responsive embed, add a container with the <code>embed-responsive</code> class. The ratio is 16:9 by default.</p><div class="embed-responsive rounded-lg">
-<iframe src="https://player.vimeo.com/video/103725669" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-</div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="modals">
-              <h2 class="docs-title my-4 font-light">Modals<a class="anchor ml-1 text-decoration-none" href="#modals">#</a></h2>
-              <p>Modals are flexible dialog prompts.</p>
-              <div class="row mb-3">
-                <div class="col">
-                  <button class="btn modal-show-trigger" data-target="#modal-example-1">Open modal</button>
-                </div>
-              </div>
-              <div class="docs-modal mb-3">
-                <div class="modal show">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <div class="modal-title h5">Modal title</div><a class="modal-close modal-close-trigger close" href="#" data-target="#modal-example-1">&times;</a>
-                    </div>
-                    <div class="modal-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button class="btn">Save changes</button>
-                      <button class="btn btn-outline modal-close-trigger" data-target="#modal-example-1">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col">
-                  <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal show"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-header"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-title h5"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-close close"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#close"</span>&gt;</span><span class="hljs-symbol">&amp;times;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-body"</span>&gt;</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. 
-            Duis quis sodales risus. Etiam euismod ornare consequat.
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-footer"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#close"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-                </div>
-              </div>
-              <div class="alert text-center bg-error">Coco.css does not include any JavaScript interaction. You will have to implement the class toggle yourself.</div>
-              <div class="modal fade" id="modal-example-1"><a class="modal-overlay modal-close-trigger" href="#" data-target="#modal-example-1"></a>
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <div class="modal-title h5">Modal title</div><a class="modal-close modal-close-trigger close" href="#" data-target="#modal-example-1">&times;</a>
-                  </div>
-                  <div class="modal-body">
-                    <p>This is the content inside the modal.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn">Save changes</button>
-                    <button class="btn btn-outline modal-close-trigger" data-target="#modal-example-1">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="modals-sizes">
-              <h4 class="docs-title my-4 font-light">Sizes<a class="anchor ml-1 text-decoration-none" href="#modals-sizes">#</a></h4>
-              <div class="row mb-3">
-                <div class="col">
-                  <button class="btn modal-show-trigger" data-target="#modal-example-2">Open small modal</button>
-                </div>
-              </div>
-              <p>Use the <code>modal-sm</code> class for a smaller size modal.</p>
-              <div class="modal modal-sm fade" id="modal-example-2"><a class="modal-overlay modal-close-trigger" href="#" data-target="#modal-example-2"></a>
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <div class="modal-title h5">Modal title</div><a class="modal-close modal-close-trigger close" href="#" data-target="#modal-example-2">&times;</a>
-                  </div>
-                  <div class="modal-body">
-                    <p>This is the content inside the modal.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn">Save changes</button>
-                    <button class="btn btn-outline modal-close-trigger" data-target="#modal-example-2">Close</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col">
-                  <button class="btn modal-show-trigger" data-target="#modal-example-3">Open large modal</button>
-                </div>
-              </div>
-              <p>Use the <code>modal-lg</code> class for a full size modal.</p>
-              <div class="modal modal-lg fade" id="modal-example-3"><a class="modal-overlay modal-close-trigger" href="#" data-target="#modal-example-3"></a>
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <div class="modal-title h5">Modal title</div><a class="modal-close modal-close-trigger close" href="#" data-target="#modal-example-3">&times;</a>
-                  </div>
-                  <div class="modal-body">
-                    <p>This is the content inside the modal.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn">Save changes</button>
-                    <button class="btn btn-outline modal-close-trigger" data-target="#modal-example-3">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5"></div>
-            <div id="progress">
-              <h3 class="docs-title my-4 font-light">Progress<a class="anchor ml-1 text-decoration-none" href="#progress">#</a></h3>
-              <p>The Progress indicates the progress completion of a task.</p>
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 50%"></div>
-                  </div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"progress"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"progress-bar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div id="progress-sizes">
-              <h4 class="docs-title my-4 font-light">Sizes<a class="anchor ml-1 text-decoration-none" href="#progress-sizes">#</a></h4>
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="progress progress-sm">
-                    <div class="progress-bar" style="width: 75%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="progress progress-lg">
-                    <div class="progress-bar" style="width: 25%"></div>
-                  </div>
-                </div>
-              </div>
-              <p>Add the<code>progresss-sm</code> or <code>progresss-lg</code> class for small or large progress bar.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"progress progresss-sm"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"progress-bar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 75%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"progress progresss-lg"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"progress-bar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 25%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="tooltips">
-              <h3 class="docs-title my-4 font-light">Tooltip<a class="anchor ml-1 text-decoration-none" href="#tooltips">#</a></h3>
-              <p>Tooltips provide context information labels that appear on hover and focus. </p>
-              <div class="row mb-3">
-                <div class="col"><span class="tooltip mr-3" data-tooltip="Hi there">hover me</span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Hi there"</span>&gt;</span>hover me<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <h1 class="font-light text-center text-uppercase">Utilities</h1>
-            <div class="mb-5"></div>
-            <div id="colors">
-              <h2 class="docs-title my-4 font-light">Colors<a class="anchor ml-1 text-decoration-none" href="#colors">#</a></h2>
-              <p>Color utilities are used for changing colors for text, link and background.</p>
-            </div>
-            <div id="colors-text">
-              <h4 class="docs-title my-4 font-light">Text<a class="anchor ml-1 text-decoration-none" href="#colors-text">#</a></h4>
-              <div class="row mb-3">
-                <div class="col"><span class="d-inline-block mr-3 text-primary">primary</span><span class="d-inline-block mr-3 text-secondary">secondary</span><span class="d-inline-block mr-3 text-success">success</span><span class="d-inline-block mr-3 text-error">error</span><span class="d-inline-block mr-3 text-warning">warning</span><span class="d-inline-block mr-3 text-dark">dark</span><span class="d-inline-block mr-3 text-light">light</span><span class="d-inline-block mr-3 px-2 text-white bg-dark rounded">white</span><span class="d-inline-block mr-3 text-black">black</span><span class="d-inline-block mr-3 text-gray">gray</span><span class="d-inline-block text-muted">muted</span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span>&gt;</span>primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-secondary"</span>&gt;</span>secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-success"</span>&gt;</span>success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-warning"</span>&gt;</span>warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-error"</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-dark"</span>&gt;</span>dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-light"</span>&gt;</span>light<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white"</span>&gt;</span>white<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-black"</span>&gt;</span>black<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-gray"</span>&gt;</span>gray<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-muted"</span>&gt;</span>muted<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div id="colors-link">
-              <h4 class="docs-title my-4 font-light">Link<a class="anchor ml-1 text-decoration-none" href="#colors-link">#</a></h4>
-              <div class="row mb-3">
-                <div class="col"><a class="d-inline-block mr-3 text-primary" href="#">primary</a><a class="d-inline-block mr-3 text-secondary" href="#">secondary</a><a class="d-inline-block mr-3 text-success" href="#">success</a><a class="d-inline-block mr-3 text-error" href="#">error</a><a class="d-inline-block mr-3 text-warning" href="#">warning</a><a class="d-inline-block mr-3 text-dark" href="#">dark</a><a class="d-inline-block mr-3 text-light" href="#">light</a><a class="d-inline-block mr-3 px-2 text-white bg-dark rounded" href="#">white</a><a class="d-inline-block mr-3 text-black" href="#">black</a><a class="d-inline-block text-gray" href="#">gray</a></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>primary<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-secondary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>secondary<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-success"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>success<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-error"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-warning"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>warning<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-dark"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>dark<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-light"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>light<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>white<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-black"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>black<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-gray"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>gray<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
-            </div>
-            <div id="colors-background">
-              <h4 class="docs-title my-4 font-light">Background<a class="anchor ml-1 text-decoration-none" href="#colors-background">#</a></h4>
-              <div class="row mb-3">
-                <div class="col"><span class="d-inline-block mr-3 px-2 bg-primary rounded">primary</span><span class="d-inline-block mr-3 px-2 bg-secondary rounded">secondary</span><span class="d-inline-block mr-3 px-2 bg-success rounded">success</span><span class="d-inline-block mr-3 px-2 bg-error rounded">error</span><span class="d-inline-block mr-3 px-2 bg-warning rounded">warning</span><span class="d-inline-block mr-3 px-2 bg-dark rounded">dark</span><span class="d-inline-block mr-3 px-2 text-dark bg-light rounded">light</span><span class="d-inline-block mr-3 px-2 text-dark bg-white rounded">white</span><span class="d-inline-block mr-3 px-2 bg-black rounded">black</span><span class="d-inline-block mr-3 px-2 bg-gray rounded">gray</span><span class="d-inline-block px-2 bg-transparent rounded">transparent</span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-primary"</span>&gt;</span>primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-secondary"</span>&gt;</span>secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-success"</span>&gt;</span>success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-error"</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-warning"</span>&gt;</span>warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-dark"</span>&gt;</span>dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-light"</span>&gt;</span>light<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-white"</span>&gt;</span>white<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-black"</span>&gt;</span>black<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-gray"</span>&gt;</span>gray<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-transparent"</span>&gt;</span>transparent<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="display">
-              <h2 class="docs-title my-4 font-light">Display<a class="anchor ml-1 text-decoration-none" href="#display">#</a></h2>
-              <p>Display utilities are used for display and hidden things.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-comment">&lt;!-- display: block; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- display: inline; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-inline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- display: inline-block; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- display: flex; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- display: inline-flex; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-inline-flex"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- display: none; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- visibility: visible; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-visible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- visibility: hidden; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-invisible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="loading">
-              <h2 class="docs-title my-4 font-light">Loading<a class="anchor ml-1 text-decoration-none" href="#loading">#</a></h2>
-              <p>Loading indicator is used for loading or updating.</p>
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="loading"></div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"loading"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div id="loading-sizes">
-              <h4 class="docs-title my-4 font-light">Sizes<a class="anchor ml-1 text-decoration-none" href="#loading-sizes">#</a></h4>
-              <p>  Add the <code>loading-sm</code> or <code>loading-lg</code> class for small or large loading size.</p>
-              <div class="row mb-3">
-                <div class="col d-flex align-items-center">
-                  <div class="loading loading-sm mr-3"></div>
-                  <div class="loading loading-lg"></div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-comment">&lt;!-- small --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"loading loading-sm"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- large --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"loading loading-lg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="opacity">
-              <h2 class="docs-title my-4 font-light">Opacity<a class="anchor ml-1 text-decoration-none" href="#opacity">#</a></h2>
-              <p>Opacity utilities are used for changing element opacity.</p>
-              <div class="row">
-                <div class="col"><span class="docs-shape mb-3 mr-3 o-5 bg-primary">5</span><span class="docs-shape mb-3 mr-3 o-10 bg-primary">10</span><span class="docs-shape mb-3 mr-3 o-15 bg-primary">15</span><span class="docs-shape mb-3 mr-3 o-20 bg-primary">20</span><span class="docs-shape mb-3 mr-3 o-25 bg-primary">25</span><span class="docs-shape mb-3 mr-3 o-30 bg-primary">30</span><span class="docs-shape mb-3 mr-3 o-35 bg-primary">35</span><span class="docs-shape mb-3 mr-3 o-40 bg-primary">40</span><span class="docs-shape mb-3 mr-3 o-45 bg-primary">45</span><span class="docs-shape mb-3 mr-3 o-50 bg-primary">50</span><span class="docs-shape mb-3 mr-3 o-55 bg-primary">55</span><span class="docs-shape mb-3 mr-3 o-60 bg-primary">60</span><span class="docs-shape mb-3 mr-3 o-65 bg-primary">65</span><span class="docs-shape mb-3 mr-3 o-70 bg-primary">70</span><span class="docs-shape mb-3 mr-3 o-75 bg-primary">75</span><span class="docs-shape mb-3 mr-3 o-80 bg-primary">80</span><span class="docs-shape mb-3 mr-3 o-85 bg-primary">85</span><span class="docs-shape mb-3 mr-3 o-90 bg-primary">90</span><span class="docs-shape mb-3 mr-3 o-95 bg-primary">95</span><span class="docs-shape mb-3 mr-3 o-100 bg-primary">100</span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-10"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-15"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-20"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-25"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-30"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-35"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-40"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-45"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-50"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-55"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-60"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-65"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-70"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-75"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-80"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-85"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-90"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-95"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="position">
-              <h2 class="docs-title my-4 font-light">Position<a class="anchor ml-1 text-decoration-none" href="#position">#</a></h2>
-              <p>Position utilities are used for useful layout and position things, including clearfix, float and position utilities.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-comment">&lt;!-- clear float --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- float: left, right and none --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"float-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"float-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"float-none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- position: relative, absolute, fixed and sticky --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"position-relative"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"position-absolute"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"position-fixed"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"position-sticky"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- position: absolute; top: 0; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"absolute-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- position: absolute; bottom: 0; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"absolute-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- position: fixed; top: 0; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fixed-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- position: fixed; bottom: 0; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fixed-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- position: sticky; top: 0; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sticky-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- position: sticky; bottom: 0; left: 0; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sticky-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="shapes">
-              <h2 class="docs-title my-4 font-light">Shapes<a class="anchor ml-1 text-decoration-none" href="#shapes">#</a></h2>
-              <p>Shape utilities are used for changing element shapes.</p>
-            </div>
-            <div id="shapes-border">
-              <h4 class="docs-title my-4 font-light">Border<a class="anchor ml-1 text-decoration-none" href="#shapes-border">#</a></h4>
-              <div class="row">
-                <div class="col"><span class="docs-shape mb-3 mr-3 border border-primary bg-light">default</span><span class="docs-shape mb-3 mr-3 border-top border-primary bg-light">top</span><span class="docs-shape mb-3 mr-3 border-right border-primary bg-light">right</span><span class="docs-shape mb-3 mr-3 border-bottom border-primary bg-light">bottom</span><span class="docs-shape mb-3 mr-3 border-left border-primary bg-light">left</span><span class="docs-shape mb-3 mr-3 border border-0 border-primary bg-light">0</span><span class="docs-shape mb-3 mr-3 border border-top-0 border-primary bg-light">top 0</span><span class="docs-shape mb-3 mr-3 border border-right-0 border-primary bg-light">right 0</span><span class="docs-shape mb-3 mr-3 border border-bottom-0 border-primary bg-light">bottom 0</span><span class="docs-shape mb-3 border border-left-0 border-primary bg-light">left 0</span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-0"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-top-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-right-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-left-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div id="shapes-border-colors">
-              <h4 class="docs-title my-4 font-light">Colors</h4>
-              <div class="row">
-                <div class="col"><span class="docs-shape mb-3 mr-3 border border-primary">primary</span><span class="docs-shape mb-3 mr-3 border border-secondary">secondary</span><span class="docs-shape mb-3 mr-3 border border-success">success</span><span class="docs-shape mb-3 mr-3 border border-error">error</span><span class="docs-shape mb-3 mr-3 border border-warning">warning</span><span class="docs-shape mb-3 mr-3 border border-dark">dark</span><span class="docs-shape mb-3 mr-3 border border-light">light</span><span class="docs-shape mb-3 mr-3 border border-white">white</span><span class="docs-shape mb-3 mr-3 border border-black">black</span><span class="docs-shape mb-3 mr-3 border border-gray">gray</span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-primary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-secondary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-success"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-error"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-warning"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-dark"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-light"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-white"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-black"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-gray"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div id="shapes-border-radius">
-              <h4 class="docs-title my-4 font-light">Border Radius<a class="anchor ml-1 text-decoration-none" href="#shapes-border-radius">#</a></h4>
-              <div class="row">
-                <div class="col"><span class="docs-shape mb-3 mr-3 rounded bg-primary">default</span><span class="docs-shape mb-3 mr-3 rounded-sm bg-primary">sm</span><span class="docs-shape mb-3 mr-3 rounded-lg bg-primary">lg</span><span class="docs-shape mb-3 mr-3 rounded-top bg-primary">top</span><span class="docs-shape mb-3 mr-3 rounded-right bg-primary">right</span><span class="docs-shape mb-3 mr-3 rounded-bottom bg-primary">bottom</span><span class="docs-shape mb-3 mr-3 rounded-left bg-primary">left</span><span class="docs-shape mb-3 mr-3 rounded-circle bg-primary">circle</span><span class="docs-shape mb-3 rounded-0 bg-primary">0</span></div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-sm"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-lg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-circle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="spacing">
-              <h2 class="docs-title my-4 font-light">Spacing<a class="anchor ml-1 text-decoration-none" href="#spacing">#</a></h2>
-              <p>Spacing utilities are useful margin and padding utility classes to modify an element’s appearance.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-comment">&lt;!-- m-0 {margin: 0} m-1 {margin: 0.25rem} m-2 {margin: 0.5rem} m-3 {margin: 1rem} m-4 {margin: 1.5rem} m-5 {margin: 3rem} --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"m-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                
-<span class="hljs-comment">&lt;!-- margin top --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- margin right --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- margin bottom --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- margin left --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ml-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ml-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ml-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ml-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ml-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ml-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- margin left and right --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mx-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- margin top and bottom --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- p-0 {padding: 0} p-1 {padding: 0.25rem} p-2 {padding: 0.5rem} p-3 {padding: 1rem} p-4 {padding: 1.5rem} p-5 {padding: 3rem} --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                
-<span class="hljs-comment">&lt;!-- padding top --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pt-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- padding right --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pr-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pr-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pr-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pr-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pr-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pr-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- padding bottom --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- padding left --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pl-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pl-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pl-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pl-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pl-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pl-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- padding left and right --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"px-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- padding top and bottom --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"py-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-            </div>
-            <div class="mb-5"></div>
-            <div id="text">
-              <h2 class="docs-title my-4 font-light">Text<a class="anchor ml-1 text-decoration-none" href="#text">#</a></h2>
-              <p>Text utilities are used for text alignment, styles and overflow things.</p>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-comment">&lt;!-- text-align: left; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-align: right; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-align: center; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-align: justify; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-justify"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-transform: lowercase; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-lowercase"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-transform: uppercase; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-uppercase"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-transform: capitalize; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-capitalize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-decoration: none; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-decoration-none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-overflow: ellipsis; white-space: nowrap; overflow: hidden; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-ellipsis"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- text-overflow: clip; white-space: nowrap; overflow: hidden; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-clip"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- hyphens: auto; word-break: break-word; word-wrap: break-word; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-break"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-weight: 300; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-light"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-weight: 400; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-normal"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-weight: 500; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-medium"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-weight: 700; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-bold"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-style: italic; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-italic"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-size: 0.875rem; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-sm"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-size: 1.25rem; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-lg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- font-size: 1.5rem; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"font-xl"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
             </div>
           </main>
-          <aside class="col col-12 col-xl-2 border-left">
-            <div class="sticky-top">
-              <h6 class="docs-title mb-0 py-3 font-light text-uppercase">Elements</h6>
+          <aside class="col-12 col-xl-2">
+            <div class="mb-5 sticky-top">
+              <h6 class="mb-2 text-uppercase">Elements</h6>
               <ul class="list-unstyled">
-                <li><a href="#typography">Typography</a></li>
-                <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#images">Images</a></li>
+                <li><a href="/elements/typography.html">Typography</a></li>
+                <li><a href="/elements/buttons.html">Buttons</a></li>
+                <li><a href="/elements/forms.html">Forms</a></li>
+                <li><a href="/elements/code.html">Code</a></li>
+                <li><a href="/elements/images.html">Images</a></li>
+                <li><a href="/elements/label.html">Label</a></li>
               </ul>
-              <h6 class="docs-title mb-0 py-3 font-light text-uppercase">Layout</h6>
+              <h6 class="mt-4 mb-2 text-uppercase">Layout</h6>
               <ul class="list-unstyled">
-                <li><a href="#containers">Containers</a></li>
-                <li><a href="#grid">Grid</a></li>
+                <li><a href="/layout/containers.html">Containers</a></li>
+                <li><a href="/layout/grid.html">Grid</a></li>
+                <li><a href="/layout/responsive.html">Responsive</a></li>
               </ul>
-              <h6 class="docs-title mb-0 py-3 font-light text-uppercase">Components</h6>
+              <h6 class="mt-4 mb-2 text-uppercase">Components</h6>
               <ul class="list-unstyled">
-                <li><a href="#alerts">Alerts</a></li>
-                <li><a href="#avatars">Avatars</a></li>
-                <li><a href="#badges">Badges</a></li>
-                <li><a href="#embed">Embed</a></li>
-                <li><a href="#modals">Modal</a></li>
-                <li><a href="#grid">Grid</a></li>
-                <li><a href="#progress">Progress</a></li>
-                <li><a href="#tooltips">Tooltips</a></li>
+                <li><a href="/components/alerts.html">Alerts</a></li>
+                <li><a href="/components/avatars.html">Avatars</a></li>
+                <li><a href="/components/cards.html">Card</a></li>
+                <li><a href="/components/callouts.html">Callouts</a></li>
+                <li><a href="/components/modals.html">Modal</a></li>
+                <li><a href="/components/progress.html">Progress</a></li>
               </ul>
-              <h6 class="docs-title mb-0 py-3 font-light text-uppercase">Utilities</h6>
+              <h6 class="mt-4 mb-2 text-uppercase">Utilities</h6>
               <ul class="list-unstyled">
-                <li><a href="#colors">Colors</a></li>
-                <li><a href="#display">Display</a></li>
-                <li><a href="#loading">Loading</a></li>
-                <li><a href="#opacity">Opacity</a></li>
-                <li><a href="#position">Position</a></li>
-                <li><a href="#shapes">Shapes</a></li>
-                <li><a href="#spacing">Spacing</a></li>
-                <li><a href="#text">Text</a></li>
+                <li><a href="/utilities/align.html">Align</a></li>
+                <li><a href="/utilities/colors.html">Colors</a></li>
+                <li><a href="/utilities/display.html">Display</a></li>
+                <li><a href="/utilities/loading.html">Loading</a></li>
+                <li><a href="/utilities/opacity.html">Opacity</a></li>
+                <li><a href="/utilities/position.html">Position</a></li>
+                <li><a href="/utilities/shapes.html">Shapes</a></li>
+                <li><a href="/utilities/sizing.html">Sizing</a></li>
+                <li><a href="/utilities/spacing.html">Spacing</a></li>
+                <li><a href="/utilities/text.html">Text</a></li>
               </ul>
             </div>
           </aside>
         </div>
-        <footer class="docs-footer mt-5 text-center">
-          <div class="container container-xxl border-top">
-            <div class="py-4"><a class="text-decoration-none" href="https://github.com/halibegic" target="_blank">@halibegic</a></div>
-          </div>
+        <footer class="py-5">
+          <p class="mb-0 text-center"><a class="text-muted" href="https://github.com/halibegic">@halibegic</a></p>
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/demo.js"></script>
       </div>
     </body>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script src="/js/main.js"></script>
   </head>
 </html>

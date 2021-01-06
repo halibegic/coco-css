@@ -1,7 +1,13 @@
 // Spacing
-@include spacing-auto();
+@each $breakpoint, $width in $grid-breakpoints {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-@each $prop, $value in $spacers {
-    @include margin-variant($prop, $value);
-    @include padding-variant($prop, $value);
+        @include spacing-auto($infix);
+
+        @each $prop, $value in $spacers {
+            @include margin-variant($prop, $value, $infix);
+            @include padding-variant($prop, $value, $infix);
+        }
+    }
 }

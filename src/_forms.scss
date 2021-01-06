@@ -1,0 +1,212 @@
+// Forms
+.form-horizontal {
+    .form-element {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.form-element {
+    &:not(:last-child) {
+        margin-bottom: $spacer;
+    }
+}
+
+.form-label {
+    display: block;
+    line-height: $line-height;
+    padding-bottom: $form-field-padding-y;
+
+    &.form-label-sm {
+        padding-bottom: $form-field-padding-y-sm;
+        font-size: $font-size-sm;
+    }
+
+    &.form-label-lg {
+        padding-bottom: $form-field-padding-y-lg;
+        font-size: $font-size-lg;
+    }
+}
+
+.form-field {
+    display: block;
+    padding: $form-field-padding-y $form-field-padding-x;
+    width: 100%;
+    line-height: $line-height;
+    color: $dark;
+    font-size: $form-field-font-size;
+    font-weight: $form-field-font-weight;
+    background: none;
+    background-color: $white;
+    border: $form-field-border-width solid $form-field-border-color;
+    outline: none;
+    appearance: none;
+    transition: all 0.3s ease 0s;
+    border-radius: $form-field-border-radius;
+    box-shadow: $form-field-box-shadow;
+
+    &:focus {
+        border-color: $primary;
+    }
+
+    &::placeholder {
+        color: $muted;
+    }
+
+    &.form-field-sm {
+        font-size: $form-field-font-size-sm;
+        padding: $form-field-padding-y-sm $form-field-padding-x-sm;
+        border-radius: $border-radius-sm;
+    }
+
+    &.form-field-lg {
+        font-size: $form-field-font-size-lg;
+        padding: $form-field-padding-y-lg $form-field-padding-x-lg;
+        border-radius: $border-radius-lg;
+    }
+
+    &.is-success {
+        border-color: $success;
+
+        &:focus {
+            border-color: $success;
+        }
+    }
+
+    &.is-error {
+        border-color: $error;
+
+        &:focus {
+            border-color: $error;
+        }
+    }
+
+    &:not(:placeholder-shown) {
+        &:invalid {
+            border-color: $error;
+
+            &:focus {
+                border-color: $error;
+            }
+
+            & + .form-hint {
+                color: $error;
+            }
+        }
+    }
+}
+
+.form-hint {
+    color: $muted;
+    font-size: $font-size-sm;
+    margin-top: $spacer * 0.25;
+
+    .is-success + & {
+        color: $success;
+    }
+
+    .is-error + & {
+        color: $error;
+    }
+}
+
+select.form-field {
+    &:not([multiple]):not([size]) {
+        padding-right: $form-field-icon-size + $form-field-padding-x;
+        background: url(svg-encode(
+                "<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$dark}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>"
+            ))
+            no-repeat right $form-field-padding-x center / $form-field-icon-size;
+    }
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: $form-field-mark-size * 1.5;
+    line-height: $line-height;
+
+    &:not(:last-child) {
+        margin-bottom: $form-field-mark-size * 0.5;
+    }
+
+    &.is-error {
+        .form-mark {
+            border-color: $error;
+        }
+    }
+
+    input {
+        position: absolute;
+        margin: -1px;
+        width: 1px;
+        height: 1px;
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+
+        &[type="radio"] ~ .form-mark {
+            border-radius: 50%;
+
+            &::after {
+                top: 50%;
+                left: 50%;
+                width: 5px;
+                height: 5px;
+                background-color: $white;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &[type="checkbox"] ~ .form-mark {
+            border-radius: $border-radius-sm;
+
+            &::after {
+                top: 50%;
+                left: 50%;
+                margin-left: -3px;
+                margin-top: -6px;
+                width: 6px;
+                height: 9px;
+                border: solid white;
+                border: 2px solid $white;
+                border-top-width: 0;
+                border-left-width: 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        &:checked ~ .form-mark {
+            background-color: $primary;
+            border-color: $primary;
+
+            &::after {
+                display: block;
+            }
+        }
+
+        &:disabled ~ .form-mark {
+            cursor: not-allowed;
+        }
+    }
+
+    .form-mark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -($form-field-mark-size * 0.5);
+        height: $form-field-mark-size;
+        width: $form-field-mark-size;
+        cursor: pointer;
+        background-color: $light;
+        border: $border-width solid $form-field-border-color;
+        border-radius: $border-radius-circle;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s ease 0s;
+
+        &::after {
+            position: absolute;
+            display: none;
+            content: "";
+        }
+    }
+}

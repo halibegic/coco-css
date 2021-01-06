@@ -1,0 +1,45 @@
+// String replacement function (https://css-tricks.com/snippets/sass/str-replace-function)
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace +
+            str-replace(
+                str-slice($string, $index + str-length($search)),
+                $search,
+                $replace
+            );
+    }
+
+    @return $string;
+}
+
+// URL-encoded Inline SVG (https://codepen.io/kevinweber/pen/dXWoRw)
+@function svg-encode($svg) {
+    @each $char, $encoded in $encoding-reference {
+        $svg: str-replace($svg, $char, $encoded);
+    }
+
+    @return "data:image/svg+xml," + $svg;
+}
+
+// Automatically pick text colors (https://codepen.io/kennyglenn/pen/bLsGg)
+$threshold: 75%;
+
+@function color-contrast(
+    $color,
+    $dark: $color-contrast-dark,
+    $light: $color-contrast-light
+) {
+    @return if(lightness($color) < $threshold, $light, $dark);
+}
+
+// Mix a color with white
+@function tint-color($color, $weight) {
+    @return mix(white, $color, $weight);
+}
+
+// Mix a color with black
+@function shade-color($color, $weight) {
+    @return mix(black, $color, $weight);
+}

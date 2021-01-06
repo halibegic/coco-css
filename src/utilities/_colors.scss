@@ -1,48 +1,37 @@
 // Text colors
-@include text-color-variant(".text-primary", $primary-color);
-@include text-color-variant(".text-secondary", $secondary-color);
 
-@include text-color-variant(".text-success", $success-color);
-@include text-color-variant(".text-warning", $warning-color);
-@include text-color-variant(".text-error", $error-color);
+// Colors
+@each $color, $value in $colors {
+    @include text-color-variant(".text-#{$color}", $value);
+}
 
-@include text-color-variant(".text-dark", $dark-color);
-@include text-color-variant(".text-light", $light-color);
-
-@include text-color-variant(".text-white", $white-color);
-@include text-color-variant(".text-black", $black-color);
-@include text-color-variant(".text-gray", $gray-color);
-
-@include text-color-variant(".text-muted", $muted-color);
+@include text-color-variant(".text-white", $white);
+@include text-color-variant(".text-black", $black);
+@include text-color-variant(".text-muted", $muted);
 
 // Background colors
-@include bg-variant(".bg-primary", $primary-color);
-@include bg-variant(".bg-secondary", $secondary-color);
+@each $color, $value in $colors {
+    @include bg-variant(".bg-#{$color}", $value);
+}
 
-@include bg-variant(".bg-success", $success-color);
-@include bg-variant(".bg-warning", $warning-color);
-@include bg-variant(".bg-error", $error-color);
+@include bg-variant(".bg-white", $white);
+@include bg-variant(".bg-black", $black);
 
-@include bg-variant(".bg-dark", $dark-color);
-@include bg-variant(".bg-light", $light-color);
+.bg-transparent {
+    background-color: transparent !important;
+}
 
-@include bg-variant(".bg-white", $white-color);
-@include bg-variant(".bg-black", $black-color);
-@include bg-variant(".bg-gray", $gray-color);
+@each $color, $value in $colors {
+    @include bg-soft-variant(".bg-#{$color}-soft", $value);
+}
 
-@include bg-variant(".bg-transparent", transparent);
+@include bg-soft-variant(".bg-white-soft", $white);
+@include bg-soft-variant(".bg-black-soft", $black);
 
 // Border colors
-@include border-variant(".border-primary", $primary-color);
-@include border-variant(".border-secondary", $secondary-color);
+@each $color, $value in $colors {
+    @include border-variant(".border-#{$color}", $value);
+}
 
-@include border-variant(".border-success", $success-color);
-@include border-variant(".border-warning", $warning-color);
-@include border-variant(".border-error", $error-color);
-
-@include border-variant(".border-dark", $dark-color);
-@include border-variant(".border-light", $light-color);
-
-@include border-variant(".border-white", $white-color);
-@include border-variant(".border-black", $black-color);
-@include border-variant(".border-gray", $gray-color);
+@include border-variant(".border-white", $white);
+@include border-variant(".border-black", $black);

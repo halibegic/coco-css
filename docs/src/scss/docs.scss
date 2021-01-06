@@ -1,29 +1,9 @@
-/*! Coco.css Docs | MIT License | github.com/halibegic/coco.css */
+/*! Coco Documentation | MIT License | github.com/halibegic/coco-css */
 
-// Core variables and mixins
+// Variables and mixins
 @import "../../../src/variables";
 @import "../../../src/mixins";
-
-.docs-row {
-    margin-left: -3rem;
-    margin-right: -3rem;
-
-    > .col {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-}
-
-.docs-title {
-    .anchor {
-        opacity: 0;
-        transition: opacity 0.15s linear;
-    }
-
-    &:hover .anchor {
-        opacity: 1;
-    }
-}
+@import "../../../node_modules/highlight.js/scss/vs.scss";
 
 .docs-modal .modal {
     position: relative;
@@ -40,68 +20,32 @@
     height: 4.5rem;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     font-size: $font-size-sm;
 }
 
-.docs-code {
-    .hljs {
-        display: block;
-        overflow-x: auto;
-        color: black;
-    }
+.docs-shape-pill {
+    width: 4.5rem;
+    height: 2.25rem;
+}
 
-    .hljs-comment,
-    .hljs-quote,
-    .hljs-variable {
-        color: #008000;
-    }
+// Feather
 
-    .hljs-keyword,
-    .hljs-selector-tag,
-    .hljs-built_in,
-    .hljs-name,
-    .hljs-tag {
-        color: #3232ff;
-    }
+.fe {
+    vertical-align: -10%;
+}
 
-    .hljs-string,
-    .hljs-title,
-    .hljs-section,
-    .hljs-attribute,
-    .hljs-literal,
-    .hljs-template-tag,
-    .hljs-template-variable,
-    .hljs-type,
-    .hljs-addition {
-        color: #a31515;
-    }
+.fe-md {
+    width: 1em;
+    height: 1em;
+}
 
-    .hljs-deletion,
-    .hljs-selector-attr,
-    .hljs-selector-pseudo,
-    .hljs-meta {
-        color: #2b91af;
-    }
+.fe-lg {
+    width: 2rem;
+    height: 2rem;
+}
 
-    .hljs-doctag {
-        color: #808080;
-    }
-
-    .hljs-attr {
-        color: #ff3232;
-    }
-
-    .hljs-symbol,
-    .hljs-bullet,
-    .hljs-link {
-        color: #00b0e8;
-    }
-
-    .hljs-emphasis {
-        font-style: italic;
-    }
-
-    .hljs-strong {
-        font-weight: bold;
-    }
+.fe-xl {
+    width: 4em;
+    height: 4em;
 }

@@ -1,10 +1,16 @@
 // Flex
-.flex-row {
-    flex-direction: row !important;
-}
+@each $breakpoint, $width in $grid-breakpoints {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.flex-column {
-    flex-direction: column !important;
+        .flex#{$infix}-row {
+            flex-direction: row !important;
+        }
+
+        .flex#{$infix}-column {
+            flex-direction: column !important;
+        }
+    }
 }
 
 .flex-row-reverse {

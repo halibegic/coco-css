@@ -1,0 +1,137 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Text'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #text
+                    h2.mb-2
+                        =title
+                        a.anchor.ml-1.text-decoration-none(href="#text") #
+                    p Text utilities are used for text alignment, styles and overflow things.
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <!-- text-align: left; -->
+                                <p class="text-left"></p>
+                                <p class="text-sm-left"></p>
+                                <p class="text-md-left"></p>
+                                <p class="text-lg-left"></p>
+                                <p class="text-xl-left"></p>
+
+                                <!-- text-align: right; -->
+                                <p class="text-right"></p>
+                                <p class="text-sm-right"></p>
+                                <p class="text-md-right"></p>
+                                <p class="text-lg-right"></p>
+                                <p class="text-xl-right"></p>
+
+                                <!-- text-align: center; -->
+                                <p class="text-center"></p>
+                                <p class="text-sm-center"></p>
+                                <p class="text-md-center"></p>
+                                <p class="text-lg-center"></p>
+                                <p class="text-xl-center"></p>
+
+                                <!-- text-align: justify; -->
+                                <p class="text-justify"></p>
+
+                                <!-- text-transform: lowercase; -->
+                                <p class="text-lowercase"></p>
+
+                                <!-- text-transform: uppercase; -->
+                                <p class="text-uppercase"></p>
+
+                                <!-- text-transform: capitalize; -->
+                                <p class="text-capitalize"></p>
+
+                                <!-- text-decoration: none; -->
+                                <p class="text-decoration-none"></p>
+
+                                <!-- white-space: nowrap; -->
+                                <p class="text-nowrap"></p>
+
+                                <!-- text-overflow: ellipsis; white-space: nowrap; overflow: hidden; -->
+                                <p class="text-ellipsis"></p>
+
+                                <!-- text-overflow: clip; white-space: nowrap; overflow: hidden; -->
+                                <p class="text-clip"></p>
+
+                                <!-- hyphens: auto; word-break: break-word; word-wrap: break-word; -->
+                                <p class="text-break"></p>
+
+                                <!-- letter-spacing: -0.025em; -->
+                                <p class="text-tight"></p>
+
+                                <!-- letter-spacing: 0.025em; -->
+                                <p class="text-wide"></p>
+
+                                <!-- letter-spacing: 0.05em; -->
+                                <p class="text-wider"></p>
+
+                                <!-- font-weight: 200; -->
+                                <p class="font-lighter"></p>
+
+                                <!-- font-weight: 300; -->
+                                <p class="font-light"></p>
+
+                                <!-- font-weight: 400; -->
+                                <p class="font-normal"></p>
+
+                                <!-- font-weight: 500; -->
+                                <p class="font-medium"></p>
+
+                                <!-- font-weight: 600; -->
+                                <p class="font-semi-bold"></p>
+
+                                <!-- font-weight: 700; -->
+                                <p class="font-bold"></p>
+
+                                <!-- font-weight: 800; -->
+                                <p class="font-extra-bold"></p>
+
+                                <!-- font-style: italic; -->
+                                <p class="font-italic"></p>
+
+                                <!-- font-size: 0; -->
+                                <p class="font-0"></p>
+
+                                <!-- font-size: 0.75rem; -->
+                                <p class="font-xs"></p>
+
+                                <!-- font-size: 0.875rem; -->
+                                <p class="font-sm"></p>
+
+                                <!-- font-size: 1rem; -->
+                                <p class="font-md"></p>
+
+                                <!-- font-size: 1.25rem; -->
+                                <p class="font-lg"></p>
+
+                                <!-- font-size: 1.5rem; -->
+                                <p class="font-xl"></p>
+
+                                <!-- line-height: 1; -->
+                                <p class="leading-1"></p>
+
+                                <!-- line-height: 1.25; -->
+                                <p class="leading-sm"></p>
+
+                                <!-- line-height: 1.5; -->
+                                <p class="leading-md"></p>
+
+                                <!-- line-height: 2; -->
+                                <p class="leading-lg"></p>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer
+
+
+

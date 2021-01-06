@@ -1,0 +1,97 @@
+extends ../../_layout/_main
+
+block variables
+    - var title = 'Pricing Template'
+    - var htmlClass = 'h-100'
+    - var bodyClass = 'h-100'
+
+block content
+    .container.d-flex.flex-wrap.align-items-center.h-100
+        .flex-grow-1
+            .mb-5.text-center
+                h1.display-4.font-bold.text-tight
+                    span.text-primary Flexible 
+                    | Plans
+                p.mb-0.font-lg.text-muted Choose a plan that works best for you and your team.
+            .row.align-items-center.justify-content-center.h-100
+                .col-12.col-lg-3
+                    .card.mb-4.mb-lg-0.border-0.shadow-none
+                        .card-body
+                            h2.card-title Basic
+                            h6.card-subtitle.pb-4.mb-4.border-bottom
+                                span.text-muted $ 
+                                span.display-5.font-bold.text-tight 10
+                                span.text-muted /user
+
+                            ul.list-unstyled.mb-4
+                                li.d-flex
+                                    svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                        polyline(points='20 6 9 17 4 12')
+                                    span.ml-2 10 users included
+
+                                li.d-flex
+                                    svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                        polyline(points='20 6 9 17 4 12')
+                                    span.ml-2 2 GB of storage
+
+                                li.d-flex
+                                    svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                        polyline(points='20 6 9 17 4 12')
+                                    span.ml-2 Email support
+
+                            a.btn.btn-light.btn-block(href="#") Choose Plan
+
+                .col-12.col-lg-4
+                    .card.mb-4.mb-lg-0.border-primary
+                        .card-body.p-4
+                            .card-body
+                                h2.card-title Startup
+                                h6.card-subtitle.pb-4.mb-4.border-bottom
+                                    span.text-muted $ 
+                                    span.display-3.font-bold.text-tight 25
+                                    span.text-muted /user
+
+                                ul.list-unstyled.mb-4
+                                    li.d-flex
+                                        svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                            polyline(points='20 6 9 17 4 12')
+                                        span.ml-2 20 users included
+
+                                    li.d-flex
+                                        svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                            polyline(points='20 6 9 17 4 12')
+                                        span.ml-2 10 GB of storage
+
+                                    li.d-flex
+                                        svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                            polyline(points='20 6 9 17 4 12')
+                                        span.ml-2 Priority email support
+
+                                a.btn.btn-primary.btn-lg.btn-block.rounded-lg(href="#") Choose Plan
+
+                .col-12.col-lg-3
+                    .card.mb-4.mb-lg-0.border-0.shadow-none
+                        .card-body
+                            h2.card-title Enterprise
+                            h6.card-subtitle.pb-4.mb-4.border-bottom
+                                span.text-muted $ 
+                                span.display-5.font-bold.text-tight 35
+                                span.text-muted /user
+
+                            ul.list-unstyled.mb-4
+                                li.d-flex
+                                    svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                        polyline(points='20 6 9 17 4 12')
+                                    span.ml-2 30 users included
+
+                                li.d-flex
+                                    svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                        polyline(points='20 6 9 17 4 12')
+                                    span.ml-2 15 GB of storage
+
+                                li.d-flex
+                                    svg.text-success(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                                        polyline(points='20 6 9 17 4 12')
+                                    span.ml-2 Phone and email support
+
+                            a.btn.btn-light.btn-block(href="#") Choose Plan

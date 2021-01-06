@@ -6,7 +6,7 @@
     width: $loading-width;
     height: $loading-height;
     line-height: 1;
-    color: $primary-color;
+    color: $primary;
     pointer-events: none;
 
     &::after {
@@ -20,7 +20,7 @@
         height: $loading-height;
         content: "";
         border-radius: 50%;
-        border: $border-width * 2 solid currentColor;
+        border: $loading-border-width solid currentColor;
         border-right-color: transparent;
         border-top-color: transparent;
         animation: loading 500ms infinite linear;
@@ -35,7 +35,7 @@
             margin-left: -$loading-sm-width * 0.5;
             width: $loading-sm-width;
             height: $loading-sm-height;
-            border-width: $border-width;
+            border-width: $loading-sm-border-width;
         }
     }
 
@@ -48,16 +48,7 @@
             margin-left: -$loading-lg-width * 0.5;
             width: $loading-lg-width;
             height: $loading-lg-height;
-            border-width: $border-width * 4;
+            border-width: $loading-lg-border-width;
         }
-    }
-}
-
-@keyframes loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
     }
 }

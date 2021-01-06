@@ -1,26 +1,32 @@
 // Display
-.d-block {
-    display: block !important;
-}
+@each $breakpoint, $width in $grid-breakpoints {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.d-inline {
-    display: inline !important;
-}
+        .d#{$infix}-none {
+            display: none !important;
+        }
 
-.d-inline-block {
-    display: inline-block !important;
-}
+        .d#{$infix}-inline {
+            display: inline !important;
+        }
 
-.d-flex {
-    display: flex !important;
-}
+        .d#{$infix}-inline-block {
+            display: inline-block !important;
+        }
 
-.d-inline-flex {
-    display: inline-flex !important;
-}
+        .d#{$infix}-block {
+            display: block !important;
+        }
 
-.d-none {
-    display: none !important;
+        .d#{$infix}-flex {
+            display: flex !important;
+        }
+
+        .d#{$infix}-inline-flex {
+            display: inline-flex !important;
+        }
+    }
 }
 
 .d-visible {

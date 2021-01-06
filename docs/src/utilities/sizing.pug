@@ -1,0 +1,43 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Sizing'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #sizing
+                    h2.mb-2
+                        =title
+                        a.anchor.ml-1.text-decoration-none(href="#sizing") #
+                    p Sizing utilities are useful width and height utility classes.
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <!-- w-25 {width: 25%} w-50 {width: 50%} w-75 {width: 75%} w-100 {width: 100%} mw-auto {max-width: 100%} w-auto {width: auto} vw-100 { width: 100vw } min-vw-100 { min-width: 100vw } -->
+                                <div class="w-25">25%</div>
+                                <div class="w-50">50%</div>
+                                <div class="w-75">75%</div>
+                                <div class="w-100">100%</div>
+                                <div class="mw-100">100%</div>
+                                <div class="w-auto">auto</div>
+                                <div class="vw-100">100vw</div>
+                                <div class="min-vw-100">100vw</div>
+                                
+                                <!-- h-25 {height: 25%} h-50 {height: 50%} h-75 {height: 75%} h-100 {height: 100%} mh-auto {max-height: 100%} h-auto {height: auto} vh-100 { height: 100vh } min-vh-100 { min-height: 100vh } -->
+                                <div class="h-25">25%</div>
+                                <div class="h-50">50%</div>
+                                <div class="h-75">75%</div>
+                                <div class="h-100">100%</div>
+                                <div class="mh-100">100%</div>
+                                <div class="h-auto">auto</div>
+                                <div class="vh-100">100vh</div>
+                                <div class="min-vh-100">100vh</div>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

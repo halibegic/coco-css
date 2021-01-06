@@ -1,15 +1,21 @@
 // Text
 // Alignment
-.text-left {
-    text-align: left !important;
-}
+@each $breakpoint, $width in $grid-breakpoints {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.text-right {
-    text-align: right !important;
-}
+        .text#{$infix}-left {
+            text-align: left !important;
+        }
 
-.text-center {
-    text-align: center !important;
+        .text#{$infix}-right {
+            text-align: right !important;
+        }
+
+        .text#{$infix}-center {
+            text-align: center !important;
+        }
+    }
 }
 
 .text-justify {
@@ -34,6 +40,11 @@
     text-decoration: none !important;
 }
 
+// wrapping
+.text-nowrap {
+    white-space: nowrap !important;
+}
+
 // Overflow
 .text-ellipsis {
     text-overflow: ellipsis !important;
@@ -53,7 +64,24 @@
     word-wrap: break-word !important;
 }
 
+// Letter spacing
+.text-tight {
+    letter-spacing: $letter-spacing-tight;
+}
+
+.text-wide {
+    letter-spacing: $letter-spacing-wide;
+}
+
+.text-wider {
+    letter-spacing: $letter-spacing-wider;
+}
+
 // Weight
+.font-lighter {
+    font-weight: $font-weight-lighter !important;
+}
+
 .font-light {
     font-weight: $font-weight-light !important;
 }
@@ -66,8 +94,16 @@
     font-weight: $font-weight-medium !important;
 }
 
+.font-semi-bold {
+    font-weight: $font-weight-semi-bold !important;
+}
+
 .font-bold {
     font-weight: $font-weight-bold !important;
+}
+
+.font-extra-bold {
+    font-weight: $font-weight-extra-bold !important;
 }
 
 // Style
@@ -76,8 +112,20 @@
 }
 
 // Size
+.font-0 {
+    font-size: 0 !important;
+}
+
+.font-xs {
+    font-size: $font-size-xs !important;
+}
+
 .font-sm {
     font-size: $font-size-sm !important;
+}
+
+.font-md {
+    font-size: $font-size !important;
 }
 
 .font-lg {
@@ -86,4 +134,21 @@
 
 .font-xl {
     font-size: $font-size-xl !important;
+}
+
+// Line height
+.leading-1 {
+    line-height: 1 !important;
+}
+
+.leading-sm {
+    line-height: $line-height-sm !important;
+}
+
+.leading-md {
+    line-height: $line-height !important;
+}
+
+.leading-lg {
+    line-height: $line-height-lg !important;
 }
