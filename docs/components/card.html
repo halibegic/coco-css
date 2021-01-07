@@ -7,101 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="A lightweight and modular CSS framework">
-    <link rel="stylesheet" href="/dist/coco.min.css">
-    <link rel="stylesheet" href="/dist/coco.icons.min.css">
-    <link rel="stylesheet" href="/dist/docs.min.css">
+    <link rel="stylesheet" href="/css/coco.min.css">
+    <link rel="stylesheet" href="/css/docs.min.css">
     <body class="w-100 h-100">
-      <header class="mb-5 bg-white border-bottom">
-        <div class="container d-flex align-items-center flex-column flex-sm-row py-3"><a class="mr-sm-auto font-xl text-dark" href="/index.html">Coco</a>
-          <nav class="my-2 my-sm-0"><a class="p-2 text-muted" href="/index.html">Home</a><a class="p-2 text-primary" href="/docs.html">Docs</a><a class="p-2 text-muted" href="/lab.html">LAB</a></nav>
+      <header class="mb-5">
+        <div class="bg-white border-bottom shadow-sm">
+          <div class="container d-flex align-items-center flex-column flex-sm-row py-3"><a class="mr-sm-auto font-xl text-dark" href="/index.html">Coco</a>
+            <nav class="my-2 my-sm-0"><a class="p-2 text-muted" href="/index.html">Home</a><a class="p-2 text-primary" href="/docs.html">Docs</a><a class="p-2 text-muted" href="/lab.html">Lab</a><a class="p-2 text-muted" href="https://github.com/halibegic/coco-css"><i class="fe fe-md" data-feather="github"></i></a></nav>
+          </div>
         </div>
       </header>
       <div class="container">
         <div class="row">
           <main class="col-12 col-xl-10">
-            <div id="card">
-              <h2 class="mt-4 mb-2">Card<a class="anchor ml-1 text-decoration-none" href="#card">#</a></h2>
-              <p>You can display the stand out notification with  <code>callout</code> class.</p>
-            </div>
-            <div id="card-colors">
-              <h4 class="mt-4 mb-2">Colors<a class="anchor ml-1 text-decoration-none" href="#card-colors">#</a></h4>
-              <p>Use color utility to set callout background and border color.</p>
-              <div class="row mb-3">
-                <div class="col-12">
-                  <div class="callout bg-light border-primary mb-3">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div id="cards">
+              <h2 class="mb-2">Cards<a class="anchor ml-1 text-decoration-none" href="#cards">#</a></h2>
+              <p>Cards are flexible content containers.</p>
+              <div class="row">
+                <div class="col-12 col-md-5">
+                  <div class="card">
+                    <div class="card-header text-muted text-uppercase text-tight">Featured news</div>
+                    <div class="card-image"><img class="img-responsive" src="/img/bg/04.jpg" alt=""></div>
+                    <div class="card-body"> 
+                      <h4 class="card-title">iPhone 12</h4>
+                      <h6 class="card-subtitle mb-2 font-normal text-muted">Blast past fast.</h6>
+                      <p class="card-text">5G on iPhone is superfast. So you can download movies on the fly. Stream higher-quality video. </p>
+                    </div>
+                    <div class="card-footer">
+                      <ul class="list-inline">
+                        <li><a href="https://www.apple.com">Website</a></li>
+                        <li><a href="https://www.apple.com/shop/buy-iphone/iphone-12">Store</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="callout bg-light border-secondary mb-3">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                  <div class="callout bg-light border-success mb-3">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                  <div class="callout bg-light border-error mb-3">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                  <div class="callout bg-light border-warning mb-3">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                  <div class="callout bg-light border-info mb-3">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                  <div class="callout bg-light border-dark mb-3">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                  <div class="callout bg-white border-light">
-                    <p class="font-semi-bold">Hi stranger!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-12 col-md-7">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="card mb-3">
+                        <div class="card-body row no-spacers">
+                          <div class="col">
+                            <h1 class="card-title leading-1 text-tight"><span class="text-dark">565</span><span class="ml-1 font-xl text-muted">€</span></h1>
+                            <p class="card-text font-sm"><span class="text-muted">Revenue This Year </span><small class="label bg-error-soft">-3.5%</small></p>
+                          </div>
+                          <div class="col-auto text-primary"><i class="fe fe-lg" data-feather="check-circle"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="card mb-3">
+                        <div class="card-body row no-spacers">
+                          <div class="col">
+                            <h1 class="card-title leading-1 text-tight"><span class="text-dark">25</span><span class="ml-1 font-xl text-muted">%</span></h1>
+                            <p class="card-text font-sm"><span class="text-muted">Target income </span><small class="label bg-success-soft">80.000€</small></p>
+                          </div>
+                          <div class="col-auto text-primary"><i class="fe fe-lg" data-feather="dollar-sign"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card mb-3">
+                        <div class="card-body row no-spacers align-items-center">
+                          <div class="col-auto"><a class="avatar avatar-status online" href="#"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></a></div>
+                          <div class="col ml-3">
+                            <h6 class="card-title mb-1">John Doe</h6>
+                            <p class="card-text font-sm text-muted">Lorem ipsum dolor sit amet</p>
+                          </div>
+                          <div class="col-auto"><a class="btn btn-primary btn-sm d-none d-md-inline-block">Subscribe</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card border-0">
+                        <div class="card-image"><img class="img-responsive" src="/img/bg/05.jpg" alt=""></div>
+                        <div class="card-overlay d-flex align-items-end">
+                          <div class="card-body text-white">
+                            <h4 class="card-title">Apple Watch</h4>
+                            <h6 class="card-subtitle mb-2 text-error text-uppercase">Series 6</h6>
+                            <p class="card-text o-75">The future of health is on your wrist.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-light border-primary"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-light border-secondary"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-light border-success"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-light border-error"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-light border-warning"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-light border-info"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-light border-dark"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"callout bg-white border-light"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi stranger!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
             </div>
           </main>
           <aside class="col-12 col-xl-2">
@@ -126,8 +116,10 @@
                 <li><a href="/components/alerts.html">Alerts</a></li>
                 <li><a href="/components/avatars.html">Avatars</a></li>
                 <li><a href="/components/card.html">Card</a></li>
+                <li><a href="/components/breadcrumb.html">Breadcrumb</a></li>
                 <li><a href="/components/callouts.html">Callouts</a></li>
-                <li><a href="/components/modals.html">Modal</a></li>
+                <li><a href="/components/modal.html">Modal</a></li>
+                <li><a href="/components/pager.html">Pager</a></li>
                 <li><a href="/components/progress.html">Progress</a></li>
               </ul>
               <h6 class="mt-4 mb-2 text-uppercase">Utilities</h6>
@@ -139,22 +131,19 @@
                 <li><a href="/utilities/opacity.html">Opacity</a></li>
                 <li><a href="/utilities/position.html">Position</a></li>
                 <li><a href="/utilities/shapes.html">Shapes</a></li>
+                <li><a href="/utilities/sizing.html">Sizing</a></li>
                 <li><a href="/utilities/spacing.html">Spacing</a></li>
                 <li><a href="/utilities/text.html">Text</a></li>
               </ul>
             </div>
           </aside>
         </div>
-        <footer class="py-5 text-center">
-          <ul class="list-inline mb-3">
-            <li><a class="text-muted" href="https://github.com/halibegic/coco-css">GitHub </a></li>
-            <li> <a class="text-muted" href="https://www.jsdelivr.com/package/npm/coco-css">jsDelivr CDN </a></li>
-            <li><a class="text-muted" href="https://www.npmjs.com/package/coco-css">NPM</a></li>
-          </ul>
-          <p class="mb-0"><a class="text-muted" href="https://github.com/halibegic">@halibegic</a></p>
+        <footer class="py-5">
+          <p class="mb-0 text-center"><a class="text-muted" href="https://github.com/halibegic">@halibegic</a></p>
         </footer>
       </div>
     </body>
-    <script src="/dist/coco.min.js"></script>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script src="/js/main.js"></script>
   </head>
 </html>

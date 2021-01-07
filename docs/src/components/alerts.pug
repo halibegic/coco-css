@@ -91,6 +91,26 @@ block content
                                     <button class="close" data-dismiss="alert">&times;</button>
                                 </div>
 
+                #hide
+                    h4.mt-4.mb-2
+                        | Hide
+                        a.anchor.ml-1.text-decoration-none(href="#hide") #
+                    p You can hide alert with the example below
+                    pre.code(data-lang='JavaScript')
+                        code.docs-code
+                            :highlight(lang="js")
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    [].forEach.call(
+                                        document.querySelectorAll("[data-dismiss='alert']"),
+                                        function (el) {
+                                            el.onclick = function () {
+                                                el.closest(".alert").style.display = "none";
+                                                return false;
+                                            };
+                                        }
+                                    );
+                                });
+
             aside.col-12.col-xl-2
                 include ../_layout/_sidebar
 

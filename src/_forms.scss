@@ -41,7 +41,7 @@
     border: $form-field-border-width solid $form-field-border-color;
     outline: none;
     appearance: none;
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
     border-radius: $form-field-border-radius;
     box-shadow: $form-field-box-shadow;
 
@@ -201,7 +201,7 @@ select.form-field {
         background-color: $light;
         border: $border-width solid $form-field-border-color;
         border-radius: $border-radius-circle;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s ease 0s;
+        transition: all 0.2s ease 0s;
 
         &::after {
             position: absolute;

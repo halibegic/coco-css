@@ -15,7 +15,7 @@
     border: $btn-border-width solid transparent;
     background-color: transparent;
     border-radius: $btn-border-radius;
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
 
     &[disabled],
     &:disabled,
@@ -49,59 +49,17 @@
     }
 }
 
-// Icons
-.btn-icon {
-    padding-left: $btn-padding-x * 0.75;
-    padding-right: $btn-padding-x * 0.75;
-}
-
-.btn-icon-left .icon {
-    margin-right: $btn-padding-x * 0.5;
-}
-
-.btn-icon-right .icon {
-    margin-left: $btn-padding-x * 0.5;
-}
-
 // Sizes
 .btn-sm {
     padding: $btn-padding-y-sm $btn-padding-x-sm;
     font-size: $btn-font-size-sm;
     border-radius: $border-radius-sm;
-
-    // Icons
-    .btn-icon {
-        padding-left: $btn-padding-x-sm * 0.75;
-        padding-right: $btn-padding-x-sm * 0.75;
-    }
-
-    .btn-icon-left .icon {
-        margin-right: $btn-padding-x-sm * 0.5;
-    }
-
-    .btn-icon-right .icon {
-        margin-left: $btn-padding-x-sm * 0.5;
-    }
 }
 
 .btn-lg {
     padding: $btn-padding-y-lg $btn-padding-x-lg;
     font-size: $btn-font-size-lg;
     border-radius: $border-radius-lg;
-
-    // Icons
-    .btn-icon {
-        padding-left: $btn-padding-x-lg * 0.75;
-        padding-right: $btn-padding-x-lg * 0.75;
-    }
-
-    .btn-icon-left .icon {
-        margin-right: $btn-padding-x-lg * 0.5;
-    }
-
-    .btn-icon-right .icon {
-        margin-left: $btn-padding-x-lg * 0.5;
-    }
 }
 
 .btn-block {

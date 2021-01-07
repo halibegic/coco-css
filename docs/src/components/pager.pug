@@ -1,0 +1,127 @@
+extends ../_layout/_main
+block variables
+    - var title = 'Pager'
+    - var navLink = 'docs'
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #pager
+                    h2.mb-2
+                        | Pager
+                        a.anchor.ml-1.text-decoration-none(href="pager") #
+                    p Pager is used show the current page navigation.
+                    .row
+                        .col-12
+                            nav(aria-label="pager")
+                                ol.pager
+                                    li.pager-item
+                                        a.pager-link(href="#") Previous
+                                    li.pager-item
+                                        a.pager-link(href="#") 1
+                                    li.pager-item
+                                        a.pager-link(href="#") 2
+                                    li.pager-item
+                                        a.pager-link(href="#") 3
+                                    li.pager-item
+                                        a.pager-link(href="#") Next
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <ol class="pager">
+                                    <li class="pager-item"><a class="pager-link" href="#">Previous</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">1</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">2</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">Next</a></li>
+                                </ol>
+
+                #sizes
+                    h4.mt-4.mb-2
+                        | Sizes
+                        a.anchor.ml-1.text-decoration-none(href="#sizes") #
+                    p Add the  #[code pager-sm] or #[code pager-lg] class for small or large pager size.
+                    .row
+                        .col-12
+                            nav(aria-label="pager")
+                                ol.pager.pager-sm
+                                    li.pager-item
+                                        a.pager-link(href="#") Previous
+                                    li.pager-item
+                                        a.pager-link(href="#") 1
+                                    li.pager-item
+                                        a.pager-link(href="#") 2
+                                    li.pager-item
+                                        a.pager-link(href="#") 3
+                                    li.pager-item
+                                        a.pager-link(href="#") Next
+                            nav(aria-label="pager")
+                                ol.pager.pager-lg
+                                    li.pager-item
+                                        a.pager-link(href="#") Previous
+                                    li.pager-item
+                                        a.pager-link(href="#") 1
+                                    li.pager-item
+                                        a.pager-link(href="#") 2
+                                    li.pager-item
+                                        a.pager-link(href="#") 3
+                                    li.pager-item
+                                        a.pager-link(href="#") Next
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <ol class="pager pager-sm">
+                                    <li class="pager-item"><a class="pager-link" href="#">Previous</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">1</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">2</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">Next</a></li>
+                                </ol>
+
+                                <ol class="pager pager-lg">
+                                    <li class="pager-item"><a class="pager-link" href="#">Previous</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">1</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">2</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">Next</a></li>
+                                </ol>
+
+                #states
+                    h4.mt-4.mb-2
+                        | States
+                        a.anchor.ml-1.text-decoration-none(href="#states") #
+                    p Add the  #[code active] or #[code disabled] class for active or disabled pager state.
+                    .row
+                        .col-12
+                            nav(aria-label="pager")
+                                ol.pager
+                                    li.pager-item
+                                        span.pager-link.disabled Previous
+                                    li.pager-item
+                                        span.pager-link.active 1
+                                    li.pager-item
+                                        a.pager-link(href="#") 2
+                                    li.pager-item
+                                        a.pager-link(href="#") 3
+                                    li.pager-item
+                                        a.pager-link(href="#") Next
+
+                    pre.code(data-lang='HTML')
+                        code.docs-code
+                            :highlight(lang="html")
+                                <ol class="pager">
+                                    <li class="pager-item"><a class="pager-link disabled" href="#">Previous</a></li>
+                                    <li class="pager-item"><a class="pager-link active" href="#">1</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">2</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                                    <li class="pager-item"><a class="pager-link" href="#">Next</a></li>
+                                </ol>
+
+                            
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

@@ -130,6 +130,38 @@
                 </div>
               </div>
             </div>
+            <div id="show">
+              <h4 class="mt-4 mb-2">Show<a class="anchor ml-1 text-decoration-none" href="#show">#</a></h4>
+              <p>You can show modal with the example below</p>
+              <pre class="code" data-lang="JavaScript"><code class="docs-code"><span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"DOMContentLoaded"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    [].forEach.call(
+        <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">"[data-toggle='modal']"</span>),
+        <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">el</span>) </span>{
+            el.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">document</span>.getElementById(el.getAttribute(<span class="hljs-string">"data-target"</span>)).classList.add(<span class="hljs-string">"show"</span>);
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+            };
+        }
+    );
+});
+</code></pre>
+            </div>
+            <div id="hide">
+              <h4 class="mt-4 mb-2">Hide<a class="anchor ml-1 text-decoration-none" href="#hide">#</a></h4>
+              <p>You can hide modal with the example below</p>
+              <pre class="code" data-lang="JavaScript"><code class="docs-code"><span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"DOMContentLoaded"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    [].forEach.call(
+        <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">"[data-dismiss='modal'"</span>),
+        <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">el</span>) </span>{
+            el.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                el.closest(<span class="hljs-string">".modal"</span>).classList.remove(<span class="hljs-string">"show"</span>);
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+            };
+        }
+    );
+});
+</code></pre>
+            </div>
           </main>
           <aside class="col-12 col-xl-2">
             <div class="mb-5 sticky-top">
@@ -152,9 +184,11 @@
               <ul class="list-unstyled">
                 <li><a href="/components/alerts.html">Alerts</a></li>
                 <li><a href="/components/avatars.html">Avatars</a></li>
-                <li><a href="/components/cards.html">Card</a></li>
+                <li><a href="/components/card.html">Card</a></li>
+                <li><a href="/components/breadcrumb.html">Breadcrumb</a></li>
                 <li><a href="/components/callouts.html">Callouts</a></li>
-                <li><a href="/components/modals.html">Modal</a></li>
+                <li><a href="/components/modal.html">Modal</a></li>
+                <li><a href="/components/pager.html">Pager</a></li>
                 <li><a href="/components/progress.html">Progress</a></li>
               </ul>
               <h6 class="mt-4 mb-2 text-uppercase">Utilities</h6>
