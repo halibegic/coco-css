@@ -106,6 +106,46 @@ block content
                                 button.btn.btn-primary Save changes
                                 button.btn.btn-light(data-dismiss="modal") Close
 
+                #show
+                    h4.mt-4.mb-2
+                        | Show
+                        a.anchor.ml-1.text-decoration-none(href="#show") #
+                    p You can show modal with the example below
+                    pre.code(data-lang='JavaScript')
+                        code.docs-code
+                            :highlight(lang="js")
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    [].forEach.call(
+                                        document.querySelectorAll("[data-toggle='modal']"),
+                                        function (el) {
+                                            el.onclick = function () {
+                                                document.getElementById(el.getAttribute("data-target")).classList.add("show");
+                                                return false;
+                                            };
+                                        }
+                                    );
+                                });
+
+                #hide
+                    h4.mt-4.mb-2
+                        | Hide
+                        a.anchor.ml-1.text-decoration-none(href="#hide") #
+                    p You can hide modal with the example below
+                    pre.code(data-lang='JavaScript')
+                        code.docs-code
+                            :highlight(lang="js")
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    [].forEach.call(
+                                        document.querySelectorAll("[data-dismiss='modal'"),
+                                        function (el) {
+                                            el.onclick = function () {
+                                                el.closest(".modal").classList.remove("show");
+                                                return false;
+                                            };
+                                        }
+                                    );
+                                });
+
             aside.col-12.col-xl-2
                 include ../_layout/_sidebar
 

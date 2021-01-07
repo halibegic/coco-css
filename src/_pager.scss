@@ -1,0 +1,91 @@
+// pager
+.pager {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $pager-margin-bottom;
+    @include list-unstyled();
+}
+
+.pager-item {
+    &:first-child .pager-link {
+        border-top-left-radius: $pager-border-radius;
+        border-bottom-left-radius: $pager-border-radius;
+    }
+
+    &:not(:first-child) .pager-link {
+        margin-left: -$pager-border-width;
+    }
+
+    &:last-child .pager-link {
+        border-top-right-radius: $pager-border-radius;
+        border-bottom-right-radius: $pager-border-radius;
+    }
+}
+
+.pager-link {
+    position: relative;
+    display: block;
+    padding: $pager-padding-y $pager-padding-x;
+    font-size: $pager-font-size;
+    color: $pager-color;
+    background-color: $pager-bg;
+    border: $pager-border-width solid $pager-border-color;
+    transition: all 0.2s ease 0s;
+
+    &:hover,
+    &:focus {
+        color: $pager-hover-color;
+        background-color: $pager-hover-bg;
+        border-color: $pager-hover-border-color;
+    }
+
+    &.active {
+        color: $pager-active-color;
+        background-color: $pager-active-bg;
+        border-color: $pager-active-border-color;
+    }
+
+    &.disabled {
+        color: $pager-disabled-color;
+        background-color: $pager-disabled-bg;
+        border-color: $pager-disabled-border-color;
+    }
+}
+
+.pager-sm {
+    .pager-item {
+        &:first-child .pager-link {
+            border-top-left-radius: $pager-border-radius-sm;
+            border-bottom-left-radius: $pager-border-radius-sm;
+        }
+
+        &:last-child .pager-link {
+            border-top-right-radius: $pager-border-radius-sm;
+            border-bottom-right-radius: $pager-border-radius-sm;
+        }
+    }
+
+    .pager-link {
+        padding: $pager-padding-y-sm $pager-padding-x-sm;
+        font-size: $pager-font-size-sm;
+    }
+}
+
+.pager-lg {
+    .pager-item {
+        &:first-child .pager-link {
+            border-top-left-radius: $pager-border-radius-lg;
+            border-bottom-left-radius: $pager-border-radius-lg;
+        }
+
+        &:last-child .pager-link {
+            border-top-right-radius: $pager-border-radius-lg;
+            border-bottom-right-radius: $pager-border-radius-lg;
+        }
+    }
+
+    .pager-link {
+        padding: $pager-padding-y-lg $pager-padding-x-lg;
+        font-size: $pager-font-size-lg;
+    }
+}

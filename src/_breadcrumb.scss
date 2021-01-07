@@ -1,0 +1,22 @@
+// Breadcrumb
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $breadcrumb-margin-bottom;
+    @include list-unstyled();
+
+    li + li {
+        padding-left: $breadcrumb-padding-x;
+
+        &::before {
+            padding-right: $breadcrumb-padding-x;
+            content: $breadcrumb-divider;
+            font-family: $breadcrumb-divider-font-family;
+            color: $breadcrumb-divider-color;
+        }
+    }
+
+    .active {
+        color: $breadcrumb-active-color;
+    }
+}
