@@ -4,40 +4,198 @@ block variables
     - var title = 'Blog'
 
 block content
-    header.border-bottom
-        .container.d-flex.align-items-center.flex-column.flex-sm-row.py-3
-            a.mr-sm-auto.font-xl.text-dark(href='#') Coco
-            nav.my-2.my-sm-0
-                a.p-2.text-dark(href='#') Home
-                a.p-2.text-muted(href='#') Portfolio
-                a.p-2.text-muted(href='#') About
-                a.p-2.text-muted(href='#')
-                    i.fe.fe-md(data-feather='at-sign')
-                a.p-2.text-muted(href='#')
-                    i.fe.fe-md(data-feather='github')
     .container
-        .py-3.text-center
-            nav(aria-label="breadcrumb")
-                ol.breadcrumb.mb-0
-                    li.breadcrumb-item
-                        a.breadcrumb-link(href="#") Home
-                    li.breadcrumb-item
-                        span.breadcrumb-link.active Blog
-        .row
-            main.col-12.col-xl-8
-                article.mb-5                   
-                    img.img-responsive.mb-3(src=path+"lab/blog/img/post-01.jpg" alt="")
-                    header.mb-3
-                        h2.h1.mb-1
-                            a.text-dark(href="#" rel="bookmark") Raspberry Pi – Setting up a web server
-                        ul.list-inline.text-muted
-                            li Posted on October 20, 2018
-                            li &middot;
-                            li Posted in Guide
-                            li &middot;
-                            li Leave a Comment
-                    p.mb-0 In this guide, we will be setting up your Raspberry Pi as a web server by installing Nginx, PHP, and MySQL. After doing this, we will perform port forwarding and Dynamic DNS host update to make Pi accessible through the internet.
+        header.mt-4.mb-5
+            .d-flex.align-items-center.flex-column.flex-sm-row
 
-            aside.col-12.col-xl-4
-        footer.py-3.text-muted.text-center.border-top
-            p.mb-0 &copy;2021 Coco
+                a.mr-sm-auto.font-xl.text-dark.text-tight(href='#') Coco
+
+                nav.my-2.my-sm-0.d-flex.align-items-center
+                    a.mr-4.font-semi-bold.text-dark(href='#') Home
+                    a.mr-4.text-secondary(href='#') Portfolio
+                    a.mr-4.text-secondary(href='#') About
+                    a.btn.btn-primary.rounded-pill(href="#") Contact
+
+            .mb-4.py-4.border-bottom
+
+                h1.display-5.font-bold.text-dark.text-tight Blog
+                p.mb-0.font-xl Sed ut perspiciatis unde omnis.
+
+            .d-flex.align-items-center.flex-column.flex-sm-row
+                nav
+                    a.mr-4.text-secondary(href='#') Technology
+                    a.mr-4.text-secondary(href='#') Business
+                    a.mr-4.text-secondary(href='#') Design
+                    a.mr-4.text-secondary(href='#') Lifestyle
+
+                nav.border-left
+                    a.ml-4.text-secondary(href='#') Join our newsletter
+
+                nav.ml-auto
+                    a.mr-4.text-secondary(href='#')
+                        i.fe.fe-md(data-feather='at-sign')
+                    a.text-secondary(href='#')
+                        i.fe.fe-md(data-feather='github')
+
+        section.mb-5
+            article.row.spacer-lg
+                .col-12.col-sm-7
+                    a.d-block(href="#")
+                        img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-01.jpg" alt="")
+                .col-12.col-sm-5
+                    header.mb-2
+                        .mb-4.d-flex.align-items-center
+                            .avatar.avatar-xs
+                                img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
+                            .ml-2.leading-sm
+                                .font-sm
+                                    |  by 
+                                    a.font-medium.text-secondary(href="#") Chester Otis
+                                span.font-xs.text-muted 29th November
+
+                        h2.h1.mb-0.font-semib-bold.text-tight
+                            a.text-dark(href="#") Choosing the right build tools
+
+                    p.mb-0.text-muted Ciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error.
+
+        section.mb-5
+            h3.mb-5.font-semi-bold.text-tight
+                a.text-dark(href="#") Technology
+
+            .row.spacer-lg
+                .col-12.col-sm-6
+                    article
+                        a.d-block(href="#")
+                            img.img-responsive.mb-4.rounded-lg(src=path+"lab/blog/img/article-02.jpg" alt="")
+                        header.mb-2
+                            .mb-4.d-flex.align-items-center
+                                .avatar.avatar-xs
+                                    img.avatar-img(src=path+"img/avatar/02.jpg" alt="")
+                                .ml-2.leading-sm
+                                    .font-sm
+                                        |  by 
+                                        a.font-medium.text-secondary(href="#") Rebecca C. Johnson
+                                    span.font-xs.text-muted 27th November
+
+                            h2.h3.mb-0.font-semi-bold.text-tight
+                                a.text-dark(href="#") Productivity in the remote work era
+
+                        p.mb-0.text-muted Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+                .col-12.col-sm-6
+                    article
+                        a.d-block(href="#")
+                            img.img-responsive.mb-4.rounded-lg(src=path+"lab/blog/img/article-03.jpg" alt="")
+                        header.mb-2
+                            .mb-4.d-flex.align-items-center
+                                .avatar.avatar-xs
+                                    img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
+                                .ml-2.leading-sm
+                                    .font-sm
+                                        |  by 
+                                        a.font-medium.text-secondary(href="#") Denis Shook
+                                    span.font-xs.text-muted 26th November
+
+                            h2.h3.mb-0.font-semi-bold.text-tight
+                                a.text-dark(href="#") A time-tracking app that isn’t a pain.
+
+                        p.mb-0.text-muted Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+        section.mb-5.py-5.border-top.border-bottom
+            .row.spacer-lg.align-items-center
+                .col
+                    h3.h2.mb-2.font-semi-bold.text-dark.text-tight Stay up to date
+                    p.mb-0.text-muted ​​​​Subscribe to our newsletter and stay updated on the latest developments and special offers.
+                .col-auto
+                    a.btn.btn-primary.btn-lg.rounded-pill(href="#") Join our newsletter
+
+        section.mb-5
+            h3.mb-5.font-semi-bold.text-tight
+                a.text-dark(href="#") Business
+
+            .row.spacer-lg
+                .col-12.col-sm-6
+                    article.card.border-0
+                        .card-image.bg-black
+                            img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-04.jpg" alt="")
+                        .card-overlay.d-flex.align-items-end
+                            .card-body.text-white
+                                a.label.px-2.bg-light-soft(href="#") Careers
+                                header.my-2
+                                    h2.card-title.h3.mb-0.font-semi-bold.text-tight
+                                        a.text-white(href="#") Forging your path
+                                .d-flex.align-items-center
+                                    .avatar.avatar-xs
+                                        img.avatar-img(src=path+"img/avatar/04.jpg" alt="")
+                                    .ml-2.leading-sm
+                                        .font-sm
+                                            |  by 
+                                            a.font-medium.text-white(href="#") Jose Adams
+                                        span.font-xs.o-75 25th November
+                .col-12.col-sm-6
+                    article.card.border-0
+                        .card-image.bg-black
+                            img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-05.jpg" alt="")
+                        .card-overlay.d-flex.align-items-end
+                            .card-body.text-white
+                                a.label.px-2.bg-light-soft(href="#") Cinema
+                                header.my-2
+                                    h2.card-title.h3.mb-0.font-semi-bold.text-tight
+                                        a.text-white(href="#") How to build collateral
+                                .d-flex.align-items-center
+                                    .avatar.avatar-xs
+                                        img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
+                                    .ml-2.leading-sm
+                                        .font-sm
+                                            |  by 
+                                            a.font-medium.text-white(href="#") Denis Shook
+                                        span.font-xs.o-75 25th November
+
+        section.mb-5
+            h3.mb-5.font-semi-bold.text-tight
+                a.text-dark(href="#") Our authors
+
+            .row.spacer-lg
+                .col-12.col-sm-6.row.mb-5
+                    .col-auto
+                        .avatar.avatar-xl
+                            img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
+                    .col
+                        h4.mb-0.text-tight
+                            a.text-dark(href="#") Chester Otis
+                        p.mb-2.text-muted Digital Journalist
+                        p.mb-0 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+
+                .col-12.col-sm-6.row.row.mb-5
+                    .col-auto
+                        .avatar.avatar-xl
+                            img.avatar-img(src=path+"img/avatar/02.jpg" alt="")
+                    .col
+                        h4.mb-0.text-tight
+                            a.text-dark(href="#") Rebecca C. Johnson
+                        p.mb-2.text-muted Digital Journalist
+                        p.mb-0 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+
+                .col-12.col-sm-6.row.row.mb-5
+                    .col-auto
+                        .avatar.avatar-xl
+                            img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
+                    .col
+                        h4.mb-0.text-tight
+                            a.text-dark(href="#") Denis Shook
+                        p.mb-2.text-muted Digital Journalist
+                        p.mb-0 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+
+                .col-12.col-sm-6.row.row.mb-5
+                    .col-auto
+                        .avatar.avatar-xl
+                            img.avatar-img(src=path+"img/avatar/04.jpg" alt="")
+                    .col
+                        h4.mb-0.text-tight
+                            a.text-dark(href="#") Jose Adams
+                        p.mb-2.text-muted Digital Journalist
+                        p.mb-0 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+
+
+        footer.py-4.text-muted.text-center.border-top
+            p.mb-0 &copy; Coco 2021

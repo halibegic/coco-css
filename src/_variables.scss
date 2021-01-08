@@ -1,23 +1,23 @@
 // Core variables
 
 // Colors
-$primary:                           #005fff !default;
-$secondary:                         #405169 !default;
+$primary:                           #2e85ff !default; //
+$secondary:                         #324b72 !default; //
 
-$success:                           #07d79b !default;
-$error:                             #ff413d !default;
-$warning:                           #ffa700 !default;
-$info:                              #00bcec !default;
+$success:                           #1ac98e !default; //
+$error:                             #ff6a68 !default; //
+$warning:                           #fcc419 !default; //
+$info:                              #5c9fff !default; //
 
-$dark:                              #0c1a26 !default;
-$light:                             #f6f7f8 !default;
+$dark:                              #112950 !default; //
+$light:                             #f5f8fb !default; //
 
 $white:                             #fff !default;
 $black:                             #000 !default;
 
-$gray:                              #7f8a9a !default;
-$gray-light:                        #e6e8eb !default;
-$gray-dark:                         #2f3b4c !default;
+$gray:                              #7b8ba5 !default; //
+$gray-light:                        #e0e6ed !default; //
+$gray-dark:                         #324b72 !default; //
 
 $colors:                           () !default;
 $colors: map-merge((
@@ -240,7 +240,7 @@ $container-max-widths: (
 
 // Grid
 $grid-columns:                      12 !default;
-$grid-spacer:                       1.5rem !default;
+$grid-spacer:                       1rem !default;
 
 $grid-breakpoints: (
     xs: 0,
@@ -263,13 +263,13 @@ $alert-border-radius:               $border-radius !default;
 $avatar-width:                      3rem !default;
 $avatar-height:                     $avatar-width !default;
 
-$avatar-width-sm:                   2.5rem !default;
+$avatar-width-sm:                   $avatar-width * 0.75 !default;
 $avatar-height-sm:                  $avatar-width-sm !default;
 
-$avatar-width-lg:                   3.5rem !default;
+$avatar-width-lg:                   $avatar-width * 1.25 !default;
 $avatar-height-lg:                  $avatar-width-lg !default;
 
-$avatar-width-xl:                   4rem !default;
+$avatar-width-xl:                   $avatar-width * 1.5 !default;
 $avatar-height-xl:                  $avatar-width-xl !default;
 
 $avatar-color:                      $white !default;

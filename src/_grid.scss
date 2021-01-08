@@ -4,11 +4,33 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -$grid-spacer * 0.5;
-    margin-right: -$grid-spacer * 0.5;
+    margin-left: -$grid-spacer;
+    margin-right: -$grid-spacer;
 }
 
-.no-spacers {
+.spacer-sm {
+    margin-left: -$grid-spacer * 0.5;
+    margin-right: -$grid-spacer * 0.5;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: $grid-spacer * 0.5;
+        padding-left: $grid-spacer * 0.5;
+    }
+}
+
+.spacer-lg {
+    margin-left: -$grid-spacer * 1.5;
+    margin-right: -$grid-spacer * 1.5;
+
+    > .col,
+    > [class*="col-"] {
+        padding-left: $grid-spacer * 1.5;
+        padding-right: $grid-spacer * 1.5;
+    }
+}
+
+.spacer-0 {
     margin-left: 0;
     margin-right: 0;
 
@@ -23,8 +45,8 @@
 %grid-column {
     position: relative;
     width: 100%;
-    padding-right: $grid-spacer * 0.5;
-    padding-left: $grid-spacer * 0.5;
+    padding-right: $grid-spacer;
+    padding-left: $grid-spacer;
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {

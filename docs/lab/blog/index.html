@@ -10,40 +10,168 @@
     <link rel="stylesheet" href="/css/coco.min.css">
     <link rel="stylesheet" href="/css/docs.min.css">
     <body class="w-100 h-100">
-      <header class="border-bottom">
-        <div class="container d-flex align-items-center flex-column flex-sm-row py-3"><a class="mr-sm-auto font-xl text-dark" href="#">Coco</a>
-          <nav class="my-2 my-sm-0"><a class="p-2 text-dark" href="#">Home</a><a class="p-2 text-muted" href="#">Portfolio</a><a class="p-2 text-muted" href="#">About</a><a class="p-2 text-muted" href="#"><i class="fe fe-md" data-feather="at-sign"></i></a><a class="p-2 text-muted" href="#"><i class="fe fe-md" data-feather="github"></i></a></nav>
-        </div>
-      </header>
       <div class="container">
-        <div class="py-3 text-center">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
-              <li class="breadcrumb-item"><span class="breadcrumb-link active">Blog</span></li>
-            </ol>
-          </nav>
-        </div>
-        <div class="row">
-          <main class="col-12 col-xl-8">
-            <article class="mb-5">                  <img class="img-responsive mb-3" src="/lab/blog/img/post-01.jpg" alt="">
-              <header class="mb-3">
-                <h2 class="h1 mb-1"><a class="text-dark" href="#" rel="bookmark">Raspberry Pi – Setting up a web server</a></h2>
-                <ul class="list-inline text-muted">
-                  <li>Posted on October 20, 2018</li>
-                  <li>&middot;</li>
-                  <li>Posted in Guide</li>
-                  <li>&middot;</li>
-                  <li>Leave a Comment</li>
-                </ul>
+        <header class="mt-4 mb-5">
+          <div class="d-flex align-items-center flex-column flex-sm-row"><a class="mr-sm-auto font-xl text-dark text-tight" href="#">Coco</a>
+            <nav class="my-2 my-sm-0 d-flex align-items-center"><a class="mr-4 font-semi-bold text-dark" href="#">Home</a><a class="mr-4 text-secondary" href="#">Portfolio</a><a class="mr-4 text-secondary" href="#">About</a><a class="btn btn-primary rounded-pill" href="#">Contact</a></nav>
+          </div>
+          <div class="mb-4 py-4 border-bottom">
+            <h1 class="display-5 font-bold text-dark text-tight">Blog</h1>
+            <p class="mb-0 font-xl">Sed ut perspiciatis unde omnis.</p>
+          </div>
+          <div class="d-flex align-items-center flex-column flex-sm-row">
+            <nav><a class="mr-4 text-secondary" href="#">Technology</a><a class="mr-4 text-secondary" href="#">Business</a><a class="mr-4 text-secondary" href="#">Design</a><a class="mr-4 text-secondary" href="#">Lifestyle</a></nav>
+            <nav class="border-left"><a class="ml-4 text-secondary" href="#">Join our newsletter</a></nav>
+            <nav class="ml-auto"><a class="mr-4 text-secondary" href="#"><i class="fe fe-md" data-feather="at-sign"></i></a><a class="text-secondary" href="#"><i class="fe fe-md" data-feather="github"></i></a></nav>
+          </div>
+        </header>
+        <section class="mb-5">
+          <article class="row spacer-lg">
+            <div class="col-12 col-sm-7"><a class="d-block" href="#"><img class="img-responsive rounded-lg" src="/lab/blog/img/article-01.jpg" alt=""></a></div>
+            <div class="col-12 col-sm-5">
+              <header class="mb-2">
+                <div class="mb-4 d-flex align-items-center">
+                  <div class="avatar avatar-xs"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
+                  <div class="ml-2 leading-sm">
+                    <div class="font-sm"> by <a class="font-medium text-secondary" href="#">Chester Otis</a></div><span class="font-xs text-muted">29th November</span>
+                  </div>
+                </div>
+                <h2 class="h1 mb-0 font-semib-bold text-tight"><a class="text-dark" href="#">Choosing the right build tools</a></h2>
               </header>
-              <p class="mb-0">In this guide, we will be setting up your Raspberry Pi as a web server by installing Nginx, PHP, and MySQL. After doing this, we will perform port forwarding and Dynamic DNS host update to make Pi accessible through the internet.</p>
-            </article>
-          </main>
-          <aside class="col-12 col-xl-4"></aside>
-        </div>
-        <footer class="py-3 text-muted text-center border-top">
-          <p class="mb-0">&copy;2021 Coco</p>
+              <p class="mb-0 text-muted">Ciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error.</p>
+            </div>
+          </article>
+        </section>
+        <section class="mb-5">
+          <h3 class="mb-5 font-semi-bold text-tight"><a class="text-dark" href="#">Technology</a></h3>
+          <div class="row spacer-lg">
+            <div class="col-12 col-sm-6">
+              <article><a class="d-block" href="#"><img class="img-responsive mb-4 rounded-lg" src="/lab/blog/img/article-02.jpg" alt=""></a>
+                <header class="mb-2">
+                  <div class="mb-4 d-flex align-items-center">
+                    <div class="avatar avatar-xs"><img class="avatar-img" src="/img/avatar/02.jpg" alt=""></div>
+                    <div class="ml-2 leading-sm">
+                      <div class="font-sm"> by <a class="font-medium text-secondary" href="#">Rebecca C. Johnson</a></div><span class="font-xs text-muted">27th November</span>
+                    </div>
+                  </div>
+                  <h2 class="h3 mb-0 font-semi-bold text-tight"><a class="text-dark" href="#">Productivity in the remote work era</a></h2>
+                </header>
+                <p class="mb-0 text-muted">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6">
+              <article><a class="d-block" href="#"><img class="img-responsive mb-4 rounded-lg" src="/lab/blog/img/article-03.jpg" alt=""></a>
+                <header class="mb-2">
+                  <div class="mb-4 d-flex align-items-center">
+                    <div class="avatar avatar-xs"><img class="avatar-img" src="/img/avatar/03.jpg" alt=""></div>
+                    <div class="ml-2 leading-sm">
+                      <div class="font-sm"> by <a class="font-medium text-secondary" href="#">Denis Shook</a></div><span class="font-xs text-muted">26th November</span>
+                    </div>
+                  </div>
+                  <h2 class="h3 mb-0 font-semi-bold text-tight"><a class="text-dark" href="#">A time-tracking app that isn’t a pain.</a></h2>
+                </header>
+                <p class="mb-0 text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5 py-5 border-top border-bottom">
+          <div class="row spacer-lg align-items-center">
+            <div class="col">
+              <h3 class="h2 mb-2 font-semi-bold text-dark text-tight">Stay up to date</h3>
+              <p class="mb-0 text-muted">​​​​Subscribe to our newsletter and stay updated on the latest developments and special offers.</p>
+            </div>
+            <div class="col-auto"><a class="btn btn-primary btn-lg rounded-pill" href="#">Join our newsletter</a></div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <h3 class="mb-5 font-semi-bold text-tight"><a class="text-dark" href="#">Business</a></h3>
+          <div class="row spacer-lg">
+            <div class="col-12 col-sm-6">
+              <article class="card border-0">
+                <div class="card-image bg-black"><img class="img-responsive rounded-lg" src="/lab/blog/img/article-04.jpg" alt=""></div>
+                <div class="card-overlay d-flex align-items-end">
+                  <div class="card-body text-white"><a class="label px-2 bg-light-soft" href="#">Careers</a>
+                    <header class="my-2">
+                      <h2 class="card-title h3 mb-0 font-semi-bold text-tight"><a class="text-white" href="#">Forging your path</a></h2>
+                    </header>
+                    <div class="d-flex align-items-center">
+                      <div class="avatar avatar-xs"><img class="avatar-img" src="/img/avatar/04.jpg" alt=""></div>
+                      <div class="ml-2 leading-sm">
+                        <div class="font-sm"> by <a class="font-medium text-white" href="#">Jose Adams</a></div><span class="font-xs o-75">25th November</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6">
+              <article class="card border-0">
+                <div class="card-image bg-black"><img class="img-responsive rounded-lg" src="/lab/blog/img/article-05.jpg" alt=""></div>
+                <div class="card-overlay d-flex align-items-end">
+                  <div class="card-body text-white"><a class="label px-2 bg-light-soft" href="#">Cinema</a>
+                    <header class="my-2">
+                      <h2 class="card-title h3 mb-0 font-semi-bold text-tight"><a class="text-white" href="#">How to build collateral</a></h2>
+                    </header>
+                    <div class="d-flex align-items-center">
+                      <div class="avatar avatar-xs"><img class="avatar-img" src="/img/avatar/03.jpg" alt=""></div>
+                      <div class="ml-2 leading-sm">
+                        <div class="font-sm"> by <a class="font-medium text-white" href="#">Denis Shook</a></div><span class="font-xs o-75">25th November</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <h3 class="mb-5 font-semi-bold text-tight"><a class="text-dark" href="#">Our authors</a></h3>
+          <div class="row spacer-lg">
+            <div class="col-12 col-sm-6 row mb-5">
+              <div class="col-auto">
+                <div class="avatar avatar-xl"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
+              </div>
+              <div class="col">
+                <h4 class="mb-0 text-tight"><a class="text-dark" href="#">Chester Otis</a></h4>
+                <p class="mb-2 text-muted">Digital Journalist</p>
+                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 row row mb-5">
+              <div class="col-auto">
+                <div class="avatar avatar-xl"><img class="avatar-img" src="/img/avatar/02.jpg" alt=""></div>
+              </div>
+              <div class="col">
+                <h4 class="mb-0 text-tight"><a class="text-dark" href="#">Rebecca C. Johnson</a></h4>
+                <p class="mb-2 text-muted">Digital Journalist</p>
+                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 row row mb-5">
+              <div class="col-auto">
+                <div class="avatar avatar-xl"><img class="avatar-img" src="/img/avatar/03.jpg" alt=""></div>
+              </div>
+              <div class="col">
+                <h4 class="mb-0 text-tight"><a class="text-dark" href="#">Denis Shook</a></h4>
+                <p class="mb-2 text-muted">Digital Journalist</p>
+                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 row row mb-5">
+              <div class="col-auto">
+                <div class="avatar avatar-xl"><img class="avatar-img" src="/img/avatar/04.jpg" alt=""></div>
+              </div>
+              <div class="col">
+                <h4 class="mb-0 text-tight"><a class="text-dark" href="#">Jose Adams</a></h4>
+                <p class="mb-2 text-muted">Digital Journalist</p>
+                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="py-4 text-muted text-center border-top">
+          <p class="mb-0">&copy; Coco 2021</p>
         </footer>
       </div>
     </body>
