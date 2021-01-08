@@ -113,6 +113,8 @@ dl {
 }
 
 .list-inline {
+    display: flex;
+    align-items: center;
     @include list-unstyled();
 
     li {

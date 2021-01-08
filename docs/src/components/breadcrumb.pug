@@ -18,23 +18,23 @@ block content
                         .col-12
                             nav(aria-label="breadcrumb")
                                 ol.breadcrumb
-                                    li
-                                        a(href="#") Home
-                                    li
-                                        a(href="#") Some Page
-                                    li
-                                        a(href="#") Some Category
-                                    li
-                                        span.active Current Page
+                                    li.breadcrumb-item
+                                        a.breadcrumb-link(href="#") Home
+                                    li.breadcrumb-item
+                                        a.breadcrumb-link(href="#") Some Page
+                                    li.breadcrumb-item
+                                        a.breadcrumb-link(href="#") Some Category
+                                    li.breadcrumb-item
+                                        span.breadcrumb-link.active Current Page
                     pre.code(data-lang='HTML')
                         code.docs-code
                             :highlight(lang="html")
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Some Page</a></li>
-                                        <li><a href="#">Some Category</a></li>
-                                        <li><span class="active">Current Page</span></li>
+                                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Some Page</a></li>
+                                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Some Category</a></li>
+                                        <li class="breadcrumb-item"><span class="breadcrumb-link active">Current Page</span></li>
                                     </ol>
                                 </nav>
                                 

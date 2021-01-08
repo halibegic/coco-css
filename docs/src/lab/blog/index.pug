@@ -1,0 +1,43 @@
+extends ../../_layout/_main
+
+block variables
+    - var title = 'Blog'
+
+block content
+    header.border-bottom
+        .container.d-flex.align-items-center.flex-column.flex-sm-row.py-3
+            a.mr-sm-auto.font-xl.text-dark(href='#') Coco
+            nav.my-2.my-sm-0
+                a.p-2.text-dark(href='#') Home
+                a.p-2.text-muted(href='#') Portfolio
+                a.p-2.text-muted(href='#') About
+                a.p-2.text-muted(href='#')
+                    i.fe.fe-md(data-feather='at-sign')
+                a.p-2.text-muted(href='#')
+                    i.fe.fe-md(data-feather='github')
+    .container
+        .py-3.text-center
+            nav(aria-label="breadcrumb")
+                ol.breadcrumb.mb-0
+                    li.breadcrumb-item
+                        a.breadcrumb-link(href="#") Home
+                    li.breadcrumb-item
+                        span.breadcrumb-link.active Blog
+        .row
+            main.col-12.col-xl-8
+                article.mb-5                   
+                    img.img-responsive.mb-3(src=path+"lab/blog/img/post-01.jpg" alt="")
+                    header.mb-3
+                        h2.h1.mb-1
+                            a.text-dark(href="#" rel="bookmark") Raspberry Pi – Setting up a web server
+                        ul.list-inline.text-muted
+                            li Posted on October 20, 2018
+                            li &middot;
+                            li Posted in Guide
+                            li &middot;
+                            li Leave a Comment
+                    p.mb-0 In this guide, we will be setting up your Raspberry Pi as a web server by installing Nginx, PHP, and MySQL. After doing this, we will perform port forwarding and Dynamic DNS host update to make Pi accessible through the internet.
+
+            aside.col-12.col-xl-4
+        footer.py-3.text-muted.text-center.border-top
+            p.mb-0 &copy;2021 Coco
