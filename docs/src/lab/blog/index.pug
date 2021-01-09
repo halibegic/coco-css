@@ -6,11 +6,12 @@ block variables
 block content
     .container
         header.mt-4.mb-5
-            .d-flex.align-items-center.flex-column.flex-sm-row
+            .d-flex.align-items-center.flex-column.flex-md-row
 
-                a.mr-sm-auto.font-xl.text-dark.text-tight(href='#') Coco
+                h4.mb-4.mb-md-0.mr-md-auto.text-tight
+                    a.text-dark(href='#') Coco
 
-                nav.my-2.my-sm-0.d-flex.align-items-center
+                nav.mb-2.mb-md-0.d-flex.align-items-center
                     a.mr-4.font-semi-bold.text-dark(href='#') Home
                     a.mr-4.text-secondary(href='#') Portfolio
                     a.mr-4.text-secondary(href='#') About
@@ -21,15 +22,11 @@ block content
                 h1.display-5.font-bold.text-dark.text-tight Blog
                 p.mb-0.font-xl Sed ut perspiciatis unde omnis.
 
-            .d-flex.align-items-center.flex-column.flex-sm-row
+            .d-flex.align-items-center.flex-row
                 nav
                     a.mr-4.text-secondary(href='#') Technology
                     a.mr-4.text-secondary(href='#') Business
-                    a.mr-4.text-secondary(href='#') Design
-                    a.mr-4.text-secondary(href='#') Lifestyle
-
-                nav.border-left
-                    a.ml-4.text-secondary(href='#') Join our newsletter
+                    a.text-secondary(href='#') Design
 
                 nav.ml-auto
                     a.mr-4.text-secondary(href='#')
@@ -39,32 +36,30 @@ block content
 
         section.mb-5
             article.row.spacer-lg
-                .col-12.col-sm-7
-                    a.d-block(href="#")
+                .col-12.col-md-7
+                    a.d-block.mb-4.mb-md-0(href="#")
                         img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-01.jpg" alt="")
-                .col-12.col-sm-5
+                .col-12.col-md-5
                     header.mb-2
                         .mb-4.d-flex.align-items-center
                             .avatar.avatar-xs
                                 img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
                             .ml-2.leading-sm
-                                .font-sm
-                                    |  by 
-                                    a.font-medium.text-secondary(href="#") Chester Otis
-                                span.font-xs.text-muted 29th November
+                                a.d-block.mb-1.font-medium.text-secondary(href="#") Chester Otis
+                                .font-sm.text-muted 29th November
 
-                        h2.h1.mb-0.font-semib-bold.text-tight
+                        h2.h1.mb-0.font-semi-bold.text-tight
                             a.text-dark(href="#") Choosing the right build tools
 
-                    p.mb-0.text-muted Ciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error.
+                    p.mb-0.font-lg.text-muted Ciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error.
 
         section.mb-5
-            h3.mb-5.font-semi-bold.text-tight
+            h3.h2.mb-5.font-semi-bold.text-tight
                 a.text-dark(href="#") Technology
 
             .row.spacer-lg
-                .col-12.col-sm-6
-                    article
+                .col-12.col-md-6
+                    article.mb-5.mb-md-0
                         a.d-block(href="#")
                             img.img-responsive.mb-4.rounded-lg(src=path+"lab/blog/img/article-02.jpg" alt="")
                         header.mb-2
@@ -72,17 +67,15 @@ block content
                                 .avatar.avatar-xs
                                     img.avatar-img(src=path+"img/avatar/02.jpg" alt="")
                                 .ml-2.leading-sm
-                                    .font-sm
-                                        |  by 
-                                        a.font-medium.text-secondary(href="#") Rebecca C. Johnson
-                                    span.font-xs.text-muted 27th November
+                                    a.d-block.mb-1.font-medium.text-secondary(href="#") Rebecca C. Johnson
+                                    .font-sm.text-muted 27th November
 
                             h2.h3.mb-0.font-semi-bold.text-tight
                                 a.text-dark(href="#") Productivity in the remote work era
 
                         p.mb-0.text-muted Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
-                .col-12.col-sm-6
+                .col-12.col-md-6
                     article
                         a.d-block(href="#")
                             img.img-responsive.mb-4.rounded-lg(src=path+"lab/blog/img/article-03.jpg" alt="")
@@ -91,10 +84,8 @@ block content
                                 .avatar.avatar-xs
                                     img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
                                 .ml-2.leading-sm
-                                    .font-sm
-                                        |  by 
-                                        a.font-medium.text-secondary(href="#") Denis Shook
-                                    span.font-xs.text-muted 26th November
+                                    a.d-block.mb-1.font-medium.text-secondary(href="#") Denis Shook
+                                    .font-sm.text-muted 26th November
 
                             h2.h3.mb-0.font-semi-bold.text-tight
                                 a.text-dark(href="#") A time-tracking app that isn’t a pain.
@@ -103,23 +94,23 @@ block content
 
         section.mb-5.py-5.border-top.border-bottom
             .row.spacer-lg.align-items-center
-                .col
+                .col-12.col-md.mb-4.mb-md-0
                     h3.h2.mb-2.font-semi-bold.text-dark.text-tight Stay up to date
                     p.mb-0.text-muted ​​​​Subscribe to our newsletter and stay updated on the latest developments and special offers.
-                .col-auto
-                    a.btn.btn-primary.btn-lg.rounded-pill(href="#") Join our newsletter
+                .col-12.col-md-auto
+                    a.btn.btn-primary.btn-lg.font-md.rounded-pill(href="#") Join our newsletter
 
         section.mb-5
-            h3.mb-5.font-semi-bold.text-tight
+            h3.h2.mb-5.font-semi-bold.text-tight
                 a.text-dark(href="#") Business
 
             .row.spacer-lg
-                .col-12.col-sm-6
-                    article.card.border-0.shadow-none
+                .col-12.col-md-6
+                    article.card.mb-5.mb-md-0.border-0.shadow-none
                         .card-image
                             img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-04.jpg" alt="")
                         .card-overlay.d-flex.align-items-end
-                            .card-body.text-white
+                            .card-body.p-4.text-white
                                 a.label.px-2.bg-light-soft(href="#") Careers
                                 header.my-2
                                     h2.card-title.h3.mb-0.font-semi-bold.text-tight
@@ -128,16 +119,14 @@ block content
                                     .avatar.avatar-xs
                                         img.avatar-img(src=path+"img/avatar/04.jpg" alt="")
                                     .ml-2.leading-sm
-                                        .font-sm
-                                            |  by 
-                                            a.font-medium.text-white(href="#") Jose Adams
-                                        span.font-xs.o-75 25th November
-                .col-12.col-sm-6
+                                        a.d-block.mb-1.font-medium.text-white(href="#") Jose Adams
+                                        .font-sm.o-75 25th November
+                .col-12.col-md-6
                     article.card.border-0.shadow-none
                         .card-image
                             img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-05.jpg" alt="")
                         .card-overlay.d-flex.align-items-end
-                            .card-body.text-white
+                            .card-body.p-4.text-white
                                 a.label.px-2.bg-light-soft(href="#") Cinema
                                 header.my-2
                                     h2.card-title.h3.mb-0.font-semi-bold.text-tight
@@ -146,17 +135,15 @@ block content
                                     .avatar.avatar-xs
                                         img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
                                     .ml-2.leading-sm
-                                        .font-sm
-                                            |  by 
-                                            a.font-medium.text-white(href="#") Denis Shook
-                                        span.font-xs.o-75 25th November
+                                        a.d-block.mb-1.font-medium.text-white(href="#") Denis Shook
+                                        .font-sm.o-75 25th November
 
-        section.mb-5
-            h3.mb-5.font-semi-bold.text-tight
+        section
+            h3.h2.mb-5.font-semi-bold.text-tight
                 a.text-dark(href="#") Our authors
 
             .row.spacer-lg
-                .col-12.col-sm-6.row.mb-5
+                .col-12.col-md-6.row.mb-5
                     .col-auto
                         .avatar.avatar-xl
                             img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
@@ -166,7 +153,7 @@ block content
                         p.mb-2.text-muted Digital Journalist
                         p.mb-0 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
 
-                .col-12.col-sm-6.row.row.mb-5
+                .col-12.col-md-6.row.row.mb-5
                     .col-auto
                         .avatar.avatar-xl
                             img.avatar-img(src=path+"img/avatar/02.jpg" alt="")
@@ -176,7 +163,7 @@ block content
                         p.mb-2.text-muted Digital Journalist
                         p.mb-0 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
 
-                .col-12.col-sm-6.row.row.mb-5
+                .col-12.col-md-6.row.row.mb-5
                     .col-auto
                         .avatar.avatar-xl
                             img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
@@ -186,7 +173,7 @@ block content
                         p.mb-2.text-muted Digital Journalist
                         p.mb-0 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
 
-                .col-12.col-sm-6.row.row.mb-5
+                .col-12.col-md-6.row.row.mb-5
                     .col-auto
                         .avatar.avatar-xl
                             img.avatar-img(src=path+"img/avatar/04.jpg" alt="")

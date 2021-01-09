@@ -4,8 +4,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: $grid-spacer * 0.5;
-    padding-right: $grid-spacer * 0.5;
+    padding-left: $grid-spacer;
+    padding-right: $grid-spacer;
 }
 
 @each $breakpoint, $max-width in $container-max-widths {
