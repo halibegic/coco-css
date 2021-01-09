@@ -1,23 +1,23 @@
 // Core variables
 
 // Colors
-$primary:                           #2e85ff !default; //
-$secondary:                         #324b72 !default; //
+$primary:                           #2e85ff !default;
+$secondary:                         #324b72 !default;
 
-$success:                           #1ac98e !default; //
-$error:                             #ff6a68 !default; //
-$warning:                           #fcc419 !default; //
-$info:                              #5c9fff !default; //
+$success:                           #1ac98e !default;
+$error:                             #ff6a68 !default;
+$warning:                           #fcc419 !default;
+$info:                              #5c9fff !default;
 
-$dark:                              #112950 !default; //
-$light:                             #f5f8fb !default; //
+$dark:                              #112950 !default;
+$light:                             #f5f8fb !default;
 
 $white:                             #fff !default;
 $black:                             #000 !default;
 
-$gray:                              #7b8ba5 !default; //
-$gray-light:                        #e0e6ed !default; //
-$gray-dark:                         #324b72 !default; //
+$gray:                              #7b8ba5 !default;
+$gray-light:                        #e0e6ed !default;
+$gray-dark:                         #2f476b !default;
 
 $colors:                           () !default;
 $colors: map-merge((

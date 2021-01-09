@@ -115,8 +115,8 @@ block content
 
             .row.spacer-lg
                 .col-12.col-sm-6
-                    article.card.border-0
-                        .card-image.bg-black
+                    article.card.border-0.shadow-none
+                        .card-image
                             img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-04.jpg" alt="")
                         .card-overlay.d-flex.align-items-end
                             .card-body.text-white
@@ -133,8 +133,8 @@ block content
                                             a.font-medium.text-white(href="#") Jose Adams
                                         span.font-xs.o-75 25th November
                 .col-12.col-sm-6
-                    article.card.border-0
-                        .card-image.bg-black
+                    article.card.border-0.shadow-none
+                        .card-image
                             img.img-responsive.rounded-lg(src=path+"lab/blog/img/article-05.jpg" alt="")
                         .card-overlay.d-flex.align-items-end
                             .card-body.text-white
@@ -198,4 +198,8 @@ block content
 
 
         footer.py-4.text-muted.text-center.border-top
-            p.mb-0 &copy; Coco 2021
+            p.mb-0 
+                | &copy; Coco 2021
+                | &middot;
+                | Photos from 
+                a(href="https://unsplash.com") unsplash.com
