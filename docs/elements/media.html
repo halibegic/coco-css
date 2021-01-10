@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="w-100 h-100" lang="en">
   <head>
-    <title>Images - Coco</title>
+    <title>Media - Coco</title>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -33,10 +33,67 @@
               <p>Add the  <code>img-fit-contain</code> or <code>img-fit-cover</code> class to fit &lt;img&gt; inside the element.</p>
               <div class="row mb-3">
                 <div class="col-sm-6"><img class="img-fit-cover rounded-lg" src="/img/bg/02.jpg" alt="" style="width: 100%; height: 15rem;"></div>
-                <div class="col-sm-6"><img class="img-fit-contain bg-dark rounded-lg" src="/img/bg/03.jpg" alt="" style="width: 100%; height: 15rem;"></div>
+                <div class="col-sm-6"><img class="img-fit-contain bg-black rounded-lg" src="/img/bg/03.jpg" alt="" style="width: 100%; height: 15rem;"></div>
               </div>
               <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fit-cover"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fit-contain"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+</code></pre>
+            </div>
+            <div id="aspect-ratios">
+              <h2 class="mt-4 mb-2 text-dark">Aspect ratios<a class="anchor ml-1 text-decoration-none" href="#aspect-ratios">#</a></h2>
+              <p> Set a ratio to the element by applying the ratio classes.</p>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <div class="ratio ratio-1x1 bg-primary rounded-lg">
+                    <div class="ratio-item docs-shape font-lg">1x1</div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="ratio ratio-4x3 bg-primary rounded-lg">
+                    <div class="ratio-item docs-shape font-lg">4x3</div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="ratio ratio-16x9 bg-primary rounded-lg">
+                    <div class="ratio-item docs-shape font-lg">16x9</div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="ratio ratio-21x9 bg-primary rounded-lg">
+                    <div class="ratio-item docs-shape font-lg">21x9</div>
+                  </div>
+                </div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio ratio-1x1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio-item"</span>&gt;</span>1x1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio ratio-4x3"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio-item"</span>&gt;</span>4x3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio ratio-16x9"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio-item"</span>&gt;</span>16x9<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio ratio-21x9"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio-item"</span>&gt;</span>21x9<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            </div>
+            <div id="embed">
+              <h2 class="mt-4 mb-2">Embed<a class="anchor ml-1 text-decoration-none" href="#embed">#</a></h2>
+              <p> Insert any YouTube, Vimeo or other iframe/embed video inside the ratio container.</p>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <div class="ratio ratio-16x9 bg-black rounded-lg overflow-hidden">
+                    <iframe class="ratio-item" src="https://www.youtube.com/embed/EKuV5gGD9tc" frameborder="0" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio ratio-16x9"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ratio-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
             </div>
           </main>
@@ -47,9 +104,9 @@
                 <li><a href="/elements/typography.html">Typography</a></li>
                 <li><a href="/elements/buttons.html">Buttons</a></li>
                 <li><a href="/elements/forms.html">Forms</a></li>
-                <li><a href="/elements/code.html">Code</a></li>
-                <li><a href="/elements/images.html">Images</a></li>
                 <li><a href="/elements/label.html">Label</a></li>
+                <li><a href="/elements/code.html">Code</a></li>
+                <li><a href="/elements/media.html">Media</a></li>
               </ul>
               <h6 class="mt-4 mb-2 text-uppercase">Layout</h6>
               <ul class="list-unstyled">

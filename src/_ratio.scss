@@ -1,0 +1,24 @@
+// Aspect ratios
+.ratio {
+    position: relative;
+    width: 100%;
+
+    &::before {
+        display: block;
+        content: "";
+    }
+
+    .ratio-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@each $key, $ratio in $aspect-ratios {
+    .ratio-#{$key}::before {
+        padding-top: #{$ratio};
+    }
+}

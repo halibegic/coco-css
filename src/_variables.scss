@@ -124,12 +124,12 @@ $headings-font-weight:              $font-weight-semi-bold !default;
 $headings-line-height:              $line-height-sm !default;
 $headings-color:                    null !default;
 
-$h1-font-size:                      $font-size * 2.5;
-$h2-font-size:                      $font-size * 2;
-$h3-font-size:                      $font-size * 1.75;
-$h4-font-size:                      $font-size * 1.5;
-$h5-font-size:                      $font-size * 1.25;
-$h6-font-size:                      $font-size;
+$h1-font-size:                      $font-size * 2.5 !default;
+$h2-font-size:                      $font-size * 2 !default;
+$h3-font-size:                      $font-size * 1.75 !default;
+$h4-font-size:                      $font-size * 1.5 !default;
+$h5-font-size:                      $font-size * 1.25 !default;
+$h6-font-size:                      $font-size !default;
 
 $letter-spacing-tight:              -0.025em !default;
 $letter-spacing-wide:               0.025em !default;
@@ -225,6 +225,15 @@ $label-padding-x:                   0.35em !default;
 $label-font-size:                   75% !default;
 $label-font-weight:                 $font-weight-semi-bold !default;
 $label-border-radius:               $border-radius !default;
+
+// Media
+$aspect-ratios:                     () !default;
+$aspect-ratios: map-merge((
+    "1x1": 100%,
+    "4x3": calc(3 / 4 * 100%),
+    "16x9": calc(9 / 16 * 100%),
+    "21x9": calc(9 / 21 * 100%)
+), $aspect-ratios);
 
 //
 // Layout
@@ -413,10 +422,11 @@ $color-contrast-dark:               $dark !default;
 $color-contrast-light:              $white !default;
 
 // Characters which are encoded by the svg-encode function
-$encoding-reference: (
-    ("<", "%3C"),
-    (">", "%3E"),
-    ('"', "'"),
-    ("#", "%23"),
-    ("&", "%26")
-);
+$encoding-reference:                () !default;
+$encoding-reference: map-merge((
+    "<": "%3C",
+    ">": "%3E",
+    '"': "'",
+    "#": "%23",
+    "&": "%26"
+), $encoding-reference);
