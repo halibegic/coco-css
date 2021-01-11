@@ -9,34 +9,6 @@ block content
     .container
         .row
             main.col-12.col-xl-10
-                #images
-                    h2.mb-2.text-dark
-                        | Images
-                        a.anchor.ml-1.text-decoration-none(href="#images") #
-                    p Add the  #[code img-responsive] class to #{'<img>'} elements. The images will scale with the parent sizes.
-                    .row.mb-3
-                        .col-12
-                            img.img-responsive.rounded-lg(src=path+"img/bg/01.jpg" alt="")
-                    pre.code(data-lang='HTML')
-                        code.docs-code
-                            :highlight(lang="html")
-                                <img src="..." class="img-responsive" alt="...">
-                #crop
-                    h2.mt-4.mb-2
-                        | Crop
-                        a.anchor.ml-1.text-decoration-none(href="#crop") #
-                    p Add the  #[code img-fit-contain] or #[code img-fit-cover] class to fit #{'<img>'} inside the element.
-                    .row.mb-3
-                        .col-sm-6
-                            img.img-fit-cover.rounded-lg(src=path+"img/bg/02.jpg" alt="" style="width: 100%; height: 15rem;")
-                        .col-sm-6
-                            img.img-fit-contain.bg-black.rounded-lg(src=path+"img/bg/03.jpg" alt="" style="width: 100%; height: 15rem;")
-                    pre.code(data-lang='HTML')
-                        code.docs-code
-                            :highlight(lang="html")
-                                <img src="..." class="img-fit-cover" alt="...">
-                                <img src="..." class="img-fit-contain" alt="...">
-
                 #aspect-ratios
                     h2.mt-4.mb-2.text-dark
                         | Aspect ratios
