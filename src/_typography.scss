@@ -63,7 +63,18 @@ p {
     font-size: $lead-font-size;
     font-weight: $lead-font-weight;
 }
-  
+
+// Blockquote
+blockquote {
+    padding: $blockquote-padding-y $blockquote-padding-x;
+    margin-left: 0;
+    border-left: $blockquote-border-width solid $blockquote-border-color;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
 // Lists
 ul,
 ol {
@@ -103,6 +114,7 @@ dl {
     }
 }
 
+// Unstyled
 .list-unstyled {
     @include list-unstyled();
 
@@ -112,16 +124,17 @@ dl {
     }
 }
 
+// Inline
 .list-inline {
     display: flex;
     align-items: center;
     @include list-unstyled();
+}
 
-    li {
-        display: inline-block;
+.list-inline-item {
+    display: inline-block;
 
-        &:not(:last-child) {
-            margin-right: $spacer * 0.5;
-        }
+    &:not(:last-child) {
+        margin-right: $spacer * 0.5;
     }
 }

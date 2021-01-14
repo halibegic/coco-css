@@ -19,8 +19,10 @@
     border-left: $border-width solid $border-color !important;
 }
 
-.border-0 {
-    border: 0 !important;
+@each $name, $width in $border-widths {
+    .border-#{$name} {
+        border-width: $width !important;
+    }
 }
 
 .border-top-0 {

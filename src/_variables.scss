@@ -71,6 +71,15 @@ $z-index-4:                         4 !default;
 $z-index-5:                         5 !default;
 
 // Border
+$border-widths:                     () !default;
+$border-widths: map-merge((
+    0: 0,
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px
+), $border-widths);
 $border-width:                      1px !default;
 $border-color:                      $gray-light !default;
 
@@ -153,6 +162,12 @@ $lead-font-size:                    $font-size * 1.25 !default;
 $lead-font-weight:                  $font-weight-light !default;
 
 $muted:                             $gray !default;
+
+// Blockquote
+$blockquote-padding-y:              0.5rem !default;
+$blockquote-padding-x:              1rem !default;
+$blockquote-border-width:           map-get($border-widths, 3) !default;
+$blockquote-border-color:           $border-color !default;
 
 // List
 $dt-font-weight:                    $font-weight-medium !default;
@@ -301,7 +316,7 @@ $breadcrumb-active-color:           $muted !default;
 // Callouts
 $callout-padding-y:                 0.75rem !default;
 $callout-padding-x:                 1rem !default;
-$callout-border-left-width:         0.2em !default;
+$callout-border-left-width:         map-get($border-widths, 3) !default;
 $callout-border-radius:             null !default;
 
 // Cards
@@ -403,15 +418,15 @@ $close-line-height:                 $line-height !default;
 // Loading
 $loading-width:                     2.5rem !default;
 $loading-height:                    $loading-width !default;
-$loading-border-width:              0.2em !default;
+$loading-border-width:              map-get($border-widths, 3) !default;
 
-$loading-sm-width:                  1.5rem !default;
-$loading-sm-height:                 $loading-sm-width !default;
-$loading-sm-border-width:           0.15em !default;
+$loading-width-sm:                  1.5rem !default;
+$loading-height-sm:                 $loading-width-sm !default;
+$loading-border-width-sm:           map-get($border-widths, 3) !default;
 
-$loading-lg-width:                  3.5rem !default;
-$loading-lg-height:                 $loading-lg-width !default;
-$loading-lg-border-width:           0.25em !default;
+$loading-width-lg:                  3.5rem !default;
+$loading-height-lg:                 $loading-width-lg !default;
+$loading-border-width-lg:           map-get($border-widths, 3) !default;
 
 //
 // Mixins
