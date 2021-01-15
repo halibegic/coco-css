@@ -1,0 +1,35 @@
+// Tabs
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include list-unstyled();
+    border-bottom: $tab-border-width solid $tab-border-color;
+
+    &.tab-block {
+        .tab-item {
+            flex: 1 0 0;
+            text-align: center;
+        }
+    }
+}
+
+.tab-link {
+    display: block;
+    margin-right: $tab-link-margin-x;
+    margin-bottom: -$tab-border-width;
+    padding: $tab-link-padding-y $tab-link-padding-x;
+    color: inherit;
+    border-bottom: $tab-border-width solid transparent;
+
+    &:focus,
+    &:hover {
+        color: $tab-link-hover-color;
+    }
+
+    &:active,
+    &.active {
+        color: $tab-link-active-color;
+        border-bottom-color: $tab-link-active-border-color;
+    }
+}

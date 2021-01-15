@@ -39,6 +39,7 @@
         border-color: $pager-hover-border-color;
     }
 
+    &:active,
     &.active {
         color: $pager-active-color;
         background-color: $pager-active-bg;

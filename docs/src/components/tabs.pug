@@ -1,0 +1,56 @@
+extends ../_layout/_main
+block variables
+    - var title = "Tabs - Coco"
+    - var navLink = "docs"
+
+block content
+    include ../_layout/_header
+
+    .container
+        .row
+            main.col-12.col-xl-10
+                #tabs
+                    h2.mb-2.text-dark
+                        | Tabs
+                        a.anchor.ml-1.text-decoration-none(href="#tabs") #
+                    p The tabs indicates the tabs completion of a task.
+                    .row.mb-3
+                        .col-12
+                            .ul.tab
+                                li.tab-item
+                                    a.tab-link.active(href="#tabs") Music
+                                li.tab-item
+                                    a.tab-link(href="#tabs") Playlists
+                                li.tab-item
+                                    a.tab-link(href="#tabs") Radio
+                                li.tab-item
+                                    a.tab-link(href="#tabs") Store
+                    pre.code.mb-3(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="tabs">
+                                    <div class="tabs-bar" style="width: 50%"></div>
+                                </div>
+
+                    .row.mb-3
+                        .col-12
+                            .ul.tab.tab-block
+                                li.tab-item
+                                    a.tab-link.active(href="#tabs") Music
+                                li.tab-item
+                                    a.tab-link(href="#tabs") Playlists
+                                li.tab-item
+                                    a.tab-link(href="#tabs") Radio
+                                li.tab-item
+                                    a.tab-link(href="#tabs") Store
+                    pre.code(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="tabs">
+                                    <div class="tabs-bar" style="width: 50%"></div>
+                                </div>
+
+            aside.col-12.col-xl-2
+                include ../_layout/_sidebar
+
+        include ../_layout/_footer

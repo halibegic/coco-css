@@ -406,6 +406,20 @@ $progress-border-radius:            $border-radius !default;
 
 $progress-bar-bg:                   $primary !default;
 
+// Tabs
+$tab-border-width:                  $border-width !default;
+$tab-border-color:                  $border-color !default;
+
+$tab-link-margin-x:                 1rem !default;
+
+$tab-link-padding-y:                0.5rem !default;
+$tab-link-padding-x:                0 !default;
+
+$tab-link-color:                    inherit !default;
+$tab-link-hover-color:              $link-hover-color !default;
+$tab-link-active-color:             $link-color !default;
+$tab-link-active-border-color:      $primary !default;
+
 //
 // Utilities
 //

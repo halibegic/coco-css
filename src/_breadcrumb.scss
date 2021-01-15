@@ -18,6 +18,7 @@
 }
 
 .breadcrumb-link {
+    &:active,
     &.active {
         color: $breadcrumb-active-color;
     }
