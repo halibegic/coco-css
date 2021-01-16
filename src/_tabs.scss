@@ -1,16 +1,16 @@
 // Tabs
-.tab {
+.tab-items {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     @include list-unstyled();
     border-bottom: $tab-border-width solid $tab-border-color;
+}
 
-    &.tab-block {
-        .tab-item {
-            flex: 1 0 0;
-            text-align: center;
-        }
+.tab-block {
+    .tab-item {
+        flex: 1 0 0;
+        text-align: center;
     }
 }
 
@@ -19,8 +19,8 @@
     margin-right: $tab-link-margin-x;
     margin-bottom: -$tab-border-width;
     padding: $tab-link-padding-y $tab-link-padding-x;
-    color: inherit;
-    border-bottom: $tab-border-width solid transparent;
+    color: $tab-link-color;
+    border-bottom: $tab-link-border-width solid transparent;
 
     &:focus,
     &:hover {
@@ -31,5 +31,15 @@
     &.active {
         color: $tab-link-active-color;
         border-bottom-color: $tab-link-active-border-color;
+    }
+}
+
+.tab-content {
+    .tab-pane {
+        display: none;
+
+        &.active {
+            display: block;
+        }
     }
 }

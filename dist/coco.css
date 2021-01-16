@@ -765,15 +765,19 @@ select.form-field:not([multiple]):not([size]) { padding-right: 1.25rem; backgrou
 
 .table th { font-weight: 500; border-bottom-width: 2px; }
 
-.tab { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; padding-left: 0; list-style: none; border-bottom: 1px solid #e0e6ed; }
+.tab-items { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; padding-left: 0; list-style: none; border-bottom: 1px solid #e0e6ed; }
 
-.tab.tab-block .tab-item { -ms-flex: 1 0 0px; flex: 1 0 0; text-align: center; }
+.tab-block .tab-item { -ms-flex: 1 0 0px; flex: 1 0 0; text-align: center; }
 
-.tab-link { display: block; margin-right: 1rem; margin-bottom: -1px; padding: 0.5rem 0; color: inherit; border-bottom: 1px solid transparent; }
+.tab-link { display: block; margin-right: 1.5rem; margin-bottom: -1px; padding: 0.75rem 0; color: #7b8ba5; border-bottom: 1px solid transparent; }
 
 .tab-link:focus, .tab-link:hover { color: #256acc; }
 
-.tab-link:active, .tab-link.active { color: #2e85ff; border-bottom-color: #2e85ff; }
+.tab-link:active, .tab-link.active { color: #2f476b; border-bottom-color: #2e85ff; }
+
+.tab-content .tab-pane { display: none; }
+
+.tab-content .tab-pane.active { display: block; }
 
 h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0.5rem; font-weight: 600; line-height: 1.25; }
 

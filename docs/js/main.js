@@ -37,6 +37,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     );
 
+    // Tab toggle
+
+    [].forEach.call(
+        document.querySelectorAll("[data-toggle='tab']"),
+        function (el) {
+            el.onclick = function () {
+                var tab = el.closest(".tab");
+                var active = tab.querySelectorAll(".active");
+                for (var i = 0; i < active.length; i++) {
+                    active[i].classList.remove("active");
+                }
+                el.classList.add("active");
+                document
+                    .getElementById(el.getAttribute("href").split("#")[1])
+                    .classList.add("active");
+                return false;
+            };
+        }
+    );
+
     // Icons
     feather.replace();
 });

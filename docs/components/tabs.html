@@ -22,34 +22,91 @@
           <main class="col-12 col-xl-10">
             <div id="tabs">
               <h2 class="mb-2 text-dark">Tabs<a class="anchor ml-1 text-decoration-none" href="#tabs">#</a></h2>
-              <p>The tabs indicates the tabs completion of a task.</p>
+              <p>Show and hide content within the tabs component.</p>
               <div class="row mb-3">
-                <div class="col-12">
-                  <div class="ul tab">
-                    <li class="tab-item"><a class="tab-link active" href="#tabs">Music</a></li>
-                    <li class="tab-item"><a class="tab-link" href="#tabs">Playlists</a></li>
-                    <li class="tab-item"><a class="tab-link" href="#tabs">Radio</a></li>
-                    <li class="tab-item"><a class="tab-link" href="#tabs">Store</a></li>
+                <div class="col-6">
+                  <div class="tab">
+                    <ul class="tab-items mb-3">
+                      <li class="tab-item"><a class="tab-link active" href="#tab-home" data-toggle="tab">Home</a></li>
+                      <li class="tab-item"><a class="tab-link" href="#tab-browse" data-toggle="tab">Browse</a></li>
+                      <li class="tab-item"><a class="tab-link" href="#tab-radio" data-toggle="tab">Radio</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="tab-home">Home</div>
+                      <div class="tab-pane" id="tab-browse">Browse</div>
+                      <div class="tab-pane" id="tab-radio">Radio</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="tab tab-block">
+                    <ul class="tab-items mb-3">
+                      <li class="tab-item"><a class="tab-link active" href="#tab-album" data-toggle="tab">Album</a></li>
+                      <li class="tab-item"><a class="tab-link" href="#tab-artists" data-toggle="tab">Artists</a></li>
+                      <li class="tab-item"><a class="tab-link" href="#tab-podcasts" data-toggle="tab">Podcasts</a></li>
+                      <li class="tab-item"><a class="tab-link" href="#tab-library" data-toggle="tab">Library</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="tab-album">Album</div>
+                      <div class="tab-pane" id="tab-artists">Artists</div>
+                      <div class="tab-pane" id="tab-podcasts">Podcasts</div>
+                      <div class="tab-pane" id="tab-library">Library</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <pre class="code mb-3" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tabs"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tabs-bar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-comment">&lt;!-- Default --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-items mb-3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-link active"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab-home"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab-browse"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Browse<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab-radio"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Radio<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-browse"</span>&gt;</span>Browse<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-radio"</span>&gt;</span>Radio<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-              <div class="row mb-3">
-                <div class="col-12">
-                  <div class="ul tab tab-block">
-                    <li class="tab-item"><a class="tab-link active" href="#tabs">Music</a></li>
-                    <li class="tab-item"><a class="tab-link" href="#tabs">Playlists</a></li>
-                    <li class="tab-item"><a class="tab-link" href="#tabs">Radio</a></li>
-                    <li class="tab-item"><a class="tab-link" href="#tabs">Store</a></li>
-                  </div>
-                </div>
-              </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tabs"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tabs-bar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Block --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab tab-block"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-items mb-3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-link active"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab-album"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Album<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab-artists"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Artists<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab-podcasts"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Podcasts<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab-library"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-album"</span>&gt;</span>Album<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-artists"</span>&gt;</span>Artists<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-podcasts"</span>&gt;</span>Podcasts<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-library"</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </div>
+            <div id="toggle">
+              <h4 class="mt-4 mb-2">Toggle<a class="anchor ml-1 text-decoration-none" href="#toggle">#</a></h4>
+              <p>You can toggle tab with the example below</p>
+              <pre class="code" data-lang="JavaScript"><code class="docs-code"><span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"DOMContentLoaded"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    [].forEach.call(
+        <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">"[data-toggle='tab']"</span>),
+        <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">el</span>) </span>{
+            el.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">var</span> tab = el.closest(<span class="hljs-string">".tab"</span>);
+                <span class="hljs-keyword">var</span> active = tab.querySelectorAll(<span class="hljs-string">".active"</span>);
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; active.length; i++) {
+                    active[i].classList.remove(<span class="hljs-string">"active"</span>);
+                }
+                el.classList.add(<span class="hljs-string">"active"</span>);
+                <span class="hljs-built_in">document</span>
+                    .getElementById(el.getAttribute(<span class="hljs-string">"href"</span>).split(<span class="hljs-string">"#"</span>)[<span class="hljs-number">1</span>])
+                    .classList.add(<span class="hljs-string">"active"</span>);
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+            };
+        }
+    );
+});
 </code></pre>
             </div>
           </main>

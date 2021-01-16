@@ -13,42 +13,98 @@ block content
                     h2.mb-2.text-dark
                         | Tabs
                         a.anchor.ml-1.text-decoration-none(href="#tabs") #
-                    p The tabs indicates the tabs completion of a task.
+                    p Show and hide content within the tabs component.
                     .row.mb-3
-                        .col-12
-                            .ul.tab
-                                li.tab-item
-                                    a.tab-link.active(href="#tabs") Music
-                                li.tab-item
-                                    a.tab-link(href="#tabs") Playlists
-                                li.tab-item
-                                    a.tab-link(href="#tabs") Radio
-                                li.tab-item
-                                    a.tab-link(href="#tabs") Store
-                    pre.code.mb-3(data-lang="HTML")
-                        code.docs-code
-                            :highlight(lang="html")
-                                <div class="tabs">
-                                    <div class="tabs-bar" style="width: 50%"></div>
-                                </div>
+                        .col-6
+                            .tab
+                                ul.tab-items.mb-3
+                                    li.tab-item
+                                        a.tab-link.active(href="#tab-home" data-toggle="tab") Home
+                                    li.tab-item
+                                        a.tab-link(href="#tab-browse" data-toggle="tab") Browse
+                                    li.tab-item
+                                        a.tab-link(href="#tab-radio" data-toggle="tab") Radio
+                                .tab-content
+                                    .tab-pane#tab-home.active Home
+                                    .tab-pane#tab-browse Browse
+                                    .tab-pane#tab-radio Radio
 
-                    .row.mb-3
-                        .col-12
-                            .ul.tab.tab-block
-                                li.tab-item
-                                    a.tab-link.active(href="#tabs") Music
-                                li.tab-item
-                                    a.tab-link(href="#tabs") Playlists
-                                li.tab-item
-                                    a.tab-link(href="#tabs") Radio
-                                li.tab-item
-                                    a.tab-link(href="#tabs") Store
+                        .col-6
+                            .tab.tab-block
+                                ul.tab-items.mb-3
+                                    li.tab-item
+                                        a.tab-link.active(href="#tab-album" data-toggle="tab") Album
+                                    li.tab-item
+                                        a.tab-link(href="#tab-artists" data-toggle="tab") Artists
+                                    li.tab-item
+                                        a.tab-link(href="#tab-podcasts" data-toggle="tab") Podcasts
+                                    li.tab-item
+                                        a.tab-link(href="#tab-library" data-toggle="tab") Library
+                                .tab-content
+                                    .tab-pane#tab-album.active Album
+                                    .tab-pane#tab-artists Artists
+                                    .tab-pane#tab-podcasts Podcasts
+                                    .tab-pane#tab-library Library
+
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")
-                                <div class="tabs">
-                                    <div class="tabs-bar" style="width: 50%"></div>
+                                <!-- Default -->
+                                <div class="tab">
+                                    <ul class="tab-items mb-3">
+                                        <li class="tab-item"><a class="tab-link active" href="#tab-home" data-toggle="tab">Home</a></li>
+                                        <li class="tab-item"><a class="tab-link" href="#tab-browse" data-toggle="tab">Browse</a></li>
+                                        <li class="tab-item"><a class="tab-link" href="#tab-radio" data-toggle="tab">Radio</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab-home">Home</div>
+                                        <div class="tab-pane" id="tab-browse">Browse</div>
+                                        <div class="tab-pane" id="tab-radio">Radio</div>
+                                    </div>
                                 </div>
+
+                                <!-- Block -->
+                                <div class="tab tab-block">
+                                    <ul class="tab-items mb-3">
+                                        <li class="tab-item"><a class="tab-link active" href="#tab-album" data-toggle="tab">Album</a></li>
+                                        <li class="tab-item"><a class="tab-link" href="#tab-artists" data-toggle="tab">Artists</a></li>
+                                        <li class="tab-item"><a class="tab-link" href="#tab-podcasts" data-toggle="tab">Podcasts</a></li>
+                                        <li class="tab-item"><a class="tab-link" href="#tab-library" data-toggle="tab">Library</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab-album">Album</div>
+                                        <div class="tab-pane" id="tab-artists">Artists</div>
+                                        <div class="tab-pane" id="tab-podcasts">Podcasts</div>
+                                        <div class="tab-pane" id="tab-library">Library</div>
+                                    </div>
+                                </div>
+                #toggle
+                    h4.mt-4.mb-2
+                        | Toggle
+                        a.anchor.ml-1.text-decoration-none(href="#toggle") #
+                    p You can toggle tab with the example below
+                    pre.code(data-lang='JavaScript')
+                        code.docs-code
+                            :highlight(lang="js")
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    [].forEach.call(
+                                        document.querySelectorAll("[data-toggle='tab']"),
+                                        function (el) {
+                                            el.onclick = function () {
+                                                var tab = el.closest(".tab");
+                                                var active = tab.querySelectorAll(".active");
+                                                for (var i = 0; i < active.length; i++) {
+                                                    active[i].classList.remove("active");
+                                                }
+                                                el.classList.add("active");
+                                                document
+                                                    .getElementById(el.getAttribute("href").split("#")[1])
+                                                    .classList.add("active");
+                                                return false;
+                                            };
+                                        }
+                                    );
+                                });
 
             aside.col-12.col-xl-2
                 include ../_layout/_sidebar
