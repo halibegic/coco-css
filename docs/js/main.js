@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
         function (el) {
             el.onclick = function () {
                 var tab = el.closest(".tab");
-                var active = tab.querySelectorAll(".active");
+                var active = tab.querySelectorAll(
+                    ".tab-link.active, .tab-pane.active"
+                );
                 for (var i = 0; i < active.length; i++) {
                     active[i].classList.remove("active");
                 }

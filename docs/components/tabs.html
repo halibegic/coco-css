@@ -94,7 +94,9 @@
         <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">el</span>) </span>{
             el.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
                 <span class="hljs-keyword">var</span> tab = el.closest(<span class="hljs-string">".tab"</span>);
-                <span class="hljs-keyword">var</span> active = tab.querySelectorAll(<span class="hljs-string">".active"</span>);
+                <span class="hljs-keyword">var</span> active = tab.querySelectorAll(
+                    <span class="hljs-string">".tab-link.active, .tab-pane.active"</span>
+                );
                 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; active.length; i++) {
                     active[i].classList.remove(<span class="hljs-string">"active"</span>);
                 }
