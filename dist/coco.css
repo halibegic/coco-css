@@ -1,4 +1,4 @@
-/*! coco-css v0.1.0 MIT License https://halibegic.github.io/coco-css */
+/*! coco-css v0.2.0 MIT License https://halibegic.github.io/coco-css */
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -256,6 +256,10 @@ pre::before { position: absolute; top: 0.375rem; right: 0.5rem; color: #7b8ba5; 
 pre code { display: block; width: 100%; font-size: inherit; color: inherit; word-break: normal; overflow-x: auto; }
 
 .container, .container-fluid { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+
+.container:before, .container:after, .container-fluid:before, .container-fluid:after { content: " "; display: table; }
+
+.container:after, .container-fluid:after { clear: both; }
 
 @media (min-width: 576px) { .container { max-width: 540px; } }
 
@@ -1054,7 +1058,9 @@ dl dd { margin: 0.25rem 0; }
 
 .overflow-hidden { overflow: hidden !important; }
 
-.clearfix::after { clear: both; content: ""; display: table; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+
+.clearfix:after { clear: both; }
 
 .float-left { float: left !important; }
 

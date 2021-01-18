@@ -3,22 +3,25 @@ extends _layout/_main
 block variables
     - var title = 'Home'
     - var navLink = 'home'
+    - var headerClass = 'mb-0'
 
 block content
     include _layout/_header
 
-    .container
-        .my-5.py-5.text-center
-            h1.display-4.mb-3.font-bold.text-dark.text-tight A lightweight and modular<br>CSS framework.
-            p.mb-3
-                a.btn.btn-primary.mr-2(href="docs.html") Get started
-                a.btn.btn-secondary(href="https://github.com/halibegic/coco-css/releases") Download 
-            p.mb-0
-                span.font-sm.text-muted Current version 
-                a(href="https://github.com/halibegic/coco-css/releases" title="View releases") 
-                    small.label.bg-success-soft=version
+    .docs-home.mb-5.bg-dark
+        .container
+            .my-5.py-5.text-center
+                h1.display-4.mb-3.font-bold.text-tight A lightweight and modular<br>CSS framework.
+                p.mb-3
+                    a.btn.btn-primary.mr-2(href="docs.html") Get started
+                    a.btn.btn-secondary(href="https://github.com/halibegic/coco-css/releases") Download 
+                p.mb-0
+                    span.font-sm.text-muted Current version 
+                    a(href="https://github.com/halibegic/coco-css/releases" title="View releases") 
+                        small.label.bg-success-soft=version
     
-        .row.mb-5.text-center
+    .container
+        .row.mb-5.py-5.text-center
             .col-12.col-md-4.mb-5.mb-md-0
                 i.fe.fe-lg.mb-3.text-primary(data-feather="award")
                 h4.mb-2 Lightweight

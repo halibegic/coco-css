@@ -6,6 +6,7 @@
     margin-right: auto;
     padding-left: $grid-spacer;
     padding-right: $grid-spacer;
+    @include clearfix();
 }
 
 @each $breakpoint, $max-width in $container-max-widths {
