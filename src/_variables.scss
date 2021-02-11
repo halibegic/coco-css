@@ -1,23 +1,23 @@
 // Core variables
 
 // Colors
-$primary:                           #2e85ff !default;
-$secondary:                         #324b72 !default;
+$primary:                           #005fff !default;
+$secondary:                         #405169 !default;
 
-$success:                           #1ac98e !default;
-$error:                             #ff6a68 !default;
-$warning:                           #fcc419 !default;
-$info:                              #5c9fff !default;
+$success:                           #07d79b !default;
+$error:                             #ff413d !default;
+$warning:                           #ffa700 !default;
+$info:                              #00bcec !default;
 
-$dark:                              #112950 !default;
-$light:                             #f5f8fb !default;
+$dark:                              #0c1a26 !default;
+$light:                             #f6f7f8 !default;
 
 $white:                             #fff !default;
 $black:                             #000 !default;
 
-$gray:                              #7b8ba5 !default;
-$gray-light:                        #e0e6ed !default;
-$gray-dark:                         #2f476b !default;
+$gray:                              #7f8a9a !default;
+$gray-light:                        #e6e8eb !default;
+$gray-dark:                         #2f3b4c !default;
 
 $colors:                           () !default;
 $colors: map-merge((
@@ -30,11 +30,12 @@ $colors: map-merge((
     "dark": $dark,
     "light": $light
 ), $colors);
+
 // Options
 $font-import:                       true !default;
 
+// Variables
 $variable-prefix:                   "coco-" !default;
-
 
 // Assets
 $font-url:                          "https://rsms.me/inter/inter-ui.css";

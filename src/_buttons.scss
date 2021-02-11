@@ -32,7 +32,7 @@
 
     &:hover {
         color: var(--#{$variable-prefix}btn-color);
-        background: var(--#{$variable-prefix}btn-bg-darker);
+        background: var(--#{$variable-prefix}btn-bg-dark);
         border-color: transparent;
     }
 }
@@ -43,8 +43,8 @@
     border-color: var(--#{$variable-prefix}btn-bg);
 
     &:hover {
-        color: var(--#{$variable-prefix}btn-color);
-        background-color: var(--#{$variable-prefix}btn-bg);
+        color: var(--#{$variable-prefix}btn-bg);
+        background-color: var(--#{$variable-prefix}btn-bg-light);
         border-color: var(--#{$variable-prefix}btn-bg);
     }
 }
@@ -55,7 +55,8 @@
     .btn-outline-#{$name} {
         --#{$variable-prefix}btn-color: #{color-contrast($color)};
         --#{$variable-prefix}btn-bg: #{$color};
-        --#{$variable-prefix}btn-bg-darker: #{shade-color($color, 10%)};
+        --#{$variable-prefix}btn-bg-light: #{theme-color-lighter($color, true)};
+        --#{$variable-prefix}btn-bg-dark: #{theme-color-darker($color)};
     }
 
     .btn-#{$name} {

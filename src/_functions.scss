@@ -1,14 +1,10 @@
 // String replacement function (https://css-tricks.com/snippets/sass/str-replace-function)
-@function str-replace($string, $search, $replace: "") {
+@function str-replace($string, $search, $replace: '') {
     $index: str-index($string, $search);
 
     @if $index {
         @return str-slice($string, 1, $index - 1) + $replace +
-            str-replace(
-                str-slice($string, $index + str-length($search)),
-                $search,
-                $replace
-            );
+            str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
     }
 
     @return $string;
@@ -20,17 +16,13 @@
         $svg: str-replace($svg, $char, $encoded);
     }
 
-    @return "data:image/svg+xml," + $svg;
+    @return 'data:image/svg+xml,' + $svg;
 }
 
 // Automatically pick text colors (https://codepen.io/kennyglenn/pen/bLsGg)
 $threshold: 75%;
 
-@function color-contrast(
-    $color,
-    $dark: $color-contrast-dark,
-    $light: $color-contrast-light
-) {
+@function color-contrast($color, $dark: $color-contrast-dark, $light: $color-contrast-light) {
     @return if(lightness($color) < $threshold, $light, $dark);
 }
 
@@ -42,4 +34,23 @@ $threshold: 75%;
 // Mix a color with black
 @function shade-color($color, $weight) {
     @return mix(black, $color, $weight);
+}
+
+// Convert hex to rgb
+@function hex-to-rgb($hex) {
+    @return red($hex), green($hex), blue($hex);
+}
+
+// Tint color
+@function theme-color-lighter($color, $transparent: false) {
+    @if ($transparent) {
+        @return rgba($color, 0.08);
+    } @else {
+        @return tint-color($color, 92%);
+    }
+}
+
+// Shade color
+@function theme-color-darker($color) {
+    @return shade-color($color, 10%);
 }
