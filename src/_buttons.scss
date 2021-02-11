@@ -26,10 +26,44 @@
     }
 }
 
+%btn-color {
+    color: var(--#{$variable-prefix}btn-color);
+    background-color: var(--#{$variable-prefix}btn-bg);
+
+    &:hover {
+        color: var(--#{$variable-prefix}btn-color);
+        background: var(--#{$variable-prefix}btn-bg-darker);
+        border-color: transparent;
+    }
+}
+
+%btn-outline {
+    color: var(--#{$variable-prefix}btn-bg);
+    background-color: transparent;
+    border-color: var(--#{$variable-prefix}btn-bg);
+
+    &:hover {
+        color: var(--#{$variable-prefix}btn-color);
+        background-color: var(--#{$variable-prefix}btn-bg);
+        border-color: var(--#{$variable-prefix}btn-bg);
+    }
+}
+
 // Colors
-@each $color, $value in $colors {
-    .btn-#{$color} {
-        @include btn-variant($value, $value);
+@each $name, $color in $colors {
+    .btn-#{$name},
+    .btn-outline-#{$name} {
+        --#{$variable-prefix}btn-color: #{color-contrast($color)};
+        --#{$variable-prefix}btn-bg: #{$color};
+        --#{$variable-prefix}btn-bg-darker: #{shade-color($color, 10%)};
+    }
+
+    .btn-#{$name} {
+        @extend %btn-color;
+    }
+
+    .btn-outline-#{$name} {
+        @extend %btn-outline;
     }
 }
 

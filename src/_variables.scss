@@ -30,9 +30,11 @@ $colors: map-merge((
     "dark": $dark,
     "light": $light
 ), $colors);
-
 // Options
 $font-import:                       true !default;
+
+$variable-prefix:                   "coco-" !default;
+
 
 // Assets
 $font-url:                          "https://rsms.me/inter/inter-ui.css";
