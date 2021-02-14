@@ -115,7 +115,11 @@ block content
                         a.anchor.ml-1.text-decoration-none(href="#dismiss") #
                     p You can dismiss alert with the example below.
 
-                    .alert.alert-success.mb-3
+                    .alert.alert-info.mb-3(role="alert")
+                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        button.close.alert-close(data-dismiss="alert") &times;
+                        
+                    .alert.alert-info.mb-3
                         .d-flex
                             i.fe.alert-icon(data-feather="check")
                             div

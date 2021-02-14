@@ -141,8 +141,8 @@
 }
 
 // Line height
-.leading-1 {
-    line-height: 1 !important;
+.leading-xs {
+    line-height: $line-height-xs !important;
 }
 
 .leading-sm {

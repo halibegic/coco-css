@@ -1,22 +1,29 @@
 .alert {
     --#{$var-prefix}alert-color: #{$muted};
-
     position: relative;
-    display: block;
     padding: $alert-padding-y $alert-padding-x;
-    width: 100%;
-    border-radius: $alert-border-radius;
-    box-shadow: $alert-box-shadow;
-
-    background: $white;
+    margin-bottom: $alert-margin-bottom;
+    background-color: $white;
     border: $alert-border-width solid $alert-border-color;
     border-left: $alert-border-left-width solid var(--#{$var-prefix}alert-color);
+    border-radius: $alert-border-radius;
+    box-shadow: $alert-box-shadow;
 
     :last-child {
         margin-bottom: 0;
     }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        padding: $alert-padding-y $alert-padding-x;
+        color: inherit;
+    }
 }
 
+// Colors
 @each $name, $color in $state-colors {
     .alert-#{$name} {
         --#{$var-prefix}alert-color: #{$color};
@@ -25,7 +32,7 @@
 
 .alert-important {
     border-color: transparent;
-    background: var(--#{$var-prefix}alert-color);
+    background-color: var(--#{$var-prefix}alert-color);
     color: $white;
 
     .alert-icon {
@@ -54,13 +61,4 @@
     width: $alert-icon-width;
     height: $alert-icon-height;
     color: var(--#{$var-prefix}alert-color);
-}
-
-.alert-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding-left: $alert-padding-x;
-    padding-right: $alert-padding-x;
 }

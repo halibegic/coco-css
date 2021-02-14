@@ -2,14 +2,14 @@
 
 // Colors
 $primary:                           #007bff !default;
-$secondary:                         #3b4859 !default;
+$secondary:                         #414f62 !default;
 
 $success:                           #1dcc70 !default;
 $info:                              #17a2b8 !default;
 $warning:                           #ffc107 !default;
 $error:                             #dc3545 !default;
 
-$dark:                              #161e29 !default;
+$dark:                              #212d3d !default;
 $light:                             #f8f9fa !default;
 
 $white:                             #fff !default;
@@ -43,7 +43,7 @@ $theme-colors: map-merge((
 $font-import:                       true !default;
 
 // Variables
-$var-prefix:                   "coco-" !default;
+$var-prefix:                        "coco-" !default;
 
 // Assets
 $font-url:                          "https://rsms.me/inter/inter-ui.css";
@@ -134,6 +134,7 @@ $font-weight-extra-bold:            800 !default;
 $font-weight:                       $font-weight-normal !default;
 
 $line-height:                       1.5 !default;
+$line-height-xs:                    1 !default;
 $line-height-sm:                    1.25 !default;
 $line-height-lg:                    2 !default;
 
@@ -292,8 +293,9 @@ $grid-breakpoints: (
 //
 
 // Alerts
-$alert-padding-y:                   1rem !default;
-$alert-padding-x:                   1rem !default;
+$alert-margin-bottom:               1rem !default;
+$alert-padding-y:                   0.75rem !default;
+$alert-padding-x:                   1.25rem !default;
 
 $alert-border-width:                $border-width !default;
 $alert-border-left-width:           map-get($border-widths, 4) !default;
@@ -445,8 +447,8 @@ $tab-link-border-width:             $tab-border-width !default;
 
 // Close
 $close-font-size:                   $font-size-xl !default;
-$close-font-weight:                 $font-weight-normal !default;
-$close-line-height:                 $line-height-sm !default;
+$close-font-weight:                 $font-weight-medium !default;
+$close-line-height:                 $line-height-xs !default;
 
 // Loading
 $loading-width:                     2.5rem !default;

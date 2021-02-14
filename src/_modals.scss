@@ -65,12 +65,8 @@
 
     // Close
     .close {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding-left: $modal-padding-x;
-        padding-right: $modal-padding-x;
+        padding: $modal-header-padding-y $modal-header-padding-x;
+        margin: (-$modal-header-padding-y) (-$modal-header-padding-x) (-$modal-header-padding-y) auto;
     }
 }
 
