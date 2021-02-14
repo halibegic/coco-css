@@ -1,30 +1,30 @@
 // Core variables
 
 // Colors
-$primary:                           #005fff !default;
-$secondary:                         #405169 !default;
+$primary:                           #007bff !default;
+$secondary:                         #3b4859 !default;
 
-$success:                           #07d79b !default;
-$error:                             #ff413d !default;
-$warning:                           #ffa700 !default;
-$info:                              #00bcec !default;
+$success:                           #1dcc70 !default;
+$info:                              #17a2b8 !default;
+$warning:                           #ffc107 !default;
+$error:                             #dc3545 !default;
 
-$dark:                              #0c1a26 !default;
-$light:                             #f6f7f8 !default;
+$dark:                              #161e29 !default;
+$light:                             #f8f9fa !default;
 
 $white:                             #fff !default;
 $black:                             #000 !default;
 
-$gray:                              #7f8a9a !default;
-$gray-light:                        #e6e8eb !default;
-$gray-dark:                         #2f3b4c !default;
+$gray:                              #8292a6 !default;
+$gray-light:                        #dee2e6 !default;
+$gray-dark:                         #212529 !default;
 
 $state-colors:                      () !default;
 $state-colors: map-merge((
     "success": $success,
-    "error": $error,
-    "warning": $warning,
     "info": $info,
+    "warning": $warning,
+    "error": $error,
 ), $state-colors);
 
 $theme-colors:                      () !default;
@@ -32,9 +32,9 @@ $theme-colors: map-merge((
     "primary": $primary,
     "secondary": $secondary,
     "success": $success,
-    "error": $error,
-    "warning": $warning,
     "info": $info,
+    "warning": $warning,
+    "error": $error,
     "dark": $dark,
     "light": $light
 ), $theme-colors);
