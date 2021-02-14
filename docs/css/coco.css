@@ -185,27 +185,27 @@ img, svg { vertical-align: middle; }
 
 .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-error, .btn-dark, .btn-light { color: var(--coco-btn-color); background-color: var(--coco-btn-bg); }
 
-.btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover, .btn-error:hover, .btn-dark:hover, .btn-light:hover { color: var(--coco-btn-color); background: var(--coco-btn-bg-dark); border-color: transparent; }
+.btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover, .btn-error:hover, .btn-dark:hover, .btn-light:hover { color: var(--coco-btn-color); background: var(--coco-btn-bg-darker); border-color: transparent; }
 
 .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-info, .btn-outline-warning, .btn-outline-error, .btn-outline-dark, .btn-outline-light { color: var(--coco-btn-bg); background-color: transparent; border-color: var(--coco-btn-bg); }
 
-.btn-outline-primary:hover, .btn-outline-secondary:hover, .btn-outline-success:hover, .btn-outline-info:hover, .btn-outline-warning:hover, .btn-outline-error:hover, .btn-outline-dark:hover, .btn-outline-light:hover { color: var(--coco-btn-bg); background-color: var(--coco-btn-bg-light); border-color: var(--coco-btn-bg); }
+.btn-outline-primary:hover, .btn-outline-secondary:hover, .btn-outline-success:hover, .btn-outline-info:hover, .btn-outline-warning:hover, .btn-outline-error:hover, .btn-outline-dark:hover, .btn-outline-light:hover { color: var(--coco-btn-bg); background-color: var(--coco-btn-bg-lighter); border-color: var(--coco-btn-bg); }
 
-.btn-primary, .btn-outline-primary { --coco-btn-color: #fff; --coco-btn-bg: #007bff; --coco-btn-bg-light: rgba(0, 123, 255, 0.08); --coco-btn-bg-dark: #006fe6; }
+.btn-primary, .btn-outline-primary { --coco-btn-color: #fff; --coco-btn-bg: #007bff; --coco-btn-bg-lighter: rgba(0, 123, 255, 0.08); --coco-btn-bg-darker: #006fe6; }
 
-.btn-secondary, .btn-outline-secondary { --coco-btn-color: #fff; --coco-btn-bg: #3b4859; --coco-btn-bg-light: rgba(59, 72, 89, 0.08); --coco-btn-bg-dark: #354150; }
+.btn-secondary, .btn-outline-secondary { --coco-btn-color: #fff; --coco-btn-bg: #3b4859; --coco-btn-bg-lighter: rgba(59, 72, 89, 0.08); --coco-btn-bg-darker: #354150; }
 
-.btn-success, .btn-outline-success { --coco-btn-color: #fff; --coco-btn-bg: #1dcc70; --coco-btn-bg-light: rgba(29, 204, 112, 0.08); --coco-btn-bg-dark: #1ab865; }
+.btn-success, .btn-outline-success { --coco-btn-color: #fff; --coco-btn-bg: #1dcc70; --coco-btn-bg-lighter: rgba(29, 204, 112, 0.08); --coco-btn-bg-darker: #1ab865; }
 
-.btn-info, .btn-outline-info { --coco-btn-color: #fff; --coco-btn-bg: #17a2b8; --coco-btn-bg-light: rgba(23, 162, 184, 0.08); --coco-btn-bg-dark: #1592a6; }
+.btn-info, .btn-outline-info { --coco-btn-color: #fff; --coco-btn-bg: #17a2b8; --coco-btn-bg-lighter: rgba(23, 162, 184, 0.08); --coco-btn-bg-darker: #1592a6; }
 
-.btn-warning, .btn-outline-warning { --coco-btn-color: #fff; --coco-btn-bg: #ffc107; --coco-btn-bg-light: rgba(255, 193, 7, 0.08); --coco-btn-bg-dark: #e6ae06; }
+.btn-warning, .btn-outline-warning { --coco-btn-color: #fff; --coco-btn-bg: #ffc107; --coco-btn-bg-lighter: rgba(255, 193, 7, 0.08); --coco-btn-bg-darker: #e6ae06; }
 
-.btn-error, .btn-outline-error { --coco-btn-color: #fff; --coco-btn-bg: #dc3545; --coco-btn-bg-light: rgba(220, 53, 69, 0.08); --coco-btn-bg-dark: #c6303e; }
+.btn-error, .btn-outline-error { --coco-btn-color: #fff; --coco-btn-bg: #dc3545; --coco-btn-bg-lighter: rgba(220, 53, 69, 0.08); --coco-btn-bg-darker: #c6303e; }
 
-.btn-dark, .btn-outline-dark { --coco-btn-color: #fff; --coco-btn-bg: #161e29; --coco-btn-bg-light: rgba(22, 30, 41, 0.08); --coco-btn-bg-dark: #141b25; }
+.btn-dark, .btn-outline-dark { --coco-btn-color: #fff; --coco-btn-bg: #161e29; --coco-btn-bg-lighter: rgba(22, 30, 41, 0.08); --coco-btn-bg-darker: #141b25; }
 
-.btn-light, .btn-outline-light { --coco-btn-color: #161e29; --coco-btn-bg: #f8f9fa; --coco-btn-bg-light: rgba(248, 249, 250, 0.08); --coco-btn-bg-dark: #dfe0e1; }
+.btn-light, .btn-outline-light { --coco-btn-color: #161e29; --coco-btn-bg: #f8f9fa; --coco-btn-bg-lighter: rgba(248, 249, 250, 0.08); --coco-btn-bg-darker: #dfe0e1; }
 
 .btn-link { font-weight: 600; color: #007bff; text-decoration: none; }
 

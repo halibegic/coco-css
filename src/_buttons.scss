@@ -39,7 +39,7 @@
 
     &:hover {
         color: var(--#{$var-prefix}btn-color);
-        background: var(--#{$var-prefix}btn-bg-dark);
+        background: var(--#{$var-prefix}btn-bg-darker);
         border-color: transparent;
     }
 }
@@ -51,7 +51,7 @@
 
     &:hover {
         color: var(--#{$var-prefix}btn-bg);
-        background-color: var(--#{$var-prefix}btn-bg-light);
+        background-color: var(--#{$var-prefix}btn-bg-lighter);
         border-color: var(--#{$var-prefix}btn-bg);
     }
 }
@@ -62,8 +62,8 @@
     .btn-outline-#{$name} {
         --#{$var-prefix}btn-color: #{color-contrast($color)};
         --#{$var-prefix}btn-bg: #{$color};
-        --#{$var-prefix}btn-bg-light: #{theme-color-lighter($color, true)};
-        --#{$var-prefix}btn-bg-dark: #{theme-color-darker($color)};
+        --#{$var-prefix}btn-bg-lighter: #{theme-color-lighter($color, true)};
+        --#{$var-prefix}btn-bg-darker: #{theme-color-darker($color)};
     }
 
     .btn-#{$name} {
