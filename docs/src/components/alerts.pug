@@ -18,84 +18,111 @@ block content
                     h4.mt-4.mb-2
                         | Colors
                         a.anchor.ml-1.text-decoration-none(href="#colors") #
-                    p Use color utility to set tab background color.
+                    p And you can add the  #[code alert-success], #[code alert-error], #[code alert-warning] or #[code alert-info] class for additional alert colors.
                     .row
                         .col-12
-                            .alert.bg-primary-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-success.mb-3(role="alert")
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                            .alert.bg-secondary-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-error.mb-3(role="alert")
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                            .alert.bg-success-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-warning.mb-3(role="alert")
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                            .alert.bg-error-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-info.mb-3(role="alert")
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                            .alert.bg-warning-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-success.alert-important.mb-3
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                            .alert.bg-info-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-error.alert-important.mb-3
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                            .alert.bg-dark-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-warning.alert-important.mb-3
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                            .alert.bg-light-soft.mb-3
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.close(data-dismiss="alert") &times;
+                            .alert.alert-info.alert-important.mb-3
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-                    pre.code(data-lang='HTML')
-                        code.docs-code
-                            :highlight(lang="html")
-                                <div class="alert bg-primary-soft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <button class="close" data-dismiss="alert">&times;</button>
-                                </div>
-
-                                <div class="alert bg-secondary-soft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <button class="close" data-dismiss="alert">&times;</button>
-                                </div>
-
-                                <div class="alert bg-success-soft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <button class="close" data-dismiss="alert">&times;</button>
-                                </div>
-
-                                <div class="alert bg-error-soft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <button class="close" data-dismiss="alert">&times;</button>
-                                </div>
-
-                                <div class="alert bg-warning-soft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <button class="close" data-dismiss="alert">&times;</button>
-                                </div>
-
-                                <div class="alert bg-dark-soft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <button class="close" data-dismiss="alert">&times;</button>
-                                </div>
-
-                                <div class="alert bg-light-soft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <button class="close" data-dismiss="alert">&times;</button>
-                                </div>
-
-                #hide
+                #link
                     h4.mt-4.mb-2
-                        | Hide
-                        a.anchor.ml-1.text-decoration-none(href="#hide") #
-                    p You can hide alert with the example below
+                        | Link
+                        a.anchor.ml-1.text-decoration-none(href="#link") #
+                    .row
+                        .col-12
+                            .alert.alert-success.mb-3
+                                | Lorem ipsum dolor sit amet - 
+                                a.alert-link(href="#link") check it out!
+
+                            .alert.alert-error.mb-3
+                                | Lorem ipsum dolor sit amet - 
+                                a.alert-link(href="#link") check it out!
+
+                            .alert.alert-warning.mb-3
+                                | Lorem ipsum dolor sit amet - 
+                                a.alert-link(href="#link") check it out!
+
+                            .alert.alert-info.mb-3
+                                | Lorem ipsum dolor sit amet - 
+                                a.alert-link(href="#link") check it out!
+
+                #icons
+                    h4.mt-4.mb-2
+                        | Icons
+                        a.anchor.ml-1.text-decoration-none(href="#icons") #
+                    .row
+                        .col-12
+                            .alert.alert-success.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="check")
+                                    div
+                                        .alert-title Title
+                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                            .alert.alert-error.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="alert-circle")
+                                    div
+                                        .alert-title Title
+                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                            .alert.alert-warning.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="alert-triangle")
+                                    div
+                                        .alert-title Title
+                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                            .alert.alert-info.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="info")
+                                    div
+                                        .alert-title Title
+                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                #dismiss
+                    h4.mt-4.mb-2
+                        | Dismiss
+                        a.anchor.ml-1.text-decoration-none(href="#dismiss") #
+                    p You can dismiss alert with the example below.
+
+                    .alert.alert-success.mb-3
+                        .d-flex
+                            i.fe.alert-icon(data-feather="check")
+                            div
+                                .alert-title Title
+                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        button.close.alert-close(data-dismiss="alert") &times;
+
                     pre.code(data-lang='JavaScript')
                         code.docs-code
                             :highlight(lang="js")

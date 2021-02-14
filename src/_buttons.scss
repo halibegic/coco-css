@@ -24,39 +24,46 @@
         opacity: 0.5;
         pointer-events: none;
     }
+
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+        text-decoration: none;
+    }
 }
 
 %btn-color {
-    color: var(--#{$variable-prefix}btn-color);
-    background-color: var(--#{$variable-prefix}btn-bg);
+    color: var(--#{$var-prefix}btn-color);
+    background-color: var(--#{$var-prefix}btn-bg);
 
     &:hover {
-        color: var(--#{$variable-prefix}btn-color);
-        background: var(--#{$variable-prefix}btn-bg-dark);
+        color: var(--#{$var-prefix}btn-color);
+        background: var(--#{$var-prefix}btn-bg-dark);
         border-color: transparent;
     }
 }
 
 %btn-outline {
-    color: var(--#{$variable-prefix}btn-bg);
+    color: var(--#{$var-prefix}btn-bg);
     background-color: transparent;
-    border-color: var(--#{$variable-prefix}btn-bg);
+    border-color: var(--#{$var-prefix}btn-bg);
 
     &:hover {
-        color: var(--#{$variable-prefix}btn-bg);
-        background-color: var(--#{$variable-prefix}btn-bg-light);
-        border-color: var(--#{$variable-prefix}btn-bg);
+        color: var(--#{$var-prefix}btn-bg);
+        background-color: var(--#{$var-prefix}btn-bg-light);
+        border-color: var(--#{$var-prefix}btn-bg);
     }
 }
 
 // Colors
-@each $name, $color in $colors {
+@each $name, $color in $theme-colors {
     .btn-#{$name},
     .btn-outline-#{$name} {
-        --#{$variable-prefix}btn-color: #{color-contrast($color)};
-        --#{$variable-prefix}btn-bg: #{$color};
-        --#{$variable-prefix}btn-bg-light: #{theme-color-lighter($color, true)};
-        --#{$variable-prefix}btn-bg-dark: #{theme-color-darker($color)};
+        --#{$var-prefix}btn-color: #{color-contrast($color)};
+        --#{$var-prefix}btn-bg: #{$color};
+        --#{$var-prefix}btn-bg-light: #{theme-color-lighter($color, true)};
+        --#{$var-prefix}btn-bg-dark: #{theme-color-darker($color)};
     }
 
     .btn-#{$name} {

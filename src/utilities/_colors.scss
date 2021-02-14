@@ -1,7 +1,7 @@
 // Text colors
 
 // Colors
-@each $color, $value in $colors {
+@each $color, $value in $theme-colors {
     @include text-color-variant(".text-#{$color}", $value);
 }
 
@@ -10,7 +10,7 @@
 @include text-color-variant(".text-muted", $muted);
 
 // Background colors
-@each $color, $value in $colors {
+@each $color, $value in $theme-colors {
     @include bg-variant(".bg-#{$color}", $value);
 }
 
@@ -21,7 +21,7 @@
     background-color: transparent !important;
 }
 
-@each $color, $value in $colors {
+@each $color, $value in $theme-colors {
     @include bg-soft-variant(".bg-#{$color}-soft", $value);
 }
 
@@ -29,7 +29,7 @@
 @include bg-soft-variant(".bg-black-soft", $black);
 
 // Border colors
-@each $color, $value in $colors {
+@each $color, $value in $theme-colors {
     @include border-variant(".border-#{$color}", $value);
 }
 

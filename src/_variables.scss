@@ -19,8 +19,16 @@ $gray:                              #7f8a9a !default;
 $gray-light:                        #e6e8eb !default;
 $gray-dark:                         #2f3b4c !default;
 
-$colors:                           () !default;
-$colors: map-merge((
+$state-colors:                      () !default;
+$state-colors: map-merge((
+    "success": $success,
+    "error": $error,
+    "warning": $warning,
+    "info": $info,
+), $state-colors);
+
+$theme-colors:                      () !default;
+$theme-colors: map-merge((
     "primary": $primary,
     "secondary": $secondary,
     "success": $success,
@@ -29,13 +37,13 @@ $colors: map-merge((
     "info": $info,
     "dark": $dark,
     "light": $light
-), $colors);
+), $theme-colors);
 
 // Options
 $font-import:                       true !default;
 
 // Variables
-$variable-prefix:                   "coco-" !default;
+$var-prefix:                   "coco-" !default;
 
 // Assets
 $font-url:                          "https://rsms.me/inter/inter-ui.css";
@@ -179,7 +187,7 @@ $dt-font-weight:                    $font-weight-medium !default;
 $link-color:                        $primary !default;
 $link-decoration:                   none !default;
 $link-hover-color:                  shade-color($link-color, 20%) !default;
-$link-hover-decoration:             none !default;
+$link-hover-decoration:             underline !default;
 
 // Button
 $btn-padding-y:                     0.5rem !default;
@@ -233,9 +241,9 @@ $code-color:                        $error !default;
 $pre-padding-y:                     0.75rem !default;
 $pre-padding-x:                     1rem !default;
 
-$pre-color:                         $dark !default;
+$pre-color:                         $gray-dark !default;
 $pre-bg:                            $light !default;
-$pre-border-radius:                 null !default;
+$pre-border-radius:                 $border-radius-sm !default;
 
 // Label
 $label-padding-y:                   0.175em !default;
@@ -286,7 +294,20 @@ $grid-breakpoints: (
 // Alerts
 $alert-padding-y:                   1rem !default;
 $alert-padding-x:                   1rem !default;
-$alert-border-radius:               $border-radius !default;
+
+$alert-border-width:                $border-width !default;
+$alert-border-left-width:           map-get($border-widths, 4) !default;
+$alert-border-color:                $border-color !default;
+$alert-border-radius:               $border-radius-sm !default;
+
+$alert-box-shadow:                  $box-shadow-sm !default;
+
+$alert-title-margin-y:              $alert-padding-y * 0.5 !default;
+$alert-title-line-height:           $headings-line-height !default;
+$alert-title-font-weight:           $headings-font-weight !default;
+
+$alert-icon-width:                  1.5rem !default;
+$alert-icon-height:                 1.5rem !default;
 
 // Avatars
 $avatar-width:                      3rem !default;
@@ -315,12 +336,6 @@ $breadcrumb-divider-color:          $muted !default;
 $breadcrumb-divider-font-family:    null !default;
 $breadcrumb-divider:                quote("/");
 $breadcrumb-active-color:           $muted !default;
-
-// Callouts
-$callout-padding-y:                 0.75rem !default;
-$callout-padding-x:                 1rem !default;
-$callout-border-left-width:         map-get($border-widths, 3) !default;
-$callout-border-radius:             null !default;
 
 // Cards
 $card-padding-y:                    $spacer !default;
@@ -431,7 +446,7 @@ $tab-link-border-width:             $tab-border-width !default;
 // Close
 $close-font-size:                   $font-size-xl !default;
 $close-font-weight:                 $font-weight-normal !default;
-$close-line-height:                 $line-height !default;
+$close-line-height:                 $line-height-sm !default;
 
 // Loading
 $loading-width:                     2.5rem !default;

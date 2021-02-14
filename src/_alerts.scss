@@ -1,37 +1,66 @@
-// Alerts
 .alert {
+    --#{$var-prefix}alert-color: #{$muted};
+
     position: relative;
     display: block;
     padding: $alert-padding-y $alert-padding-x;
     width: 100%;
     border-radius: $alert-border-radius;
+    box-shadow: $alert-box-shadow;
 
-    // Reset
-    a {
-        color: currentColor;
-        text-decoration: underline;
+    background: $white;
+    border: $alert-border-width solid $alert-border-color;
+    border-left: $alert-border-left-width solid var(--#{$var-prefix}alert-color);
 
-        &:focus,
-        &:hover,
-        &:active,
-        &.active {
-            opacity: 0.75;
-        }
+    :last-child {
+        margin-bottom: 0;
     }
+}
 
-    p {
-        &:last-child {
-            margin-bottom: 0;
-        }
+@each $name, $color in $state-colors {
+    .alert-#{$name} {
+        --#{$var-prefix}alert-color: #{$color};
     }
+}
 
-    // Close
-    .close {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding-left: $alert-padding-x;
-        padding-right: $alert-padding-x;
+.alert-important {
+    border-color: transparent;
+    background: var(--#{$var-prefix}alert-color);
+    color: $white;
+
+    .alert-icon {
+        color: inherit;
     }
+}
+
+.alert-link {
+    &,
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+        color: var(--#{$var-prefix}alert-color);
+    }
+}
+
+.alert-title {
+    margin-bottom: $alert-title-margin-y;
+    line-height: $alert-title-line-height;
+    font-weight: $alert-title-font-weight;
+}
+
+.alert-icon {
+    margin-right: $alert-padding-x;
+    width: $alert-icon-width;
+    height: $alert-icon-height;
+    color: var(--#{$var-prefix}alert-color);
+}
+
+.alert-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: $alert-padding-x;
+    padding-right: $alert-padding-x;
 }
