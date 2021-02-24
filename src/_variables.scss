@@ -141,7 +141,7 @@ $line-height-lg:                    2 !default;
 $headings-margin-bottom:            $spacer * 0.5 !default;
 $headings-font-family:              null !default;
 $headings-font-style:               null !default;
-$headings-font-weight:              $font-weight-semi-bold !default;
+$headings-font-weight:              $font-weight-medium !default;
 $headings-line-height:              $line-height-sm !default;
 $headings-color:                    null !default;
 
@@ -294,8 +294,8 @@ $grid-breakpoints: (
 
 // Alerts
 $alert-margin-bottom:               1rem !default;
-$alert-padding-y:                   0.75rem !default;
-$alert-padding-x:                   1.25rem !default;
+$alert-padding-y:                   1rem !default;
+$alert-padding-x:                   1rem !default;
 
 $alert-border-width:                $border-width !default;
 $alert-border-left-width:           map-get($border-widths, 4) !default;
@@ -310,6 +310,8 @@ $alert-title-font-weight:           $headings-font-weight !default;
 
 $alert-icon-width:                  1.5rem !default;
 $alert-icon-height:                 1.5rem !default;
+
+$alert-important-font-weight:       $headings-font-weight !default;
 
 // Avatars
 $avatar-width:                      3rem !default;

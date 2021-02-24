@@ -121,11 +121,11 @@ a:focus, a:hover, a:active, a.active { color: #0062cc; text-decoration: underlin
 
 img, svg { vertical-align: middle; }
 
-.alert { --coco-alert-color: #8292a6; position: relative; padding: 0.75rem 1.25rem; margin-bottom: 1rem; background-color: #fff; border: 1px solid #dee2e6; border-left: 4px solid var(--coco-alert-color); border-radius: 0.25rem; box-shadow: 0 0.125rem 0.25rem rgba(33, 45, 61, 0.075); }
+.alert { --coco-alert-color: #8292a6; position: relative; padding: 1rem 1rem; margin-bottom: 1rem; background-color: #fff; border: 1px solid #dee2e6; border-left: 4px solid var(--coco-alert-color); border-radius: 0.25rem; box-shadow: 0 0.125rem 0.25rem rgba(33, 45, 61, 0.075); }
 
 .alert :last-child { margin-bottom: 0; }
 
-.alert .close { position: absolute; top: 0; right: 0; z-index: 2; padding: 0.75rem 1.25rem; color: inherit; }
+.alert .close { position: absolute; top: 0; right: 0; z-index: 2; padding: 1rem 1rem; color: inherit; }
 
 .alert-success { --coco-alert-color: #1dcc70; }
 
@@ -135,15 +135,15 @@ img, svg { vertical-align: middle; }
 
 .alert-error { --coco-alert-color: #dc3545; }
 
-.alert-important { border-color: transparent; background-color: var(--coco-alert-color); color: #fff; }
+.alert-important { font-weight: 500; color: #fff; background-color: var(--coco-alert-color); border-color: transparent; }
 
 .alert-important .alert-icon { color: inherit; }
 
 .alert-link, .alert-link:focus, .alert-link:hover, .alert-link:active, .alert-link.active { color: var(--coco-alert-color); }
 
-.alert-title { margin-bottom: 0.375rem; line-height: 1.25; font-weight: 600; }
+.alert-title { margin-bottom: 0.5rem; line-height: 1.25; font-weight: 500; }
 
-.alert-icon { margin-right: 1.25rem; width: 1.5rem; height: 1.5rem; color: var(--coco-alert-color); }
+.alert-icon { margin-right: 1rem; width: 1.5rem; height: 1.5rem; color: var(--coco-alert-color); }
 
 .avatar { display: inline-block; position: relative; margin: 0; width: 3rem; height: 3rem; font-weight: 500; font-size: 1rem; line-height: 1.5; vertical-align: middle; text-align: center; }
 
@@ -773,7 +773,7 @@ select.form-field:not([multiple]):not([size]) { padding-right: 1.25rem; backgrou
 
 .tab-content .tab-pane.active { display: block; }
 
-h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0.5rem; font-weight: 600; line-height: 1.25; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.25; }
 
 h1, .h1 { font-size: 2.5rem; }
 

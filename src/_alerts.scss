@@ -31,9 +31,10 @@
 }
 
 .alert-important {
-    border-color: transparent;
-    background-color: var(--#{$var-prefix}alert-color);
+    font-weight: $alert-important-font-weight;
     color: $white;
+    background-color: var(--#{$var-prefix}alert-color);
+    border-color: transparent;
 
     .alert-icon {
         color: inherit;
