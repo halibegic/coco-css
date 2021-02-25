@@ -9,13 +9,13 @@ $info:                              #17a2b8 !default;
 $warning:                           #ffc107 !default;
 $error:                             #dc3545 !default;
 
-$dark:                              #212d3d !default;
+$dark:                              #161e29 !default;
 $light:                             #f8f9fa !default;
 
 $white:                             #fff !default;
 $black:                             #000 !default;
 
-$gray:                              #8292a6 !default;
+$gray:                              #6f8299 !default;
 $gray-light:                        #dee2e6 !default;
 $gray-dark:                         #343a40 !default;
 
@@ -304,7 +304,7 @@ $alert-border-radius:               $border-radius-sm !default;
 
 $alert-box-shadow:                  $box-shadow-sm !default;
 
-$alert-title-margin-y:              $alert-padding-y * 0.5 !default;
+$alert-title-margin-y:              $alert-padding-y * 0.25 !default;
 $alert-title-line-height:           $headings-line-height !default;
 $alert-title-font-weight:           $headings-font-weight !default;
 

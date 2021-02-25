@@ -13,34 +13,60 @@ block content
                     h2.mb-2.text-dark
                         | Alerts
                         a.anchor.ml-1.text-decoration-none(href="#alerts") #
-                    p Notification toast using the  #[code alert] class.
+                    p Alert messages are used to inform users of the status of their action and help them solve any problems that might have occurred. Good design of alert modals is very important for the overall user experience of a website or app.
+
                 #colors
                     h4.mt-4.mb-2
                         | Colors
                         a.anchor.ml-1.text-decoration-none(href="#colors") #
-                    p And you can add the  #[code alert-success], #[code alert-error], #[code alert-warning] or #[code alert-info] class for additional alert colors.
+                    p Depending on the information you need to convey, you can use one of the following types of alert messages - success, info, warning or danger. Using the right type of alert modal will help draw users’ attention to the message and prompt them to take action.
+
                     .row
                         .col-12
                             .alert.alert-success.mb-3(role="alert")
                                 .alert-title Title
-                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                             .alert.alert-error.mb-3(role="alert")
                                 .alert-title Title
-                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                             .alert.alert-warning.mb-3(role="alert")
                                 .alert-title Title
-                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                             .alert.alert-info.mb-3(role="alert")
                                 .alert-title Title
-                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                    pre.code.mb-3(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="alert alert-success" role="alert">
+                                    <div class="alert-title">Title</div>
+                                    <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+
+                                <div class="alert alert-error" role="alert">
+                                    <div class="alert-title">Title</div>
+                                    <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+
+                                <div class="alert alert-warning" role="alert">
+                                    <div class="alert-title">Title</div>
+                                    <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+
+                                <div class="alert alert-info" role="alert">
+                                    <div class="alert-title">Title</div>
+                                    <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
 
                 #link
                     h4.mt-4.mb-2
                         | Link
                         a.anchor.ml-1.text-decoration-none(href="#link") #
+                    p Add a link to your alert message to redirect users to the details they need to complete or additional information they should read.
                     .row
                         .col-12
                             .alert.alert-success.mb-3
@@ -57,91 +83,53 @@ block content
 
                             .alert.alert-info.mb-3
                                 | Lorem ipsum dolor sit amet - 
-                                a.alert-link(href="#link") check it out!
+                                a.alert-link(href="#link") check it out!                                
+                
+                    pre.code.mb-3(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="alert alert-success">
+                                    Lorem ipsum dolor sit amet - <a class="alert-link" href="#link">check it out!</a>
+                                </div>
 
-                #icons
-                    h4.mt-4.mb-2
-                        | Icons
-                        a.anchor.ml-1.text-decoration-none(href="#icons") #
-                    .row
-                        .col-12
-                            .alert.alert-success.mb-3(role="alert")
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="check")
-                                    div
-                                        .alert-title Title
-                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <div class="alert alert-error">
+                                    Lorem ipsum dolor sit amet - <a class="alert-link" href="#link">check it out!</a>
+                                </div>
 
-                            .alert.alert-error.mb-3(role="alert")
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="alert-circle")
-                                    div
-                                        .alert-title Title
-                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <div class="alert alert-warning">
+                                    Lorem ipsum dolor sit amet - <a class="alert-link" href="#link">check it out!</a>
+                                </div>
 
-                            .alert.alert-warning.mb-3(role="alert")
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="alert-triangle")
-                                    div
-                                        .alert-title Title
-                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-                            .alert.alert-info.mb-3(role="alert")
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="info")
-                                    div
-                                        .alert-title Title
-                                        div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-                #important
-                    h4.mt-4.mb-2
-                        | Important
-                        a.anchor.ml-1.text-decoration-none(href="#important") #
-                    p If you want your alert to be really eye-catching, you can add a class  #[code alert-important].
-
-                    .row
-                        .col-12 
-                            .alert.alert-success.alert-important.mb-3
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="check")
-                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-                            .alert.alert-error.alert-important.mb-3
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="alert-circle")
-                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-                            .alert.alert-warning.alert-important.mb-3
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="alert-triangle")
-                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-                            .alert.alert-info.alert-important.mb-3
-                                .d-flex
-                                    i.fe.alert-icon(data-feather="info")
-                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <div class="alert alert-info">
+                                    Lorem ipsum dolor sit amet - <a class="alert-link" href="#link">check it out!</a>
+                                </div>
 
                 #dismiss
                     h4.mt-4.mb-2
                         | Dismiss
                         a.anchor.ml-1.text-decoration-none(href="#dismiss") #
-                    p You can dismiss alert with the example below.
+                    p Add the  #[code x] close button to make an alert modal dismissible. Thanks to that, your alert modal will disappear only once the user closes it.
 
-                    .alert.alert-info.mb-3(role="alert")
-                        .d-flex
-                            i.fe.alert-icon(data-feather="check")
-                            div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        button.close.alert-close(data-dismiss="alert") &times;
-                        
-                    .alert.alert-info.mb-3
-                        .d-flex
-                            i.fe.alert-icon(data-feather="check")
-                            div
-                                .alert-title Title
-                                div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        button.close.alert-close(data-dismiss="alert") &times;
+                    .row
+                        .col-12 
+                            .alert.alert-success.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="check")
+                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
 
-                    pre.code(data-lang='JavaScript')
+                    pre.code.mb-3(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="alert alert-success" role="alert">
+                                    <div class="d-flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                    pre.code.mb-3(data-lang="JavaScript")
                         code.docs-code
                             :highlight(lang="js")
                                 document.addEventListener("DOMContentLoaded", function () {
@@ -155,6 +143,193 @@ block content
                                         }
                                     );
                                 });
+
+                #icons
+                    h4.mt-4.mb-2
+                        | Icons
+                        a.anchor.ml-1.text-decoration-none(href="#icons") #
+                    p Add an icon to your alert modal to make it more user-friendly and help users easily identify the message.
+
+                    .row
+                        .col-12
+                            .alert.alert-success.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="check")
+                                    div
+                                        .alert-title Title
+                                        .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                            .alert.alert-error.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="alert-circle")
+                                    div
+                                        .alert-title Title
+                                        .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                            .alert.alert-warning.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="alert-triangle")
+                                    div
+                                        .alert-title Title
+                                        .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                            .alert.alert-info.mb-3(role="alert")
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="info")
+                                    div
+                                        .alert-title Title
+                                        .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                    pre.code.mb-3(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="alert alert-success" role="alert">
+                                    <div class="flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>
+                                            <div class="alert-title">Title</div>
+                                            <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                        </div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert alert-error" role="alert">
+                                    <div class="flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>
+                                            <div class="alert-title">Title</div>
+                                            <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                        </div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert alert-warning" role="alert">
+                                    <div class="flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>
+                                            <div class="alert-title">Title</div>
+                                            <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                        </div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert alert-info" role="alert">
+                                    <div class="flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>
+                                            <div class="alert-title">Title</div>
+                                            <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                        </div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+                #avatars
+                    h4.mt-4.mb-2
+                        | Avatars
+                        a.anchor.ml-1.text-decoration-none(href="#avatars") #
+                    p Add an avatar to your alert modal to make it more personalized.
+
+                    .row
+                        .col-12
+                            .alert.alert-success.mb-3(role="alert")
+                                .d-flex
+                                    .avatar.mr-3
+                                        img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
+                                    div
+                                        .alert-title Title
+                                        .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                    pre.code.mb-3(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="alert alert-success" role="alert">
+                                    <div class="flex">
+                                        <div class="avatar mr-3">
+                                            <img class="avatar-img" src="..." alt="...">
+                                        </div>
+                                        <div>
+                                            <div class="alert-title">Title</div>
+                                            <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                        </div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+
+                #important
+                    h4.mt-4.mb-2
+                        | Important
+                        a.anchor.ml-1.text-decoration-none(href="#important") #
+                    p If you want your alert to be really eye-catching, you can add a class  #[code alert-important].
+
+                    .row
+                        .col-12 
+                            .alert.alert-success.alert-important.mb-3
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="check")
+                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                            .alert.alert-error.alert-important.mb-3
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="alert-circle")
+                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                            .alert.alert-warning.alert-important.mb-3
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="alert-triangle")
+                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                            .alert.alert-info.alert-important.mb-3
+                                .d-flex
+                                    i.fe.alert-icon(data-feather="info")
+                                    div Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                button.close.alert-close(data-dismiss="alert") &times;
+
+                    pre.code.mb-3(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="alert alert-success alert-important">
+                                    <div class="d-flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert alert-error alert-important">
+                                    <div class="d-flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert alert-warning alert-important">
+                                    <div class="d-flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
+
+                                <div class="alert alert-info alert-important">
+                                    <div class="d-flex">
+                                        <!-- Icon with class="alert-icon" -->
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <button class="close alert-close" data-dismiss="alert">&times;</button>
+                                </div>
 
             aside.col-12.col-xl-2
                 include ../_layout/_sidebar
