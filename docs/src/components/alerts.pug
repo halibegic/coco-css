@@ -67,6 +67,7 @@ block content
                         | Link
                         a.anchor.ml-1.text-decoration-none(href="#link") #
                     p Add a link to your alert message to redirect users to the details they need to complete or additional information they should read.
+                    
                     .row
                         .col-12
                             .alert.alert-success.mb-3
@@ -108,7 +109,7 @@ block content
                     h4.mt-4.mb-2
                         | Dismiss
                         a.anchor.ml-1.text-decoration-none(href="#dismiss") #
-                    p Add the  #[code x] close button to make an alert modal dismissible. Thanks to that, your alert modal will disappear only once the user closes it.
+                    p Add the close button to make an alert modal dismissible. Thanks to that, your alert modal will disappear only once the user closes it.
 
                     .row
                         .col-12 
@@ -239,9 +240,8 @@ block content
                     .row
                         .col-12
                             .alert.alert-success.mb-3(role="alert")
-                                .d-flex
-                                    .avatar.mr-3
-                                        img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
+                                .d-flex.align-items-center
+                                    .avatar.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
                                     div
                                         .alert-title Title
                                         .text-muted Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -251,10 +251,8 @@ block content
                         code.docs-code
                             :highlight(lang="html")
                                 <div class="alert alert-success" role="alert">
-                                    <div class="flex">
-                                        <div class="avatar mr-3">
-                                            <img class="avatar-img" src="..." alt="...">
-                                        </div>
+                                    <div class="flex align-items-center">
+                                        <div class="avatar mr-3" style="background-image: url(...)"></div>
                                         <div>
                                             <div class="alert-title">Title</div>
                                             <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>

@@ -16,66 +16,71 @@ block content
                     p Avatars are user profile pictures.
                     .row.mb-3
                         .col-12
-                            .avatar.mr-3
-                                img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
-                            .avatar(data-initial="HA")
+                            .avatar.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
+                            .avatar.mr-3 AB
+                            .avatar.mr-3(style=`background-image:url(${path}img/avatar/02.jpg)`)
+                            .avatar CD
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")
-                                <div class="avatar">
-                                    <img class="avatar-img" src="..." alt="...">
-                                </div>
-
-                                <div class="avatar" data-initial="HA"></div>
+                                <div class="avatar" style="background-image: url(...)"></div>
+                                <div class="avatar">HA</div>
+                                <div class="avatar" style="background-image: url(...)"></div>
+                                <div class="avatar">AŠ</div>
                 #sizes
                     h4.mt-4.mb-2
                         | Sizes
                         a.anchor.ml-1.text-decoration-none(href="#sizes") #
-                    p   Add the  #[code avatar-sm], #[code avatar-lg] or #[code avatar-xl] class for small, large or extra large avatar size.
+                    p   Add the  #[code avatar-xs], #[code avatar-sm], #[code avatar-md], #[code avatar-lg] or #[code avatar-xl] class for small, large or extra large avatar size.
                     
                     .row.mb-3
-                        .col-12.d-flex.align-items-center
-                            .avatar.avatar-sm.mr-3
-                                img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
-                            .avatar.avatar.mr-3
-                                img.avatar-img(src=path+"img/avatar/02.jpg" alt="")
-                            .avatar.avatar-lg.mr-3
-                                img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
-                            .avatar.avatar-xl
-                                img.avatar-img(src=path+"img/avatar/04.jpg" alt="")
+                        .col-12
+                            .avatar.avatar-xl.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
+                            .avatar.avatar-lg.mr-3(style=`background-image:url(${path}img/avatar/04.jpg)`)
+                            .avatar.avatar-md.mr-3(style=`background-image:url(${path}img/avatar/03.jpg)`)
+                            .avatar.avatar-sm.mr-3(style=`background-image:url(${path}img/avatar/02.jpg)`)
+                            .avatar.avatar-xs.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
 
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")
-                                <div class="avatar avatar-sm">
-                                    <img class="avatar-img" src="..." alt="...">
-                                </div>
+                                <div class="avatar avatar-xl mr-3" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-lg mr-3" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-md mr-3" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-sm mr-3" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-xs mr-3" style="background-image: url(...)"></div>
 
-                                <div class="avatar">
-                                    <img class="avatar-img" src="..." alt="...">
-                                </div>
+                #colors
+                    h4.mt-4.mb-2
+                        | Colors
+                        a.anchor.ml-1.text-decoration-none(href="#colors") #
+                    p   Add the  #[code avatar-xs], #[code avatar-sm], #[code avatar-md], #[code avatar-lg] or #[code avatar-xl] class for small, large or extra large avatar size.
+                    
+                    .row.mb-3
+                        .col-12
+                            .avatar.bg-primary-soft.mr-3 HA
+                            .avatar.bg-secondary-soft.mr-3 AŠ
+                            .avatar.bg-success-soft.mr-3 TD
+                            .avatar.bg-info-soft.mr-3 TD
+                            .avatar.bg-warning-soft.mr-3 TD
+                            .avatar.bg-error-soft.mr-3 TD
 
-                                <div class="avatar avatar-lg">
-                                    <img class="avatar-img" src="..." alt="...">
-                                </div>
-
-                                <div class="avatar avatar-xl">
-                                    <img class="avatar-img" src="..." alt="...">
-                                </div>
+                    pre.code(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="avatar avatar-xl mr-3" style="background-image: url(...)"></div>
+                
                 #indicators
                     h4.mt-4.mb-2
                         | Indicators
                         a.anchor.ml-1.text-decoration-none(href="#indicators") #
+
                     .row.mb-3
                         .col-12.d-flex.align-items-center
-                            .avatar.avatar-status.offline.mr-3
-                                img.avatar-img(src=path+"img/avatar/01.jpg" alt="")
-                            .avatar.avatar-status.online.mr-3
-                                img.avatar-img(src=path+"img/avatar/02.jpg" alt="")
-                            .avatar.avatar-status.busy.mr-3
-                                img.avatar-img(src=path+"img/avatar/03.jpg" alt="")
-                            .avatar.avatar-status.away
-                                img.avatar-img(src=path+"img/avatar/04.jpg" alt="")
+
+                            .avatar.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
+                                small.label.bg-success
+
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")

@@ -1,8 +1,4 @@
 // Base
-@if $font-import == true {
-    @import url($font-url);
-}
-
 *,
 *::before,
 *::after {
@@ -19,7 +15,7 @@ html {
 }
 
 body {
-    font-family: $font-family;
+    font-family: $font-family-sans-serif;
     font-size: $font-size;
     font-weight: $font-weight;
     line-height: $line-height;
@@ -45,4 +41,10 @@ a {
 img,
 svg {
     vertical-align: middle;
+}
+
+code,
+kbd,
+samp {
+    font-family: $font-family-monospace;
 }

@@ -25,51 +25,57 @@
               <p>Avatars are user profile pictures.</p>
               <div class="row mb-3">
                 <div class="col-12">
-                  <div class="avatar mr-3"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
-                  <div class="avatar" data-initial="HA"></div>
+                  <div class="avatar mr-3" style="background-image:url(/img/avatar/01.jpg)"></div>
+                  <div class="avatar mr-3">AB</div>
+                  <div class="avatar mr-3" style="background-image:url(/img/avatar/02.jpg)"></div>
+                  <div class="avatar">CD</div>
                 </div>
               </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">data-initial</span>=<span class="hljs-string">"HA"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>HA<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>AŠ<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
             </div>
             <div id="sizes">
               <h4 class="mt-4 mb-2">Sizes<a class="anchor ml-1 text-decoration-none" href="#sizes">#</a></h4>
-              <p>  Add the  <code>avatar-sm</code>, <code>avatar-lg</code> or <code>avatar-xl</code> class for small, large or extra large avatar size.</p>
+              <p>  Add the  <code>avatar-xs</code>, <code>avatar-sm</code>, <code>avatar-md</code>, <code>avatar-lg</code> or <code>avatar-xl</code> class for small, large or extra large avatar size.</p>
               <div class="row mb-3">
-                <div class="col-12 d-flex align-items-center">
-                  <div class="avatar avatar-sm mr-3"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
-                  <div class="avatar avatar mr-3"><img class="avatar-img" src="/img/avatar/02.jpg" alt=""></div>
-                  <div class="avatar avatar-lg mr-3"><img class="avatar-img" src="/img/avatar/03.jpg" alt=""></div>
-                  <div class="avatar avatar-xl"><img class="avatar-img" src="/img/avatar/04.jpg" alt=""></div>
+                <div class="col-12">
+                  <div class="avatar avatar-xl mr-3" style="background-image:url(/img/avatar/01.jpg)"></div>
+                  <div class="avatar avatar-lg mr-3" style="background-image:url(/img/avatar/04.jpg)"></div>
+                  <div class="avatar avatar-md mr-3" style="background-image:url(/img/avatar/03.jpg)"></div>
+                  <div class="avatar avatar-sm mr-3" style="background-image:url(/img/avatar/02.jpg)"></div>
+                  <div class="avatar avatar-xs mr-3" style="background-image:url(/img/avatar/01.jpg)"></div>
                 </div>
               </div>
-              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-sm"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-lg"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl mr-3"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-lg mr-3"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-md mr-3"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-sm mr-3"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xs mr-3"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            </div>
+            <div id="colors">
+              <h4 class="mt-4 mb-2">Colors<a class="anchor ml-1 text-decoration-none" href="#colors">#</a></h4>
+              <p>  Add the  <code>avatar-xs</code>, <code>avatar-sm</code>, <code>avatar-md</code>, <code>avatar-lg</code> or <code>avatar-xl</code> class for small, large or extra large avatar size.</p>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <div class="avatar bg-primary-soft mr-3">HA</div>
+                  <div class="avatar bg-secondary-soft mr-3">AŠ</div>
+                  <div class="avatar bg-success-soft mr-3">TD</div>
+                  <div class="avatar bg-info-soft mr-3">TD</div>
+                  <div class="avatar bg-warning-soft mr-3">TD</div>
+                  <div class="avatar bg-error-soft mr-3">TD</div>
+                </div>
+              </div>
+              <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl mr-3"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(...)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
             </div>
             <div id="indicators">
               <h4 class="mt-4 mb-2">Indicators<a class="anchor ml-1 text-decoration-none" href="#indicators">#</a></h4>
               <div class="row mb-3">
                 <div class="col-12 d-flex align-items-center">
-                  <div class="avatar avatar-status offline mr-3"><img class="avatar-img" src="/img/avatar/01.jpg" alt=""></div>
-                  <div class="avatar avatar-status online mr-3"><img class="avatar-img" src="/img/avatar/02.jpg" alt=""></div>
-                  <div class="avatar avatar-status busy mr-3"><img class="avatar-img" src="/img/avatar/03.jpg" alt=""></div>
-                  <div class="avatar avatar-status away"><img class="avatar-img" src="/img/avatar/04.jpg" alt=""></div>
+                  <div class="avatar mr-3" style="background-image:url(/img/avatar/01.jpg)"><small class="label bg-success"></small></div>
                 </div>
               </div>
               <pre class="code" data-lang="HTML"><code class="docs-code"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-status offline"</span>&gt;</span>

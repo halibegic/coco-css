@@ -42,6 +42,8 @@
 }
 
 .alert-link {
+    font-weight: $alert-link-font-weight;
+
     &,
     &:focus,
     &:hover,
@@ -52,7 +54,6 @@
 }
 
 .alert-title {
-    margin-bottom: $alert-title-margin-y;
     line-height: $alert-title-line-height;
     font-weight: $alert-title-font-weight;
 }

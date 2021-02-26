@@ -16,7 +16,7 @@ $white:                             #fff !default;
 $black:                             #000 !default;
 
 $gray:                              #6f8299 !default;
-$gray-light:                        #dee2e6 !default;
+$gray-light:                        #e1e5e8 !default;
 $gray-dark:                         #343a40 !default;
 
 $state-colors:                      () !default;
@@ -46,7 +46,6 @@ $font-import:                       true !default;
 $var-prefix:                        "coco-" !default;
 
 // Assets
-$font-url:                          "https://rsms.me/inter/inter-ui.css";
 $font-path:                         "font/" !default;
 $img-path:                          "img/" !default;
 
@@ -115,7 +114,8 @@ $body-color:                        $gray-dark !default;
 $body-bg:                           $white !default;
 
 // Typography
-$font-family:                       "Inter UI", sans-serif;
+$font-family-sans-serif:            system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+$font-family-monospace:             null, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !default;
 
 $font-size:                         1rem !default;
 $font-size-xs:                      $font-size * 0.75 !default;
@@ -204,7 +204,7 @@ $btn-font-size:                     $font-size !default;
 $btn-font-size-sm:                  $font-size-sm !default;
 $btn-font-size-lg:                  $font-size-lg !default;
 
-$btn-font-weight:                   $font-weight-semi-bold !default;
+$btn-font-weight:                   $font-weight-medium !default;
 
 $btn-border-width:                  $border-width !default;
 $btn-border-color:                  $border-color !default;
@@ -236,21 +236,34 @@ $form-field-mark-size:              $font-size !default;
 $form-field-icon-size:              $font-size * 0.5 !default;
 
 // Code
-$code-font-size:                    $font-size-sm !default;
-$code-color:                        $error !default;
+$code-padding-y:                    0.125rem !default;
+$code-padding-x:                    0.25rem !default;
 
-$pre-padding-y:                     0.75rem !default;
+$code-font-size:                    85% !default;
+
+$code-color:                        $primary !default;
+$code-bg:                           rgba($primary, 0.03) !default;
+
+$code-border-width:                 $border-width !default;
+$code-border-color:                 rgba($primary, 0.06) !default;
+$code-border-radius:                $border-radius-sm !default;
+
+$pre-padding-y:                     1rem !default;
 $pre-padding-x:                     1rem !default;
 
 $pre-color:                         $gray-dark !default;
 $pre-bg:                            $light !default;
+
+$pre-border-width:                  $border-width !default;
+$pre-border-color:                  $border-color !default;
+
 $pre-border-radius:                 $border-radius-sm !default;
 
 // Label
 $label-padding-y:                   0.175em !default;
 $label-padding-x:                   0.35em !default;
 $label-font-size:                   75% !default;
-$label-font-weight:                 $font-weight-semi-bold !default;
+$label-font-weight:                 $font-weight-medium !default;
 $label-border-radius:               $border-radius !default;
 
 // Media
@@ -304,7 +317,8 @@ $alert-border-radius:               $border-radius-sm !default;
 
 $alert-box-shadow:                  $box-shadow-sm !default;
 
-$alert-title-margin-y:              $alert-padding-y * 0.25 !default;
+$alert-link-font-weight:            $headings-font-weight !default;
+
 $alert-title-line-height:           $headings-line-height !default;
 $alert-title-font-weight:           $headings-font-weight !default;
 
@@ -314,24 +328,21 @@ $alert-icon-height:                 1.5rem !default;
 $alert-important-font-weight:       $headings-font-weight !default;
 
 // Avatars
-$avatar-width:                      3rem !default;
-$avatar-height:                     $avatar-width !default;
 
-$avatar-width-sm:                   $avatar-width * 0.75 !default;
-$avatar-height-sm:                  $avatar-width-sm !default;
+// Avatars
+$avatar-size:                       2.5rem !default;
+$avatar-sizes: (
+  "xs": 1.25rem,
+  "sm": 2rem,
+  "md": 3.75rem,
+  "lg": 5rem,
+  "xl": 7rem
+) !default;
 
-$avatar-width-lg:                   $avatar-width * 1.25 !default;
-$avatar-height-lg:                  $avatar-width-lg !default;
-
-$avatar-width-xl:                   $avatar-width * 1.5 !default;
-$avatar-height-xl:                  $avatar-width-xl !default;
-
-$avatar-color:                      $white !default;
-$avatar-bg:                         $primary !default;
-$avatar-border-radius:              $border-radius-circle !default;
-
-$avatar-status-border-width:        $border-width !default;
-$avatar-status-border-color:        $white !default;
+$avatar-font-size:                  $h4-font-size !default;
+$avatar-color:                      $muted !default;
+$avatar-bg:                         $light !default;
+$avatar-border-radius:              $border-radius !default;
 
 // Breadcrumbs
 $breadcrumb-margin-bottom:          1rem !default;
@@ -449,7 +460,7 @@ $tab-link-border-width:             $tab-border-width !default;
 
 // Close
 $close-font-size:                   $font-size-xl !default;
-$close-font-weight:                 $font-weight-medium !default;
+$close-font-weight:                 $font-weight-light !default;
 $close-line-height:                 $line-height-xs !default;
 
 // Loading
