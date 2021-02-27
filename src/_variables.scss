@@ -236,8 +236,8 @@ $form-field-mark-size:              $font-size !default;
 $form-field-icon-size:              $font-size * 0.5 !default;
 
 // Code
-$code-padding-y:                    0.125rem !default;
-$code-padding-x:                    0.25rem !default;
+$code-padding-y:                    0.15em !default;
+$code-padding-x:                    0.3em !default;
 
 $code-font-size:                    85% !default;
 
@@ -254,17 +254,7 @@ $pre-padding-x:                     1rem !default;
 $pre-color:                         $gray-dark !default;
 $pre-bg:                            $light !default;
 
-$pre-border-width:                  $border-width !default;
-$pre-border-color:                  $border-color !default;
-
 $pre-border-radius:                 $border-radius-sm !default;
-
-// Label
-$label-padding-y:                   0.175em !default;
-$label-padding-x:                   0.35em !default;
-$label-font-size:                   75% !default;
-$label-font-weight:                 $font-weight-medium !default;
-$label-border-radius:               $border-radius !default;
 
 // Media
 $aspect-ratios:                     () !default;
@@ -339,17 +329,36 @@ $avatar-sizes: (
   "xl": 7rem
 ) !default;
 
-$avatar-font-size:                  $h4-font-size !default;
+$avatar-font-size:                  null !default;
+$avatar-font-weight:                $font-weight-medium !default;
+
 $avatar-color:                      $muted !default;
 $avatar-bg:                         $light !default;
+
 $avatar-border-radius:              $border-radius !default;
+
+$avatar-badge-border-width:         map-get($border-widths, 2) !default;
+$avatar-badge-border-color:         $white !default;
+
+// Badge
+$badge-padding-y:                   0.25em !default;
+$badge-padding-x:                   0.5em !default;
+
+$badge-font-size:                   75% !default;
+$badge-font-weight:                 $font-weight-semi-bold !default;
+
+$badge-border-radius:               $border-radius-sm !default;
+
+$badge-empty-size:                  8px !default;
 
 // Breadcrumbs
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-padding-x:              0.5rem !default;
+
 $breadcrumb-divider-color:          $muted !default;
 $breadcrumb-divider-font-family:    null !default;
 $breadcrumb-divider:                quote("/");
+
 $breadcrumb-active-color:           $muted !default;
 
 // Cards

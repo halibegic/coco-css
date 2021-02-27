@@ -16,7 +16,6 @@ pre {
     font-size: $code-font-size;
     color: $pre-color;
     background-color: $pre-bg;
-    border: $pre-border-width solid $pre-border-color;
     border-radius: $pre-border-radius;
 
     &::before {

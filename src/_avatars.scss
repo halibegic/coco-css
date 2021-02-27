@@ -7,6 +7,8 @@
     justify-content: center;
     width: var(--#{$var-prefix}avatar-size);
     height: var(--#{$var-prefix}avatar-size);
+    font-size: $avatar-font-size;
+    font-weight: $avatar-font-weight;
     color: $avatar-color;
     text-align: center;
     text-transform: uppercase;
@@ -14,74 +16,14 @@
     user-select: none;
     background: $avatar-bg no-repeat center/cover;
     border-radius: $avatar-border-radius;
-}
 
-/*
-.avatar {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    width: $avatar-width;
-    height: $avatar-height;
-    font-weight: $font-weight-medium;
-    font-size: $font-size;
-    line-height: $line-height;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.avatar-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: $avatar-border-radius;
-}
-
-.avatar-status {
-    &::after {
+    .badge {
         position: absolute;
-        bottom: 5%;
-        right: 5%;
-        width: 20%;
-        height: 20%;
-        content: "";
-        border: $avatar-status-border-width solid $avatar-status-border-color;
-        border-radius: 50%;
-    }
-
-    &.online::after {
-        background-color: $success;
-    }
-
-    &.offline::after {
-        background-color: $muted;
-    }
-
-    &.busy::after {
-        background-color: $error;
-    }
-
-    &.away::after {
-        background-color: $warning;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0 0 0 $avatar-badge-border-width $avatar-badge-border-color;
     }
 }
-
-.avatar[data-initial] {
-    color: $avatar-color;
-    background-color: $avatar-bg;
-    border-radius: $avatar-border-radius;
-
-    &::before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        content: attr(data-initial);
-        color: currentColor;
-        transform: translate(-50%, -50%);
-    }
-}
-*/
 
 @each $avatar-size, $size in $avatar-sizes {
     .avatar-#{$avatar-size} {

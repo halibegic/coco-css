@@ -13,91 +13,127 @@ block content
                     h2.mb-2.text-dark
                         | Avatars
                         a.anchor.ml-1.text-decoration-none(href="#avatars") #
-                    p Avatars are user profile pictures.
+                    p Avatars help customise various elements of a user interface and make the product experience more personalised. They are often used in communication apps, collaboration tools and social media.
+
                     .row.mb-3
                         .col-12
                             .avatar.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
-                            .avatar.mr-3 AB
+                            .avatar.mr-3 HA
                             .avatar.mr-3(style=`background-image:url(${path}img/avatar/02.jpg)`)
-                            .avatar CD
+                            .avatar MH
+
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")
                                 <div class="avatar" style="background-image: url(...)"></div>
                                 <div class="avatar">HA</div>
                                 <div class="avatar" style="background-image: url(...)"></div>
-                                <div class="avatar">AŠ</div>
+                                <div class="avatar">MH</div>
                 #sizes
                     h4.mt-4.mb-2
                         | Sizes
                         a.anchor.ml-1.text-decoration-none(href="#sizes") #
-                    p   Add the  #[code avatar-xs], #[code avatar-sm], #[code avatar-md], #[code avatar-lg] or #[code avatar-xl] class for small, large or extra large avatar size.
-                    
+                    p Using Bootstrap’s typical naming structure, you can create a standard avatar or scale it up or down to different sizes based on what you need.
+
                     .row.mb-3
                         .col-12
                             .avatar.avatar-xl.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
                             .avatar.avatar-lg.mr-3(style=`background-image:url(${path}img/avatar/04.jpg)`)
                             .avatar.avatar-md.mr-3(style=`background-image:url(${path}img/avatar/03.jpg)`)
                             .avatar.avatar-sm.mr-3(style=`background-image:url(${path}img/avatar/02.jpg)`)
-                            .avatar.avatar-xs.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
+                            .avatar.avatar-xs(style=`background-image:url(${path}img/avatar/01.jpg)`)
 
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")
-                                <div class="avatar avatar-xl mr-3" style="background-image: url(...)"></div>
-                                <div class="avatar avatar-lg mr-3" style="background-image: url(...)"></div>
-                                <div class="avatar avatar-md mr-3" style="background-image: url(...)"></div>
-                                <div class="avatar avatar-sm mr-3" style="background-image: url(...)"></div>
-                                <div class="avatar avatar-xs mr-3" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-xl" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-lg" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-md" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-sm" style="background-image: url(...)"></div>
+                                <div class="avatar avatar-xs" style="background-image: url(...)"></div>
 
                 #colors
                     h4.mt-4.mb-2
                         | Colors
                         a.anchor.ml-1.text-decoration-none(href="#colors") #
-                    p   Add the  #[code avatar-xs], #[code avatar-sm], #[code avatar-md], #[code avatar-lg] or #[code avatar-xl] class for small, large or extra large avatar size.
-                    
+                    p Customize the color of the avatars background. You can #[a(href=path+'utilities/colors.html') click here] to see the list of available colors.
+
                     .row.mb-3
                         .col-12
                             .avatar.bg-primary-soft.mr-3 HA
-                            .avatar.bg-secondary-soft.mr-3 AŠ
+                            .avatar.bg-secondary-soft.mr-3 MA
                             .avatar.bg-success-soft.mr-3 TD
-                            .avatar.bg-info-soft.mr-3 TD
-                            .avatar.bg-warning-soft.mr-3 TD
-                            .avatar.bg-error-soft.mr-3 TD
+                            .avatar.bg-info-soft.mr-3 RA
+                            .avatar.bg-warning-soft.mr-3 MH
+                            .avatar.bg-error-soft PM
 
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")
-                                <div class="avatar avatar-xl mr-3" style="background-image: url(...)"></div>
-                
+                                <div class="avatar bg-primary-soft">HA</div>
+                                <div class="avatar bg-secondary-soft">MA</div>
+                                <div class="avatar bg-success-soft">TD</div>
+                                <div class="avatar bg-info-soft">RA</div>
+                                <div class="avatar bg-warning-soft">MH</div>
+                                <div class="avatar bg-error-soft">PM</div>
+
+                #shapes
+                    h4.mt-4.mb-2
+                        | Shapes
+                        a.anchor.ml-1.text-decoration-none(href="#shapes") #
+                    p Change the shape of an avatar with the default Bootstrap image classes. You can make them round or square and change their border radius.
+
+                    .row.mb-3
+                        .col-12
+
+                            .avatar.rounded-circle.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
+                            .avatar.rounded-sm.mr-3(style=`background-image:url(${path}img/avatar/02.jpg)`)
+                            .avatar.rounded-lg.mr-3(style=`background-image:url(${path}img/avatar/03.jpg)`)
+                            .avatar.rounded-0(style=`background-image:url(${path}img/avatar/04.jpg)`)
+
+                    pre.code(data-lang="HTML")
+                        code.docs-code
+                            :highlight(lang="html")
+                                <div class="avatar rounded-circle" style="background-image:url(...)"></div>
+                                <div class="avatar rounded-sm" style="background-image:url(...)"></div>
+                                <div class="avatar rounded-lg" style="background-image:url(...)"></div>
+                                <div class="avatar rounded-0" style="background-image:url(...)"></div>
+       
                 #indicators
                     h4.mt-4.mb-2
                         | Indicators
                         a.anchor.ml-1.text-decoration-none(href="#indicators") #
+                    p Add a status indicator to your avatar to show, for instance, if a users is online or offline or indicate the number of messages they have received.
 
                     .row.mb-3
-                        .col-12.d-flex.align-items-center
+                        .col-12
 
                             .avatar.mr-3(style=`background-image:url(${path}img/avatar/01.jpg)`)
-                                small.label.bg-success
+                                span.badge.bg-success
+                            .avatar.mr-3(style=`background-image:url(${path}img/avatar/02.jpg)`)
+                                span.badge.bg-info
+                            .avatar.mr-3(style=`background-image:url(${path}img/avatar/03.jpg)`)
+                                span.badge.bg-warning
+                            .avatar(style=`background-image:url(${path}img/avatar/04.jpg)`)
+                                span.badge.bg-error
 
                     pre.code(data-lang="HTML")
                         code.docs-code
                             :highlight(lang="html")
-                                <div class="avatar avatar-status offline">
-                                    <img class="avatar-img" src="..." alt="...">
+                                <div class="avatar" style="background-image: url(...)">
+                                    <span class="badge bg-success"></span>
                                 </div>
 
-                                <div class="avatar avatar-status online">
-                                    <img class="avatar-img" src="..." alt="...">
+                                <div class="avatar" style="background-image: url(...)">
+                                    <span class="badge bg-info"></span>
                                 </div>
 
-                                <div class="avatar avatar-status busy">
-                                    <img class="avatar-img" src="..." alt="...">
+                                <div class="avatar" style="background-image: url(...)">
+                                    <span class="badge bg-warning"></span>
                                 </div>
 
-                                <div class="avatar avatar-status away">
-                                    <img class="avatar-img" src="..." alt="...">
+                                <div class="avatar" style="background-image: url(...)">
+                                    <span class="badge bg-error"></span>
                                 </div>
        
             aside.col-12.col-xl-2

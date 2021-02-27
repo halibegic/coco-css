@@ -1,0 +1,19 @@
+// Badge
+.badge {
+    display: inline-block;
+    padding: $badge-padding-y $badge-padding-x;
+    font-size: $badge-font-size;
+    font-weight: $badge-font-weight;
+    line-height: $line-height-xs;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: $badge-border-radius;
+
+    &:empty {
+        padding: 0;
+        width: $badge-empty-size;
+        height: $badge-empty-size;
+        border-radius: $border-radius-circle;
+    }
+}
