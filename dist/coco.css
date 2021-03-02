@@ -112,7 +112,7 @@ template { display: none; }
 
 html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -moz-osx-font-smoothing: grayscale; -moz-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
 
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #343a40; text-align: left; background-color: #fff; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #343a40; text-align: left; background-color: #fff; }
 
 a { color: #007bff; outline: none; text-decoration: none; }
 
@@ -120,7 +120,7 @@ a:focus, a:hover, a:active, a.active { color: #0062cc; text-decoration: underlin
 
 img, svg { vertical-align: middle; }
 
-code, kbd, samp { font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; }
+code, kbd, samp { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 .alert { --coco-alert-color: #6f8299; position: relative; padding: 1rem 1rem; margin-bottom: 1rem; background-color: #fff; border: 1px solid #e1e5e8; border-left: 4px solid var(--coco-alert-color); border-radius: 0.25rem; box-shadow: 0 0.125rem 0.25rem rgba(22, 30, 41, 0.075); }
 
@@ -768,9 +768,9 @@ select.form-field:not([multiple]):not([size]) { padding-right: 1.25rem; backgrou
 
 .tab-link { display: block; margin-right: 1.5rem; margin-bottom: -1px; padding: 0.75rem 0; color: #6f8299; border-bottom: 1px solid transparent; }
 
-.tab-link:focus, .tab-link:hover { color: #0062cc; }
+.tab-link:focus, .tab-link:hover { color: #0062cc; text-decoration: none; }
 
-.tab-link:active, .tab-link.active { color: #343a40; border-bottom-color: #007bff; }
+.tab-link:active, .tab-link.active { color: #343a40; border-bottom-color: #007bff; text-decoration: none; }
 
 .tab-content .tab-pane { display: none; }
 

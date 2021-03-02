@@ -25,12 +25,14 @@
     &:focus,
     &:hover {
         color: $tab-link-hover-color;
+        text-decoration: none;
     }
 
     &:active,
     &.active {
         color: $tab-link-active-color;
         border-bottom-color: $tab-link-active-border-color;
+        text-decoration: none;
     }
 }
 
