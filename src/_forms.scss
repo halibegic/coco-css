@@ -14,7 +14,7 @@
 
 .form-label {
     display: block;
-    line-height: $line-height;
+    line-height: $form-field-line-height;
     padding-bottom: $form-field-padding-y;
 
     &.form-label-sm {
@@ -32,10 +32,10 @@
     display: block;
     padding: $form-field-padding-y $form-field-padding-x;
     width: 100%;
-    line-height: $line-height;
-    color: $dark;
+    line-height: $form-field-line-height;
     font-size: $form-field-font-size;
     font-weight: $form-field-font-weight;
+    color: $dark;
     background: none;
     background-color: $white;
     border: $form-field-border-width solid $form-field-border-color;
@@ -124,7 +124,7 @@ select.form-field {
     position: relative;
     display: block;
     padding-left: $form-field-mark-size * 1.5;
-    line-height: $line-height;
+    line-height: $form-field-line-height;
 
     &:not(:last-child) {
         margin-bottom: $form-field-mark-size * 0.5;
