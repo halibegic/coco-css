@@ -244,7 +244,7 @@ code, kbd, samp { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberat
 
 code { padding: 0.15em 0.3em; font-size: 85%; word-wrap: break-word; color: #007bff; background-color: rgba(0, 123, 255, 0.03); border: 1px solid rgba(0, 123, 255, 0.06); border-radius: 0.25rem; }
 
-pre { position: relative; margin: 0; padding: 1rem 1rem; font-size: 85%; color: #343a40; background-color: #f8f9fa; border-radius: 0.25rem; }
+pre { position: relative; margin: 0; padding: 1rem 1rem; font-size: 85%; color: #343a40; background-color: #f8f9fa; border-radius: 0.25rem; overflow: auto; }
 
 pre::before { position: absolute; top: 0.5rem; right: 0.5rem; color: #6f8299; content: attr(data-lang); font-size: 0.875rem; }
 

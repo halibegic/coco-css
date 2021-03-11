@@ -17,6 +17,7 @@ pre {
     color: $pre-color;
     background-color: $pre-bg;
     border-radius: $pre-border-radius;
+    overflow: auto;
 
     &::before {
         position: absolute;
