@@ -11,7 +11,7 @@
 
     &::before {
         padding-right: $breadcrumb-padding-x;
-        content: $breadcrumb-divider;
+        content: var(--#{$var-prefix}breadcrumb-divider, ($breadcrumb-divider));
         font-family: $breadcrumb-divider-font-family;
         color: $breadcrumb-divider-color;
     }

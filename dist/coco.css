@@ -180,7 +180,7 @@ code, kbd, samp { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberat
 
 .breadcrumb-item + .breadcrumb-item { padding-left: 0.5rem; }
 
-.breadcrumb-item + .breadcrumb-item::before { padding-right: 0.5rem; content: "/"; color: #6f8299; }
+.breadcrumb-item + .breadcrumb-item::before { padding-right: 0.5rem; content: var(--coco-breadcrumb-divider, "/"); color: #6f8299; }
 
 .breadcrumb-link:active, .breadcrumb-link.active { color: #6f8299; }
 
